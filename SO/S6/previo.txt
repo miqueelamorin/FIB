@@ -1,0 +1,16 @@
+Pregunta 1.
+	Se encuentran en /proc/[pid]/stat en los archivos 'cminflt' y 'cmajflt'.
+
+Pregunta 2.
+	vmstat -n 1
+	en las columnas 'si' 'so' en el grupo ---swap---
+
+Pregunta 3.
+	fib 10: 0m0.006s
+	fib 20: 0m0.006s
+	fib 30: 0m0.010s
+	fib 40: 0m0.642s
+	fib 50: 1m20.194s
+
+Pregunta 4.
+	Con valor 10

@@ -1,0 +1,2048 @@
+CacheSize? limite=   256 ; fallos=     2 ; referencias=200000
+CacheSize? limite=   512 ; fallos=     4 ; referencias=200000
+CacheSize? limite=   768 ; fallos=     6 ; referencias=200000
+CacheSize? limite=  1024 ; fallos=     8 ; referencias=200000
+CacheSize? limite=  1280 ; fallos=    10 ; referencias=200000
+CacheSize? limite=  1536 ; fallos=    12 ; referencias=200000
+CacheSize? limite=  1792 ; fallos=    14 ; referencias=200000
+CacheSize? limite=  2048 ; fallos=    16 ; referencias=200000
+CacheSize? limite=  2304 ; fallos=    18 ; referencias=200000
+CacheSize? limite=  2560 ; fallos=    20 ; referencias=200000
+CacheSize? limite=  2816 ; fallos=    22 ; referencias=200000
+CacheSize? limite=  3072 ; fallos=    24 ; referencias=200000
+CacheSize? limite=  3328 ; fallos=    26 ; referencias=200000
+CacheSize? limite=  3584 ; fallos=    28 ; referencias=200000
+CacheSize? limite=  3840 ; fallos=    30 ; referencias=200000
+CacheSize? limite=  4096 ; fallos=    32 ; referencias=200000
+CacheSize? limite=  4352 ; fallos=    34 ; referencias=200000
+CacheSize? limite=  4608 ; fallos=    36 ; referencias=200000
+CacheSize? limite=  4864 ; fallos=    38 ; referencias=200000
+CacheSize? limite=  5120 ; fallos=    40 ; referencias=200000
+CacheSize? limite=  5376 ; fallos=    42 ; referencias=200000
+CacheSize? limite=  5632 ; fallos=    44 ; referencias=200000
+CacheSize? limite=  5888 ; fallos=    46 ; referencias=200000
+CacheSize? limite=  6144 ; fallos=    48 ; referencias=200000
+CacheSize? limite=  6400 ; fallos=    50 ; referencias=200000
+CacheSize? limite=  6656 ; fallos=    52 ; referencias=200000
+CacheSize? limite=  6912 ; fallos=    54 ; referencias=200000
+CacheSize? limite=  7168 ; fallos=    56 ; referencias=200000
+CacheSize? limite=  7424 ; fallos=    58 ; referencias=200000
+CacheSize? limite=  7680 ; fallos=    60 ; referencias=200000
+CacheSize? limite=  7936 ; fallos=    62 ; referencias=200000
+CacheSize? limite=  8192 ; fallos=    64 ; referencias=200000
+CacheSize? limite=  8448 ; fallos=    66 ; referencias=200000
+CacheSize? limite=  8704 ; fallos=    68 ; referencias=200000
+CacheSize? limite=  8960 ; fallos=    70 ; referencias=200000
+CacheSize? limite=  9216 ; fallos=    72 ; referencias=200000
+CacheSize? limite=  9472 ; fallos=    74 ; referencias=200000
+CacheSize? limite=  9728 ; fallos=    76 ; referencias=200000
+CacheSize? limite=  9984 ; fallos=    78 ; referencias=200000
+CacheSize? limite= 10240 ; fallos=    80 ; referencias=200000
+CacheSize? limite= 10496 ; fallos=    82 ; referencias=200000
+CacheSize? limite= 10752 ; fallos=    84 ; referencias=200000
+CacheSize? limite= 11008 ; fallos=    86 ; referencias=200000
+CacheSize? limite= 11264 ; fallos=    88 ; referencias=200000
+CacheSize? limite= 11520 ; fallos=    90 ; referencias=200000
+CacheSize? limite= 11776 ; fallos=    92 ; referencias=200000
+CacheSize? limite= 12032 ; fallos=    94 ; referencias=200000
+CacheSize? limite= 12288 ; fallos=    96 ; referencias=200000
+CacheSize? limite= 12544 ; fallos=    98 ; referencias=200000
+CacheSize? limite= 12800 ; fallos=   100 ; referencias=200000
+CacheSize? limite= 13056 ; fallos=   102 ; referencias=200000
+CacheSize? limite= 13312 ; fallos=   104 ; referencias=200000
+CacheSize? limite= 13568 ; fallos=   106 ; referencias=200000
+CacheSize? limite= 13824 ; fallos=   108 ; referencias=200000
+CacheSize? limite= 14080 ; fallos=   110 ; referencias=200000
+CacheSize? limite= 14336 ; fallos=   112 ; referencias=200000
+CacheSize? limite= 14592 ; fallos=   114 ; referencias=200000
+CacheSize? limite= 14848 ; fallos=   116 ; referencias=200000
+CacheSize? limite= 15104 ; fallos=   118 ; referencias=200000
+CacheSize? limite= 15360 ; fallos=   120 ; referencias=200000
+CacheSize? limite= 15616 ; fallos=   122 ; referencias=200000
+CacheSize? limite= 15872 ; fallos=   124 ; referencias=200000
+CacheSize? limite= 16128 ; fallos=   126 ; referencias=200000
+CacheSize? limite= 16384 ; fallos=   128 ; referencias=200000
+CacheSize? limite= 16640 ; fallos=   130 ; referencias=200000
+CacheSize? limite= 16896 ; fallos=   132 ; referencias=200000
+CacheSize? limite= 17152 ; fallos=   134 ; referencias=200000
+CacheSize? limite= 17408 ; fallos=   136 ; referencias=200000
+CacheSize? limite= 17664 ; fallos=   138 ; referencias=200000
+CacheSize? limite= 17920 ; fallos=   140 ; referencias=200000
+CacheSize? limite= 18176 ; fallos=   142 ; referencias=200000
+CacheSize? limite= 18432 ; fallos=   144 ; referencias=200000
+CacheSize? limite= 18688 ; fallos=   146 ; referencias=200000
+CacheSize? limite= 18944 ; fallos=   148 ; referencias=200000
+CacheSize? limite= 19200 ; fallos=   150 ; referencias=200000
+CacheSize? limite= 19456 ; fallos=   152 ; referencias=200000
+CacheSize? limite= 19712 ; fallos=   154 ; referencias=200000
+CacheSize? limite= 19968 ; fallos=   156 ; referencias=200000
+CacheSize? limite= 20224 ; fallos=   158 ; referencias=200000
+CacheSize? limite= 20480 ; fallos=   160 ; referencias=200000
+CacheSize? limite= 20736 ; fallos=   162 ; referencias=200000
+CacheSize? limite= 20992 ; fallos=   164 ; referencias=200000
+CacheSize? limite= 21248 ; fallos=   166 ; referencias=200000
+CacheSize? limite= 21504 ; fallos=   168 ; referencias=200000
+CacheSize? limite= 21760 ; fallos=   170 ; referencias=200000
+CacheSize? limite= 22016 ; fallos=   172 ; referencias=200000
+CacheSize? limite= 22272 ; fallos=   174 ; referencias=200000
+CacheSize? limite= 22528 ; fallos=   176 ; referencias=200000
+CacheSize? limite= 22784 ; fallos=   178 ; referencias=200000
+CacheSize? limite= 23040 ; fallos=   180 ; referencias=200000
+CacheSize? limite= 23296 ; fallos=   182 ; referencias=200000
+CacheSize? limite= 23552 ; fallos=   184 ; referencias=200000
+CacheSize? limite= 23808 ; fallos=   186 ; referencias=200000
+CacheSize? limite= 24064 ; fallos=   188 ; referencias=200000
+CacheSize? limite= 24320 ; fallos=   190 ; referencias=200000
+CacheSize? limite= 24576 ; fallos=   192 ; referencias=200000
+CacheSize? limite= 24832 ; fallos=   194 ; referencias=200000
+CacheSize? limite= 25088 ; fallos=   196 ; referencias=200000
+CacheSize? limite= 25344 ; fallos=   198 ; referencias=200000
+CacheSize? limite= 25600 ; fallos=   200 ; referencias=200000
+CacheSize? limite= 25856 ; fallos=   202 ; referencias=200000
+CacheSize? limite= 26112 ; fallos=   204 ; referencias=200000
+CacheSize? limite= 26368 ; fallos=   206 ; referencias=200000
+CacheSize? limite= 26624 ; fallos=   208 ; referencias=200000
+CacheSize? limite= 26880 ; fallos=   210 ; referencias=200000
+CacheSize? limite= 27136 ; fallos=   212 ; referencias=200000
+CacheSize? limite= 27392 ; fallos=   214 ; referencias=200000
+CacheSize? limite= 27648 ; fallos=   216 ; referencias=200000
+CacheSize? limite= 27904 ; fallos=   218 ; referencias=200000
+CacheSize? limite= 28160 ; fallos=   220 ; referencias=200000
+CacheSize? limite= 28416 ; fallos=   222 ; referencias=200000
+CacheSize? limite= 28672 ; fallos=   224 ; referencias=200000
+CacheSize? limite= 28928 ; fallos=   226 ; referencias=200000
+CacheSize? limite= 29184 ; fallos=   228 ; referencias=200000
+CacheSize? limite= 29440 ; fallos=   230 ; referencias=200000
+CacheSize? limite= 29696 ; fallos=   232 ; referencias=200000
+CacheSize? limite= 29952 ; fallos=   234 ; referencias=200000
+CacheSize? limite= 30208 ; fallos=   236 ; referencias=200000
+CacheSize? limite= 30464 ; fallos=   238 ; referencias=200000
+CacheSize? limite= 30720 ; fallos=   240 ; referencias=200000
+CacheSize? limite= 30976 ; fallos=   242 ; referencias=200000
+CacheSize? limite= 31232 ; fallos=   244 ; referencias=200000
+CacheSize? limite= 31488 ; fallos=   246 ; referencias=200000
+CacheSize? limite= 31744 ; fallos=   248 ; referencias=200000
+CacheSize? limite= 32000 ; fallos=   250 ; referencias=200000
+CacheSize? limite= 32256 ; fallos=   252 ; referencias=200000
+CacheSize? limite= 32512 ; fallos=   254 ; referencias=200000
+CacheSize? limite= 32768 ; fallos=   256 ; referencias=200000
+CacheSize? limite= 33024 ; fallos=   258 ; referencias=200000
+CacheSize? limite= 33280 ; fallos=   260 ; referencias=200000
+CacheSize? limite= 33536 ; fallos=   262 ; referencias=200000
+CacheSize? limite= 33792 ; fallos=   264 ; referencias=200000
+CacheSize? limite= 34048 ; fallos=   266 ; referencias=200000
+CacheSize? limite= 34304 ; fallos=   268 ; referencias=200000
+CacheSize? limite= 34560 ; fallos=   270 ; referencias=200000
+CacheSize? limite= 34816 ; fallos=   272 ; referencias=200000
+CacheSize? limite= 35072 ; fallos=   274 ; referencias=200000
+CacheSize? limite= 35328 ; fallos=   276 ; referencias=200000
+CacheSize? limite= 35584 ; fallos=   278 ; referencias=200000
+CacheSize? limite= 35840 ; fallos=   280 ; referencias=200000
+CacheSize? limite= 36096 ; fallos=   282 ; referencias=200000
+CacheSize? limite= 36352 ; fallos=   284 ; referencias=200000
+CacheSize? limite= 36608 ; fallos=   286 ; referencias=200000
+CacheSize? limite= 36864 ; fallos=   288 ; referencias=200000
+CacheSize? limite= 37120 ; fallos=   290 ; referencias=200000
+CacheSize? limite= 37376 ; fallos=   292 ; referencias=200000
+CacheSize? limite= 37632 ; fallos=   294 ; referencias=200000
+CacheSize? limite= 37888 ; fallos=   296 ; referencias=200000
+CacheSize? limite= 38144 ; fallos=   298 ; referencias=200000
+CacheSize? limite= 38400 ; fallos=   300 ; referencias=200000
+CacheSize? limite= 38656 ; fallos=   302 ; referencias=200000
+CacheSize? limite= 38912 ; fallos=   304 ; referencias=200000
+CacheSize? limite= 39168 ; fallos=   306 ; referencias=200000
+CacheSize? limite= 39424 ; fallos=   308 ; referencias=200000
+CacheSize? limite= 39680 ; fallos=   310 ; referencias=200000
+CacheSize? limite= 39936 ; fallos=   312 ; referencias=200000
+CacheSize? limite= 40192 ; fallos=   314 ; referencias=200000
+CacheSize? limite= 40448 ; fallos=   316 ; referencias=200000
+CacheSize? limite= 40704 ; fallos=   318 ; referencias=200000
+CacheSize? limite= 40960 ; fallos=   320 ; referencias=200000
+CacheSize? limite= 41216 ; fallos=   322 ; referencias=200000
+CacheSize? limite= 41472 ; fallos=   324 ; referencias=200000
+CacheSize? limite= 41728 ; fallos=   326 ; referencias=200000
+CacheSize? limite= 41984 ; fallos=   328 ; referencias=200000
+CacheSize? limite= 42240 ; fallos=   330 ; referencias=200000
+CacheSize? limite= 42496 ; fallos=   332 ; referencias=200000
+CacheSize? limite= 42752 ; fallos=   334 ; referencias=200000
+CacheSize? limite= 43008 ; fallos=   336 ; referencias=200000
+CacheSize? limite= 43264 ; fallos=   338 ; referencias=200000
+CacheSize? limite= 43520 ; fallos=   340 ; referencias=200000
+CacheSize? limite= 43776 ; fallos=   342 ; referencias=200000
+CacheSize? limite= 44032 ; fallos=   344 ; referencias=200000
+CacheSize? limite= 44288 ; fallos=   346 ; referencias=200000
+CacheSize? limite= 44544 ; fallos=   348 ; referencias=200000
+CacheSize? limite= 44800 ; fallos=   350 ; referencias=200000
+CacheSize? limite= 45056 ; fallos=   352 ; referencias=200000
+CacheSize? limite= 45312 ; fallos=   354 ; referencias=200000
+CacheSize? limite= 45568 ; fallos=   356 ; referencias=200000
+CacheSize? limite= 45824 ; fallos=   358 ; referencias=200000
+CacheSize? limite= 46080 ; fallos=   360 ; referencias=200000
+CacheSize? limite= 46336 ; fallos=   362 ; referencias=200000
+CacheSize? limite= 46592 ; fallos=   364 ; referencias=200000
+CacheSize? limite= 46848 ; fallos=   366 ; referencias=200000
+CacheSize? limite= 47104 ; fallos=   368 ; referencias=200000
+CacheSize? limite= 47360 ; fallos=   370 ; referencias=200000
+CacheSize? limite= 47616 ; fallos=   372 ; referencias=200000
+CacheSize? limite= 47872 ; fallos=   374 ; referencias=200000
+CacheSize? limite= 48128 ; fallos=   376 ; referencias=200000
+CacheSize? limite= 48384 ; fallos=   378 ; referencias=200000
+CacheSize? limite= 48640 ; fallos=   380 ; referencias=200000
+CacheSize? limite= 48896 ; fallos=   382 ; referencias=200000
+CacheSize? limite= 49152 ; fallos=   384 ; referencias=200000
+CacheSize? limite= 49408 ; fallos=   386 ; referencias=200000
+CacheSize? limite= 49664 ; fallos=   388 ; referencias=200000
+CacheSize? limite= 49920 ; fallos=   390 ; referencias=200000
+CacheSize? limite= 50176 ; fallos=   392 ; referencias=200000
+CacheSize? limite= 50432 ; fallos=   394 ; referencias=200000
+CacheSize? limite= 50688 ; fallos=   396 ; referencias=200000
+CacheSize? limite= 50944 ; fallos=   398 ; referencias=200000
+CacheSize? limite= 51200 ; fallos=   400 ; referencias=200000
+CacheSize? limite= 51456 ; fallos=   402 ; referencias=200000
+CacheSize? limite= 51712 ; fallos=   404 ; referencias=200000
+CacheSize? limite= 51968 ; fallos=   406 ; referencias=200000
+CacheSize? limite= 52224 ; fallos=   408 ; referencias=200000
+CacheSize? limite= 52480 ; fallos=   410 ; referencias=200000
+CacheSize? limite= 52736 ; fallos=   412 ; referencias=200000
+CacheSize? limite= 52992 ; fallos=   414 ; referencias=200000
+CacheSize? limite= 53248 ; fallos=   416 ; referencias=200000
+CacheSize? limite= 53504 ; fallos=   418 ; referencias=200000
+CacheSize? limite= 53760 ; fallos=   420 ; referencias=200000
+CacheSize? limite= 54016 ; fallos=   422 ; referencias=200000
+CacheSize? limite= 54272 ; fallos=   424 ; referencias=200000
+CacheSize? limite= 54528 ; fallos=   426 ; referencias=200000
+CacheSize? limite= 54784 ; fallos=   428 ; referencias=200000
+CacheSize? limite= 55040 ; fallos=   430 ; referencias=200000
+CacheSize? limite= 55296 ; fallos=   432 ; referencias=200000
+CacheSize? limite= 55552 ; fallos=   434 ; referencias=200000
+CacheSize? limite= 55808 ; fallos=   436 ; referencias=200000
+CacheSize? limite= 56064 ; fallos=   438 ; referencias=200000
+CacheSize? limite= 56320 ; fallos=   440 ; referencias=200000
+CacheSize? limite= 56576 ; fallos=   442 ; referencias=200000
+CacheSize? limite= 56832 ; fallos=   444 ; referencias=200000
+CacheSize? limite= 57088 ; fallos=   446 ; referencias=200000
+CacheSize? limite= 57344 ; fallos=   448 ; referencias=200000
+CacheSize? limite= 57600 ; fallos=   450 ; referencias=200000
+CacheSize? limite= 57856 ; fallos=   452 ; referencias=200000
+CacheSize? limite= 58112 ; fallos=   454 ; referencias=200000
+CacheSize? limite= 58368 ; fallos=   456 ; referencias=200000
+CacheSize? limite= 58624 ; fallos=   458 ; referencias=200000
+CacheSize? limite= 58880 ; fallos=   460 ; referencias=200000
+CacheSize? limite= 59136 ; fallos=   462 ; referencias=200000
+CacheSize? limite= 59392 ; fallos=   464 ; referencias=200000
+CacheSize? limite= 59648 ; fallos=   466 ; referencias=200000
+CacheSize? limite= 59904 ; fallos=   468 ; referencias=200000
+CacheSize? limite= 60160 ; fallos=   470 ; referencias=200000
+CacheSize? limite= 60416 ; fallos=   472 ; referencias=200000
+CacheSize? limite= 60672 ; fallos=   474 ; referencias=200000
+CacheSize? limite= 60928 ; fallos=   476 ; referencias=200000
+CacheSize? limite= 61184 ; fallos=   478 ; referencias=200000
+CacheSize? limite= 61440 ; fallos=   480 ; referencias=200000
+CacheSize? limite= 61696 ; fallos=   482 ; referencias=200000
+CacheSize? limite= 61952 ; fallos=   484 ; referencias=200000
+CacheSize? limite= 62208 ; fallos=   486 ; referencias=200000
+CacheSize? limite= 62464 ; fallos=   488 ; referencias=200000
+CacheSize? limite= 62720 ; fallos=   490 ; referencias=200000
+CacheSize? limite= 62976 ; fallos=   492 ; referencias=200000
+CacheSize? limite= 63232 ; fallos=   494 ; referencias=200000
+CacheSize? limite= 63488 ; fallos=   496 ; referencias=200000
+CacheSize? limite= 63744 ; fallos=   498 ; referencias=200000
+CacheSize? limite= 64000 ; fallos=   500 ; referencias=200000
+CacheSize? limite= 64256 ; fallos=   502 ; referencias=200000
+CacheSize? limite= 64512 ; fallos=   504 ; referencias=200000
+CacheSize? limite= 64768 ; fallos=   506 ; referencias=200000
+CacheSize? limite= 65024 ; fallos=   508 ; referencias=200000
+CacheSize? limite= 65280 ; fallos=   510 ; referencias=200000
+CacheSize? limite= 65536 ; fallos=   512 ; referencias=200000
+CacheSize? limite= 65792 ; fallos=   514 ; referencias=200000
+CacheSize? limite= 66048 ; fallos=   516 ; referencias=200000
+CacheSize? limite= 66304 ; fallos=   518 ; referencias=200000
+CacheSize? limite= 66560 ; fallos=   520 ; referencias=200000
+CacheSize? limite= 66816 ; fallos=   522 ; referencias=200000
+CacheSize? limite= 67072 ; fallos=   524 ; referencias=200000
+CacheSize? limite= 67328 ; fallos=   526 ; referencias=200000
+CacheSize? limite= 67584 ; fallos=   528 ; referencias=200000
+CacheSize? limite= 67840 ; fallos=   530 ; referencias=200000
+CacheSize? limite= 68096 ; fallos=   532 ; referencias=200000
+CacheSize? limite= 68352 ; fallos=   534 ; referencias=200000
+CacheSize? limite= 68608 ; fallos=   536 ; referencias=200000
+CacheSize? limite= 68864 ; fallos=   538 ; referencias=200000
+CacheSize? limite= 69120 ; fallos=   540 ; referencias=200000
+CacheSize? limite= 69376 ; fallos=   542 ; referencias=200000
+CacheSize? limite= 69632 ; fallos=   544 ; referencias=200000
+CacheSize? limite= 69888 ; fallos=   546 ; referencias=200000
+CacheSize? limite= 70144 ; fallos=   548 ; referencias=200000
+CacheSize? limite= 70400 ; fallos=   550 ; referencias=200000
+CacheSize? limite= 70656 ; fallos=   552 ; referencias=200000
+CacheSize? limite= 70912 ; fallos=   554 ; referencias=200000
+CacheSize? limite= 71168 ; fallos=   556 ; referencias=200000
+CacheSize? limite= 71424 ; fallos=   558 ; referencias=200000
+CacheSize? limite= 71680 ; fallos=   560 ; referencias=200000
+CacheSize? limite= 71936 ; fallos=   562 ; referencias=200000
+CacheSize? limite= 72192 ; fallos=   564 ; referencias=200000
+CacheSize? limite= 72448 ; fallos=   566 ; referencias=200000
+CacheSize? limite= 72704 ; fallos=   568 ; referencias=200000
+CacheSize? limite= 72960 ; fallos=   570 ; referencias=200000
+CacheSize? limite= 73216 ; fallos=   572 ; referencias=200000
+CacheSize? limite= 73472 ; fallos=   574 ; referencias=200000
+CacheSize? limite= 73728 ; fallos=   576 ; referencias=200000
+CacheSize? limite= 73984 ; fallos=   578 ; referencias=200000
+CacheSize? limite= 74240 ; fallos=   580 ; referencias=200000
+CacheSize? limite= 74496 ; fallos=   582 ; referencias=200000
+CacheSize? limite= 74752 ; fallos=   584 ; referencias=200000
+CacheSize? limite= 75008 ; fallos=   586 ; referencias=200000
+CacheSize? limite= 75264 ; fallos=   588 ; referencias=200000
+CacheSize? limite= 75520 ; fallos=   590 ; referencias=200000
+CacheSize? limite= 75776 ; fallos=   592 ; referencias=200000
+CacheSize? limite= 76032 ; fallos=   594 ; referencias=200000
+CacheSize? limite= 76288 ; fallos=   596 ; referencias=200000
+CacheSize? limite= 76544 ; fallos=   598 ; referencias=200000
+CacheSize? limite= 76800 ; fallos=   600 ; referencias=200000
+CacheSize? limite= 77056 ; fallos=   602 ; referencias=200000
+CacheSize? limite= 77312 ; fallos=   604 ; referencias=200000
+CacheSize? limite= 77568 ; fallos=   606 ; referencias=200000
+CacheSize? limite= 77824 ; fallos=   608 ; referencias=200000
+CacheSize? limite= 78080 ; fallos=   610 ; referencias=200000
+CacheSize? limite= 78336 ; fallos=   612 ; referencias=200000
+CacheSize? limite= 78592 ; fallos=   614 ; referencias=200000
+CacheSize? limite= 78848 ; fallos=   616 ; referencias=200000
+CacheSize? limite= 79104 ; fallos=   618 ; referencias=200000
+CacheSize? limite= 79360 ; fallos=   620 ; referencias=200000
+CacheSize? limite= 79616 ; fallos=   622 ; referencias=200000
+CacheSize? limite= 79872 ; fallos=   624 ; referencias=200000
+CacheSize? limite= 80128 ; fallos=   626 ; referencias=200000
+CacheSize? limite= 80384 ; fallos=   628 ; referencias=200000
+CacheSize? limite= 80640 ; fallos=   630 ; referencias=200000
+CacheSize? limite= 80896 ; fallos=   632 ; referencias=200000
+CacheSize? limite= 81152 ; fallos=   634 ; referencias=200000
+CacheSize? limite= 81408 ; fallos=   636 ; referencias=200000
+CacheSize? limite= 81664 ; fallos=   638 ; referencias=200000
+CacheSize? limite= 81920 ; fallos=   640 ; referencias=200000
+CacheSize? limite= 82176 ; fallos=   642 ; referencias=200000
+CacheSize? limite= 82432 ; fallos=   644 ; referencias=200000
+CacheSize? limite= 82688 ; fallos=   646 ; referencias=200000
+CacheSize? limite= 82944 ; fallos=   648 ; referencias=200000
+CacheSize? limite= 83200 ; fallos=   650 ; referencias=200000
+CacheSize? limite= 83456 ; fallos=   652 ; referencias=200000
+CacheSize? limite= 83712 ; fallos=   654 ; referencias=200000
+CacheSize? limite= 83968 ; fallos=   656 ; referencias=200000
+CacheSize? limite= 84224 ; fallos=   658 ; referencias=200000
+CacheSize? limite= 84480 ; fallos=   660 ; referencias=200000
+CacheSize? limite= 84736 ; fallos=   662 ; referencias=200000
+CacheSize? limite= 84992 ; fallos=   664 ; referencias=200000
+CacheSize? limite= 85248 ; fallos=   666 ; referencias=200000
+CacheSize? limite= 85504 ; fallos=   668 ; referencias=200000
+CacheSize? limite= 85760 ; fallos=   670 ; referencias=200000
+CacheSize? limite= 86016 ; fallos=   672 ; referencias=200000
+CacheSize? limite= 86272 ; fallos=   674 ; referencias=200000
+CacheSize? limite= 86528 ; fallos=   676 ; referencias=200000
+CacheSize? limite= 86784 ; fallos=   678 ; referencias=200000
+CacheSize? limite= 87040 ; fallos=   680 ; referencias=200000
+CacheSize? limite= 87296 ; fallos=   682 ; referencias=200000
+CacheSize? limite= 87552 ; fallos=   684 ; referencias=200000
+CacheSize? limite= 87808 ; fallos=   686 ; referencias=200000
+CacheSize? limite= 88064 ; fallos=   688 ; referencias=200000
+CacheSize? limite= 88320 ; fallos=   690 ; referencias=200000
+CacheSize? limite= 88576 ; fallos=   692 ; referencias=200000
+CacheSize? limite= 88832 ; fallos=   694 ; referencias=200000
+CacheSize? limite= 89088 ; fallos=   696 ; referencias=200000
+CacheSize? limite= 89344 ; fallos=   698 ; referencias=200000
+CacheSize? limite= 89600 ; fallos=   700 ; referencias=200000
+CacheSize? limite= 89856 ; fallos=   702 ; referencias=200000
+CacheSize? limite= 90112 ; fallos=   704 ; referencias=200000
+CacheSize? limite= 90368 ; fallos=   706 ; referencias=200000
+CacheSize? limite= 90624 ; fallos=   708 ; referencias=200000
+CacheSize? limite= 90880 ; fallos=   710 ; referencias=200000
+CacheSize? limite= 91136 ; fallos=   712 ; referencias=200000
+CacheSize? limite= 91392 ; fallos=   714 ; referencias=200000
+CacheSize? limite= 91648 ; fallos=   716 ; referencias=200000
+CacheSize? limite= 91904 ; fallos=   718 ; referencias=200000
+CacheSize? limite= 92160 ; fallos=   720 ; referencias=200000
+CacheSize? limite= 92416 ; fallos=   722 ; referencias=200000
+CacheSize? limite= 92672 ; fallos=   724 ; referencias=200000
+CacheSize? limite= 92928 ; fallos=   726 ; referencias=200000
+CacheSize? limite= 93184 ; fallos=   728 ; referencias=200000
+CacheSize? limite= 93440 ; fallos=   730 ; referencias=200000
+CacheSize? limite= 93696 ; fallos=   732 ; referencias=200000
+CacheSize? limite= 93952 ; fallos=   734 ; referencias=200000
+CacheSize? limite= 94208 ; fallos=   736 ; referencias=200000
+CacheSize? limite= 94464 ; fallos=   738 ; referencias=200000
+CacheSize? limite= 94720 ; fallos=   740 ; referencias=200000
+CacheSize? limite= 94976 ; fallos=   742 ; referencias=200000
+CacheSize? limite= 95232 ; fallos=   744 ; referencias=200000
+CacheSize? limite= 95488 ; fallos=   746 ; referencias=200000
+CacheSize? limite= 95744 ; fallos=   748 ; referencias=200000
+CacheSize? limite= 96000 ; fallos=   750 ; referencias=200000
+CacheSize? limite= 96256 ; fallos=   752 ; referencias=200000
+CacheSize? limite= 96512 ; fallos=   754 ; referencias=200000
+CacheSize? limite= 96768 ; fallos=   756 ; referencias=200000
+CacheSize? limite= 97024 ; fallos=   758 ; referencias=200000
+CacheSize? limite= 97280 ; fallos=   760 ; referencias=200000
+CacheSize? limite= 97536 ; fallos=   762 ; referencias=200000
+CacheSize? limite= 97792 ; fallos=   764 ; referencias=200000
+CacheSize? limite= 98048 ; fallos=   766 ; referencias=200000
+CacheSize? limite= 98304 ; fallos=   768 ; referencias=200000
+CacheSize? limite= 98560 ; fallos=   770 ; referencias=200000
+CacheSize? limite= 98816 ; fallos=   772 ; referencias=200000
+CacheSize? limite= 99072 ; fallos=   774 ; referencias=200000
+CacheSize? limite= 99328 ; fallos=   776 ; referencias=200000
+CacheSize? limite= 99584 ; fallos=   778 ; referencias=200000
+CacheSize? limite= 99840 ; fallos=   780 ; referencias=200000
+CacheSize? limite=100096 ; fallos=   782 ; referencias=200000
+CacheSize? limite=100352 ; fallos=   784 ; referencias=200000
+CacheSize? limite=100608 ; fallos=   786 ; referencias=200000
+CacheSize? limite=100864 ; fallos=   788 ; referencias=200000
+CacheSize? limite=101120 ; fallos=   790 ; referencias=200000
+CacheSize? limite=101376 ; fallos=   792 ; referencias=200000
+CacheSize? limite=101632 ; fallos=   794 ; referencias=200000
+CacheSize? limite=101888 ; fallos=   796 ; referencias=200000
+CacheSize? limite=102144 ; fallos=   798 ; referencias=200000
+CacheSize? limite=102400 ; fallos=   800 ; referencias=200000
+CacheSize? limite=102656 ; fallos=   802 ; referencias=200000
+CacheSize? limite=102912 ; fallos=   804 ; referencias=200000
+CacheSize? limite=103168 ; fallos=   806 ; referencias=200000
+CacheSize? limite=103424 ; fallos=   808 ; referencias=200000
+CacheSize? limite=103680 ; fallos=   810 ; referencias=200000
+CacheSize? limite=103936 ; fallos=   812 ; referencias=200000
+CacheSize? limite=104192 ; fallos=   814 ; referencias=200000
+CacheSize? limite=104448 ; fallos=   816 ; referencias=200000
+CacheSize? limite=104704 ; fallos=   818 ; referencias=200000
+CacheSize? limite=104960 ; fallos=   820 ; referencias=200000
+CacheSize? limite=105216 ; fallos=   822 ; referencias=200000
+CacheSize? limite=105472 ; fallos=   824 ; referencias=200000
+CacheSize? limite=105728 ; fallos=   826 ; referencias=200000
+CacheSize? limite=105984 ; fallos=   828 ; referencias=200000
+CacheSize? limite=106240 ; fallos=   830 ; referencias=200000
+CacheSize? limite=106496 ; fallos=   832 ; referencias=200000
+CacheSize? limite=106752 ; fallos=   834 ; referencias=200000
+CacheSize? limite=107008 ; fallos=   836 ; referencias=200000
+CacheSize? limite=107264 ; fallos=   838 ; referencias=200000
+CacheSize? limite=107520 ; fallos=   840 ; referencias=200000
+CacheSize? limite=107776 ; fallos=   842 ; referencias=200000
+CacheSize? limite=108032 ; fallos=   844 ; referencias=200000
+CacheSize? limite=108288 ; fallos=   846 ; referencias=200000
+CacheSize? limite=108544 ; fallos=   848 ; referencias=200000
+CacheSize? limite=108800 ; fallos=   850 ; referencias=200000
+CacheSize? limite=109056 ; fallos=   852 ; referencias=200000
+CacheSize? limite=109312 ; fallos=   854 ; referencias=200000
+CacheSize? limite=109568 ; fallos=   856 ; referencias=200000
+CacheSize? limite=109824 ; fallos=   858 ; referencias=200000
+CacheSize? limite=110080 ; fallos=   860 ; referencias=200000
+CacheSize? limite=110336 ; fallos=   862 ; referencias=200000
+CacheSize? limite=110592 ; fallos=   864 ; referencias=200000
+CacheSize? limite=110848 ; fallos=   866 ; referencias=200000
+CacheSize? limite=111104 ; fallos=   868 ; referencias=200000
+CacheSize? limite=111360 ; fallos=   870 ; referencias=200000
+CacheSize? limite=111616 ; fallos=   872 ; referencias=200000
+CacheSize? limite=111872 ; fallos=   874 ; referencias=200000
+CacheSize? limite=112128 ; fallos=   876 ; referencias=200000
+CacheSize? limite=112384 ; fallos=   878 ; referencias=200000
+CacheSize? limite=112640 ; fallos=   880 ; referencias=200000
+CacheSize? limite=112896 ; fallos=   882 ; referencias=200000
+CacheSize? limite=113152 ; fallos=   884 ; referencias=200000
+CacheSize? limite=113408 ; fallos=   886 ; referencias=200000
+CacheSize? limite=113664 ; fallos=   888 ; referencias=200000
+CacheSize? limite=113920 ; fallos=   890 ; referencias=200000
+CacheSize? limite=114176 ; fallos=   892 ; referencias=200000
+CacheSize? limite=114432 ; fallos=   894 ; referencias=200000
+CacheSize? limite=114688 ; fallos=   896 ; referencias=200000
+CacheSize? limite=114944 ; fallos=   898 ; referencias=200000
+CacheSize? limite=115200 ; fallos=   900 ; referencias=200000
+CacheSize? limite=115456 ; fallos=   902 ; referencias=200000
+CacheSize? limite=115712 ; fallos=   904 ; referencias=200000
+CacheSize? limite=115968 ; fallos=   906 ; referencias=200000
+CacheSize? limite=116224 ; fallos=   908 ; referencias=200000
+CacheSize? limite=116480 ; fallos=   910 ; referencias=200000
+CacheSize? limite=116736 ; fallos=   912 ; referencias=200000
+CacheSize? limite=116992 ; fallos=   914 ; referencias=200000
+CacheSize? limite=117248 ; fallos=   916 ; referencias=200000
+CacheSize? limite=117504 ; fallos=   918 ; referencias=200000
+CacheSize? limite=117760 ; fallos=   920 ; referencias=200000
+CacheSize? limite=118016 ; fallos=   922 ; referencias=200000
+CacheSize? limite=118272 ; fallos=   924 ; referencias=200000
+CacheSize? limite=118528 ; fallos=   926 ; referencias=200000
+CacheSize? limite=118784 ; fallos=   928 ; referencias=200000
+CacheSize? limite=119040 ; fallos=   930 ; referencias=200000
+CacheSize? limite=119296 ; fallos=   932 ; referencias=200000
+CacheSize? limite=119552 ; fallos=   934 ; referencias=200000
+CacheSize? limite=119808 ; fallos=   936 ; referencias=200000
+CacheSize? limite=120064 ; fallos=   938 ; referencias=200000
+CacheSize? limite=120320 ; fallos=   940 ; referencias=200000
+CacheSize? limite=120576 ; fallos=   942 ; referencias=200000
+CacheSize? limite=120832 ; fallos=   944 ; referencias=200000
+CacheSize? limite=121088 ; fallos=   946 ; referencias=200000
+CacheSize? limite=121344 ; fallos=   948 ; referencias=200000
+CacheSize? limite=121600 ; fallos=   950 ; referencias=200000
+CacheSize? limite=121856 ; fallos=   952 ; referencias=200000
+CacheSize? limite=122112 ; fallos=   954 ; referencias=200000
+CacheSize? limite=122368 ; fallos=   956 ; referencias=200000
+CacheSize? limite=122624 ; fallos=   958 ; referencias=200000
+CacheSize? limite=122880 ; fallos=   960 ; referencias=200000
+CacheSize? limite=123136 ; fallos=   962 ; referencias=200000
+CacheSize? limite=123392 ; fallos=   964 ; referencias=200000
+CacheSize? limite=123648 ; fallos=   966 ; referencias=200000
+CacheSize? limite=123904 ; fallos=   968 ; referencias=200000
+CacheSize? limite=124160 ; fallos=   970 ; referencias=200000
+CacheSize? limite=124416 ; fallos=   972 ; referencias=200000
+CacheSize? limite=124672 ; fallos=   974 ; referencias=200000
+CacheSize? limite=124928 ; fallos=   976 ; referencias=200000
+CacheSize? limite=125184 ; fallos=   978 ; referencias=200000
+CacheSize? limite=125440 ; fallos=   980 ; referencias=200000
+CacheSize? limite=125696 ; fallos=   982 ; referencias=200000
+CacheSize? limite=125952 ; fallos=   984 ; referencias=200000
+CacheSize? limite=126208 ; fallos=   986 ; referencias=200000
+CacheSize? limite=126464 ; fallos=   988 ; referencias=200000
+CacheSize? limite=126720 ; fallos=   990 ; referencias=200000
+CacheSize? limite=126976 ; fallos=   992 ; referencias=200000
+CacheSize? limite=127232 ; fallos=   994 ; referencias=200000
+CacheSize? limite=127488 ; fallos=   996 ; referencias=200000
+CacheSize? limite=127744 ; fallos=   998 ; referencias=200000
+CacheSize? limite=128000 ; fallos=  1000 ; referencias=200000
+CacheSize? limite=128256 ; fallos=  1002 ; referencias=200000
+CacheSize? limite=128512 ; fallos=  1004 ; referencias=200000
+CacheSize? limite=128768 ; fallos=  1006 ; referencias=200000
+CacheSize? limite=129024 ; fallos=  1008 ; referencias=200000
+CacheSize? limite=129280 ; fallos=  1010 ; referencias=200000
+CacheSize? limite=129536 ; fallos=  1012 ; referencias=200000
+CacheSize? limite=129792 ; fallos=  1014 ; referencias=200000
+CacheSize? limite=130048 ; fallos=  1016 ; referencias=200000
+CacheSize? limite=130304 ; fallos=  1018 ; referencias=200000
+CacheSize? limite=130560 ; fallos=  1020 ; referencias=200000
+CacheSize? limite=130816 ; fallos=  1022 ; referencias=200000
+CacheSize? limite=131072 ; fallos=  1024 ; referencias=200000
+CacheSize? limite=131328 ; fallos=  1026 ; referencias=200000
+CacheSize? limite=131584 ; fallos=  1028 ; referencias=200000
+CacheSize? limite=131840 ; fallos=  1030 ; referencias=200000
+CacheSize? limite=132096 ; fallos=  1032 ; referencias=200000
+CacheSize? limite=132352 ; fallos=  1034 ; referencias=200000
+CacheSize? limite=132608 ; fallos=  1036 ; referencias=200000
+CacheSize? limite=132864 ; fallos=  1038 ; referencias=200000
+CacheSize? limite=133120 ; fallos=  1040 ; referencias=200000
+CacheSize? limite=133376 ; fallos=  1042 ; referencias=200000
+CacheSize? limite=133632 ; fallos=  1044 ; referencias=200000
+CacheSize? limite=133888 ; fallos=  1046 ; referencias=200000
+CacheSize? limite=134144 ; fallos=  1048 ; referencias=200000
+CacheSize? limite=134400 ; fallos=  1050 ; referencias=200000
+CacheSize? limite=134656 ; fallos=  1052 ; referencias=200000
+CacheSize? limite=134912 ; fallos=  1054 ; referencias=200000
+CacheSize? limite=135168 ; fallos=  1056 ; referencias=200000
+CacheSize? limite=135424 ; fallos=  1058 ; referencias=200000
+CacheSize? limite=135680 ; fallos=  1060 ; referencias=200000
+CacheSize? limite=135936 ; fallos=  1062 ; referencias=200000
+CacheSize? limite=136192 ; fallos=  1064 ; referencias=200000
+CacheSize? limite=136448 ; fallos=  1066 ; referencias=200000
+CacheSize? limite=136704 ; fallos=  1068 ; referencias=200000
+CacheSize? limite=136960 ; fallos=  1070 ; referencias=200000
+CacheSize? limite=137216 ; fallos=  1072 ; referencias=200000
+CacheSize? limite=137472 ; fallos=  1074 ; referencias=200000
+CacheSize? limite=137728 ; fallos=  1076 ; referencias=200000
+CacheSize? limite=137984 ; fallos=  1078 ; referencias=200000
+CacheSize? limite=138240 ; fallos=  1080 ; referencias=200000
+CacheSize? limite=138496 ; fallos=  1082 ; referencias=200000
+CacheSize? limite=138752 ; fallos=  1084 ; referencias=200000
+CacheSize? limite=139008 ; fallos=  1086 ; referencias=200000
+CacheSize? limite=139264 ; fallos=  1088 ; referencias=200000
+CacheSize? limite=139520 ; fallos=  1090 ; referencias=200000
+CacheSize? limite=139776 ; fallos=  1092 ; referencias=200000
+CacheSize? limite=140032 ; fallos=  1094 ; referencias=200000
+CacheSize? limite=140288 ; fallos=  1096 ; referencias=200000
+CacheSize? limite=140544 ; fallos=  1098 ; referencias=200000
+CacheSize? limite=140800 ; fallos=  1100 ; referencias=200000
+CacheSize? limite=141056 ; fallos=  1102 ; referencias=200000
+CacheSize? limite=141312 ; fallos=  1104 ; referencias=200000
+CacheSize? limite=141568 ; fallos=  1106 ; referencias=200000
+CacheSize? limite=141824 ; fallos=  1108 ; referencias=200000
+CacheSize? limite=142080 ; fallos=  1110 ; referencias=200000
+CacheSize? limite=142336 ; fallos=  1112 ; referencias=200000
+CacheSize? limite=142592 ; fallos=  1114 ; referencias=200000
+CacheSize? limite=142848 ; fallos=  1116 ; referencias=200000
+CacheSize? limite=143104 ; fallos=  1118 ; referencias=200000
+CacheSize? limite=143360 ; fallos=  1120 ; referencias=200000
+CacheSize? limite=143616 ; fallos=  1122 ; referencias=200000
+CacheSize? limite=143872 ; fallos=  1124 ; referencias=200000
+CacheSize? limite=144128 ; fallos=  1126 ; referencias=200000
+CacheSize? limite=144384 ; fallos=  1128 ; referencias=200000
+CacheSize? limite=144640 ; fallos=  1130 ; referencias=200000
+CacheSize? limite=144896 ; fallos=  1132 ; referencias=200000
+CacheSize? limite=145152 ; fallos=  1134 ; referencias=200000
+CacheSize? limite=145408 ; fallos=  1136 ; referencias=200000
+CacheSize? limite=145664 ; fallos=  1138 ; referencias=200000
+CacheSize? limite=145920 ; fallos=  1140 ; referencias=200000
+CacheSize? limite=146176 ; fallos=  1142 ; referencias=200000
+CacheSize? limite=146432 ; fallos=  1144 ; referencias=200000
+CacheSize? limite=146688 ; fallos=  1146 ; referencias=200000
+CacheSize? limite=146944 ; fallos=  1148 ; referencias=200000
+CacheSize? limite=147200 ; fallos=  1150 ; referencias=200000
+CacheSize? limite=147456 ; fallos=  1152 ; referencias=200000
+CacheSize? limite=147712 ; fallos=  1154 ; referencias=200000
+CacheSize? limite=147968 ; fallos=  1156 ; referencias=200000
+CacheSize? limite=148224 ; fallos=  1158 ; referencias=200000
+CacheSize? limite=148480 ; fallos=  1160 ; referencias=200000
+CacheSize? limite=148736 ; fallos=  1162 ; referencias=200000
+CacheSize? limite=148992 ; fallos=  1164 ; referencias=200000
+CacheSize? limite=149248 ; fallos=  1166 ; referencias=200000
+CacheSize? limite=149504 ; fallos=  1168 ; referencias=200000
+CacheSize? limite=149760 ; fallos=  1170 ; referencias=200000
+CacheSize? limite=150016 ; fallos=  1172 ; referencias=200000
+CacheSize? limite=150272 ; fallos=  1174 ; referencias=200000
+CacheSize? limite=150528 ; fallos=  1176 ; referencias=200000
+CacheSize? limite=150784 ; fallos=  1178 ; referencias=200000
+CacheSize? limite=151040 ; fallos=  1180 ; referencias=200000
+CacheSize? limite=151296 ; fallos=  1182 ; referencias=200000
+CacheSize? limite=151552 ; fallos=  1184 ; referencias=200000
+CacheSize? limite=151808 ; fallos=  1186 ; referencias=200000
+CacheSize? limite=152064 ; fallos=  1188 ; referencias=200000
+CacheSize? limite=152320 ; fallos=  1190 ; referencias=200000
+CacheSize? limite=152576 ; fallos=  1192 ; referencias=200000
+CacheSize? limite=152832 ; fallos=  1194 ; referencias=200000
+CacheSize? limite=153088 ; fallos=  1196 ; referencias=200000
+CacheSize? limite=153344 ; fallos=  1198 ; referencias=200000
+CacheSize? limite=153600 ; fallos=  1200 ; referencias=200000
+CacheSize? limite=153856 ; fallos=  1202 ; referencias=200000
+CacheSize? limite=154112 ; fallos=  1204 ; referencias=200000
+CacheSize? limite=154368 ; fallos=  1206 ; referencias=200000
+CacheSize? limite=154624 ; fallos=  1208 ; referencias=200000
+CacheSize? limite=154880 ; fallos=  1210 ; referencias=200000
+CacheSize? limite=155136 ; fallos=  1212 ; referencias=200000
+CacheSize? limite=155392 ; fallos=  1214 ; referencias=200000
+CacheSize? limite=155648 ; fallos=  1216 ; referencias=200000
+CacheSize? limite=155904 ; fallos=  1218 ; referencias=200000
+CacheSize? limite=156160 ; fallos=  1220 ; referencias=200000
+CacheSize? limite=156416 ; fallos=  1222 ; referencias=200000
+CacheSize? limite=156672 ; fallos=  1224 ; referencias=200000
+CacheSize? limite=156928 ; fallos=  1226 ; referencias=200000
+CacheSize? limite=157184 ; fallos=  1228 ; referencias=200000
+CacheSize? limite=157440 ; fallos=  1230 ; referencias=200000
+CacheSize? limite=157696 ; fallos=  1232 ; referencias=200000
+CacheSize? limite=157952 ; fallos=  1234 ; referencias=200000
+CacheSize? limite=158208 ; fallos=  1236 ; referencias=200000
+CacheSize? limite=158464 ; fallos=  1238 ; referencias=200000
+CacheSize? limite=158720 ; fallos=  1240 ; referencias=200000
+CacheSize? limite=158976 ; fallos=  1242 ; referencias=200000
+CacheSize? limite=159232 ; fallos=  1244 ; referencias=200000
+CacheSize? limite=159488 ; fallos=  1246 ; referencias=200000
+CacheSize? limite=159744 ; fallos=  1248 ; referencias=200000
+CacheSize? limite=160000 ; fallos=  1250 ; referencias=200000
+CacheSize? limite=160256 ; fallos=  1252 ; referencias=200000
+CacheSize? limite=160512 ; fallos=  1254 ; referencias=200000
+CacheSize? limite=160768 ; fallos=  1256 ; referencias=200000
+CacheSize? limite=161024 ; fallos=  1258 ; referencias=200000
+CacheSize? limite=161280 ; fallos=  1260 ; referencias=200000
+CacheSize? limite=161536 ; fallos=  1262 ; referencias=200000
+CacheSize? limite=161792 ; fallos=  1264 ; referencias=200000
+CacheSize? limite=162048 ; fallos=  1266 ; referencias=200000
+CacheSize? limite=162304 ; fallos=  1268 ; referencias=200000
+CacheSize? limite=162560 ; fallos=  1270 ; referencias=200000
+CacheSize? limite=162816 ; fallos=  1272 ; referencias=200000
+CacheSize? limite=163072 ; fallos=  1274 ; referencias=200000
+CacheSize? limite=163328 ; fallos=  1276 ; referencias=200000
+CacheSize? limite=163584 ; fallos=  1278 ; referencias=200000
+CacheSize? limite=163840 ; fallos=  1280 ; referencias=200000
+CacheSize? limite=164096 ; fallos=  1282 ; referencias=200000
+CacheSize? limite=164352 ; fallos=  1284 ; referencias=200000
+CacheSize? limite=164608 ; fallos=  1286 ; referencias=200000
+CacheSize? limite=164864 ; fallos=  1288 ; referencias=200000
+CacheSize? limite=165120 ; fallos=  1290 ; referencias=200000
+CacheSize? limite=165376 ; fallos=  1292 ; referencias=200000
+CacheSize? limite=165632 ; fallos=  1294 ; referencias=200000
+CacheSize? limite=165888 ; fallos=  1296 ; referencias=200000
+CacheSize? limite=166144 ; fallos=  1298 ; referencias=200000
+CacheSize? limite=166400 ; fallos=  1300 ; referencias=200000
+CacheSize? limite=166656 ; fallos=  1302 ; referencias=200000
+CacheSize? limite=166912 ; fallos=  1304 ; referencias=200000
+CacheSize? limite=167168 ; fallos=  1306 ; referencias=200000
+CacheSize? limite=167424 ; fallos=  1308 ; referencias=200000
+CacheSize? limite=167680 ; fallos=  1310 ; referencias=200000
+CacheSize? limite=167936 ; fallos=  1312 ; referencias=200000
+CacheSize? limite=168192 ; fallos=  1314 ; referencias=200000
+CacheSize? limite=168448 ; fallos=  1316 ; referencias=200000
+CacheSize? limite=168704 ; fallos=  1318 ; referencias=200000
+CacheSize? limite=168960 ; fallos=  1320 ; referencias=200000
+CacheSize? limite=169216 ; fallos=  1322 ; referencias=200000
+CacheSize? limite=169472 ; fallos=  1324 ; referencias=200000
+CacheSize? limite=169728 ; fallos=  1326 ; referencias=200000
+CacheSize? limite=169984 ; fallos=  1328 ; referencias=200000
+CacheSize? limite=170240 ; fallos=  1330 ; referencias=200000
+CacheSize? limite=170496 ; fallos=  1332 ; referencias=200000
+CacheSize? limite=170752 ; fallos=  1334 ; referencias=200000
+CacheSize? limite=171008 ; fallos=  1336 ; referencias=200000
+CacheSize? limite=171264 ; fallos=  1338 ; referencias=200000
+CacheSize? limite=171520 ; fallos=  1340 ; referencias=200000
+CacheSize? limite=171776 ; fallos=  1342 ; referencias=200000
+CacheSize? limite=172032 ; fallos=  1344 ; referencias=200000
+CacheSize? limite=172288 ; fallos=  1346 ; referencias=200000
+CacheSize? limite=172544 ; fallos=  1348 ; referencias=200000
+CacheSize? limite=172800 ; fallos=  1350 ; referencias=200000
+CacheSize? limite=173056 ; fallos=  1352 ; referencias=200000
+CacheSize? limite=173312 ; fallos=  1354 ; referencias=200000
+CacheSize? limite=173568 ; fallos=  1356 ; referencias=200000
+CacheSize? limite=173824 ; fallos=  1358 ; referencias=200000
+CacheSize? limite=174080 ; fallos=  1360 ; referencias=200000
+CacheSize? limite=174336 ; fallos=  1362 ; referencias=200000
+CacheSize? limite=174592 ; fallos=  1364 ; referencias=200000
+CacheSize? limite=174848 ; fallos=  1366 ; referencias=200000
+CacheSize? limite=175104 ; fallos=  1368 ; referencias=200000
+CacheSize? limite=175360 ; fallos=  1370 ; referencias=200000
+CacheSize? limite=175616 ; fallos=  1372 ; referencias=200000
+CacheSize? limite=175872 ; fallos=  1374 ; referencias=200000
+CacheSize? limite=176128 ; fallos=  1376 ; referencias=200000
+CacheSize? limite=176384 ; fallos=  1378 ; referencias=200000
+CacheSize? limite=176640 ; fallos=  1380 ; referencias=200000
+CacheSize? limite=176896 ; fallos=  1382 ; referencias=200000
+CacheSize? limite=177152 ; fallos=  1384 ; referencias=200000
+CacheSize? limite=177408 ; fallos=  1386 ; referencias=200000
+CacheSize? limite=177664 ; fallos=  1388 ; referencias=200000
+CacheSize? limite=177920 ; fallos=  1390 ; referencias=200000
+CacheSize? limite=178176 ; fallos=  1392 ; referencias=200000
+CacheSize? limite=178432 ; fallos=  1394 ; referencias=200000
+CacheSize? limite=178688 ; fallos=  1396 ; referencias=200000
+CacheSize? limite=178944 ; fallos=  1398 ; referencias=200000
+CacheSize? limite=179200 ; fallos=  1400 ; referencias=200000
+CacheSize? limite=179456 ; fallos=  1402 ; referencias=200000
+CacheSize? limite=179712 ; fallos=  1404 ; referencias=200000
+CacheSize? limite=179968 ; fallos=  1406 ; referencias=200000
+CacheSize? limite=180224 ; fallos=  1408 ; referencias=200000
+CacheSize? limite=180480 ; fallos=  1410 ; referencias=200000
+CacheSize? limite=180736 ; fallos=  1412 ; referencias=200000
+CacheSize? limite=180992 ; fallos=  1414 ; referencias=200000
+CacheSize? limite=181248 ; fallos=  1416 ; referencias=200000
+CacheSize? limite=181504 ; fallos=  1418 ; referencias=200000
+CacheSize? limite=181760 ; fallos=  1420 ; referencias=200000
+CacheSize? limite=182016 ; fallos=  1422 ; referencias=200000
+CacheSize? limite=182272 ; fallos=  1424 ; referencias=200000
+CacheSize? limite=182528 ; fallos=  1426 ; referencias=200000
+CacheSize? limite=182784 ; fallos=  1428 ; referencias=200000
+CacheSize? limite=183040 ; fallos=  1430 ; referencias=200000
+CacheSize? limite=183296 ; fallos=  1432 ; referencias=200000
+CacheSize? limite=183552 ; fallos=  1434 ; referencias=200000
+CacheSize? limite=183808 ; fallos=  1436 ; referencias=200000
+CacheSize? limite=184064 ; fallos=  1438 ; referencias=200000
+CacheSize? limite=184320 ; fallos=  1440 ; referencias=200000
+CacheSize? limite=184576 ; fallos=  1442 ; referencias=200000
+CacheSize? limite=184832 ; fallos=  1444 ; referencias=200000
+CacheSize? limite=185088 ; fallos=  1446 ; referencias=200000
+CacheSize? limite=185344 ; fallos=  1448 ; referencias=200000
+CacheSize? limite=185600 ; fallos=  1450 ; referencias=200000
+CacheSize? limite=185856 ; fallos=  1452 ; referencias=200000
+CacheSize? limite=186112 ; fallos=  1454 ; referencias=200000
+CacheSize? limite=186368 ; fallos=  1456 ; referencias=200000
+CacheSize? limite=186624 ; fallos=  1458 ; referencias=200000
+CacheSize? limite=186880 ; fallos=  1460 ; referencias=200000
+CacheSize? limite=187136 ; fallos=  1462 ; referencias=200000
+CacheSize? limite=187392 ; fallos=  1464 ; referencias=200000
+CacheSize? limite=187648 ; fallos=  1466 ; referencias=200000
+CacheSize? limite=187904 ; fallos=  1468 ; referencias=200000
+CacheSize? limite=188160 ; fallos=  1470 ; referencias=200000
+CacheSize? limite=188416 ; fallos=  1472 ; referencias=200000
+CacheSize? limite=188672 ; fallos=  1474 ; referencias=200000
+CacheSize? limite=188928 ; fallos=  1476 ; referencias=200000
+CacheSize? limite=189184 ; fallos=  1478 ; referencias=200000
+CacheSize? limite=189440 ; fallos=  1480 ; referencias=200000
+CacheSize? limite=189696 ; fallos=  1482 ; referencias=200000
+CacheSize? limite=189952 ; fallos=  1484 ; referencias=200000
+CacheSize? limite=190208 ; fallos=  1486 ; referencias=200000
+CacheSize? limite=190464 ; fallos=  1488 ; referencias=200000
+CacheSize? limite=190720 ; fallos=  1490 ; referencias=200000
+CacheSize? limite=190976 ; fallos=  1492 ; referencias=200000
+CacheSize? limite=191232 ; fallos=  1494 ; referencias=200000
+CacheSize? limite=191488 ; fallos=  1496 ; referencias=200000
+CacheSize? limite=191744 ; fallos=  1498 ; referencias=200000
+CacheSize? limite=192000 ; fallos=  1500 ; referencias=200000
+CacheSize? limite=192256 ; fallos=  1502 ; referencias=200000
+CacheSize? limite=192512 ; fallos=  1504 ; referencias=200000
+CacheSize? limite=192768 ; fallos=  1506 ; referencias=200000
+CacheSize? limite=193024 ; fallos=  1508 ; referencias=200000
+CacheSize? limite=193280 ; fallos=  1510 ; referencias=200000
+CacheSize? limite=193536 ; fallos=  1512 ; referencias=200000
+CacheSize? limite=193792 ; fallos=  1514 ; referencias=200000
+CacheSize? limite=194048 ; fallos=  1516 ; referencias=200000
+CacheSize? limite=194304 ; fallos=  1518 ; referencias=200000
+CacheSize? limite=194560 ; fallos=  1520 ; referencias=200000
+CacheSize? limite=194816 ; fallos=  1522 ; referencias=200000
+CacheSize? limite=195072 ; fallos=  1524 ; referencias=200000
+CacheSize? limite=195328 ; fallos=  1526 ; referencias=200000
+CacheSize? limite=195584 ; fallos=  1528 ; referencias=200000
+CacheSize? limite=195840 ; fallos=  1530 ; referencias=200000
+CacheSize? limite=196096 ; fallos=  1532 ; referencias=200000
+CacheSize? limite=196352 ; fallos=  1534 ; referencias=200000
+CacheSize? limite=196608 ; fallos=  1536 ; referencias=200000
+CacheSize? limite=196864 ; fallos=  1538 ; referencias=200000
+CacheSize? limite=197120 ; fallos=  1540 ; referencias=200000
+CacheSize? limite=197376 ; fallos=  1542 ; referencias=200000
+CacheSize? limite=197632 ; fallos=  1544 ; referencias=200000
+CacheSize? limite=197888 ; fallos=  1546 ; referencias=200000
+CacheSize? limite=198144 ; fallos=  1548 ; referencias=200000
+CacheSize? limite=198400 ; fallos=  1550 ; referencias=200000
+CacheSize? limite=198656 ; fallos=  1552 ; referencias=200000
+CacheSize? limite=198912 ; fallos=  1554 ; referencias=200000
+CacheSize? limite=199168 ; fallos=  1556 ; referencias=200000
+CacheSize? limite=199424 ; fallos=  1558 ; referencias=200000
+CacheSize? limite=199680 ; fallos=  1560 ; referencias=200000
+CacheSize? limite=199936 ; fallos=  1562 ; referencias=200000
+CacheSize? limite=200192 ; fallos=  1564 ; referencias=200000
+CacheSize? limite=200448 ; fallos=  1566 ; referencias=200000
+CacheSize? limite=200704 ; fallos=  1568 ; referencias=200000
+CacheSize? limite=200960 ; fallos=  1570 ; referencias=200000
+CacheSize? limite=201216 ; fallos=  1572 ; referencias=200000
+CacheSize? limite=201472 ; fallos=  1574 ; referencias=200000
+CacheSize? limite=201728 ; fallos=  1576 ; referencias=200000
+CacheSize? limite=201984 ; fallos=  1578 ; referencias=200000
+CacheSize? limite=202240 ; fallos=  1580 ; referencias=200000
+CacheSize? limite=202496 ; fallos=  1582 ; referencias=200000
+CacheSize? limite=202752 ; fallos=  1584 ; referencias=200000
+CacheSize? limite=203008 ; fallos=  1586 ; referencias=200000
+CacheSize? limite=203264 ; fallos=  1588 ; referencias=200000
+CacheSize? limite=203520 ; fallos=  1590 ; referencias=200000
+CacheSize? limite=203776 ; fallos=  1592 ; referencias=200000
+CacheSize? limite=204032 ; fallos=  1594 ; referencias=200000
+CacheSize? limite=204288 ; fallos=  1596 ; referencias=200000
+CacheSize? limite=204544 ; fallos=  1598 ; referencias=200000
+CacheSize? limite=204800 ; fallos=  1600 ; referencias=200000
+CacheSize? limite=205056 ; fallos=  1602 ; referencias=200000
+CacheSize? limite=205312 ; fallos=  1604 ; referencias=200000
+CacheSize? limite=205568 ; fallos=  1606 ; referencias=200000
+CacheSize? limite=205824 ; fallos=  1608 ; referencias=200000
+CacheSize? limite=206080 ; fallos=  1610 ; referencias=200000
+CacheSize? limite=206336 ; fallos=  1612 ; referencias=200000
+CacheSize? limite=206592 ; fallos=  1614 ; referencias=200000
+CacheSize? limite=206848 ; fallos=  1616 ; referencias=200000
+CacheSize? limite=207104 ; fallos=  1618 ; referencias=200000
+CacheSize? limite=207360 ; fallos=  1620 ; referencias=200000
+CacheSize? limite=207616 ; fallos=  1622 ; referencias=200000
+CacheSize? limite=207872 ; fallos=  1624 ; referencias=200000
+CacheSize? limite=208128 ; fallos=  1626 ; referencias=200000
+CacheSize? limite=208384 ; fallos=  1628 ; referencias=200000
+CacheSize? limite=208640 ; fallos=  1630 ; referencias=200000
+CacheSize? limite=208896 ; fallos=  1632 ; referencias=200000
+CacheSize? limite=209152 ; fallos=  1634 ; referencias=200000
+CacheSize? limite=209408 ; fallos=  1636 ; referencias=200000
+CacheSize? limite=209664 ; fallos=  1638 ; referencias=200000
+CacheSize? limite=209920 ; fallos=  1640 ; referencias=200000
+CacheSize? limite=210176 ; fallos=  1642 ; referencias=200000
+CacheSize? limite=210432 ; fallos=  1644 ; referencias=200000
+CacheSize? limite=210688 ; fallos=  1646 ; referencias=200000
+CacheSize? limite=210944 ; fallos=  1648 ; referencias=200000
+CacheSize? limite=211200 ; fallos=  1650 ; referencias=200000
+CacheSize? limite=211456 ; fallos=  1652 ; referencias=200000
+CacheSize? limite=211712 ; fallos=  1654 ; referencias=200000
+CacheSize? limite=211968 ; fallos=  1656 ; referencias=200000
+CacheSize? limite=212224 ; fallos=  1658 ; referencias=200000
+CacheSize? limite=212480 ; fallos=  1660 ; referencias=200000
+CacheSize? limite=212736 ; fallos=  1662 ; referencias=200000
+CacheSize? limite=212992 ; fallos=  1664 ; referencias=200000
+CacheSize? limite=213248 ; fallos=  1666 ; referencias=200000
+CacheSize? limite=213504 ; fallos=  1668 ; referencias=200000
+CacheSize? limite=213760 ; fallos=  1670 ; referencias=200000
+CacheSize? limite=214016 ; fallos=  1672 ; referencias=200000
+CacheSize? limite=214272 ; fallos=  1674 ; referencias=200000
+CacheSize? limite=214528 ; fallos=  1676 ; referencias=200000
+CacheSize? limite=214784 ; fallos=  1678 ; referencias=200000
+CacheSize? limite=215040 ; fallos=  1680 ; referencias=200000
+CacheSize? limite=215296 ; fallos=  1682 ; referencias=200000
+CacheSize? limite=215552 ; fallos=  1684 ; referencias=200000
+CacheSize? limite=215808 ; fallos=  1686 ; referencias=200000
+CacheSize? limite=216064 ; fallos=  1688 ; referencias=200000
+CacheSize? limite=216320 ; fallos=  1690 ; referencias=200000
+CacheSize? limite=216576 ; fallos=  1692 ; referencias=200000
+CacheSize? limite=216832 ; fallos=  1694 ; referencias=200000
+CacheSize? limite=217088 ; fallos=  1696 ; referencias=200000
+CacheSize? limite=217344 ; fallos=  1698 ; referencias=200000
+CacheSize? limite=217600 ; fallos=  1700 ; referencias=200000
+CacheSize? limite=217856 ; fallos=  1702 ; referencias=200000
+CacheSize? limite=218112 ; fallos=  1704 ; referencias=200000
+CacheSize? limite=218368 ; fallos=  1706 ; referencias=200000
+CacheSize? limite=218624 ; fallos=  1708 ; referencias=200000
+CacheSize? limite=218880 ; fallos=  1710 ; referencias=200000
+CacheSize? limite=219136 ; fallos=  1712 ; referencias=200000
+CacheSize? limite=219392 ; fallos=  1714 ; referencias=200000
+CacheSize? limite=219648 ; fallos=  1716 ; referencias=200000
+CacheSize? limite=219904 ; fallos=  1718 ; referencias=200000
+CacheSize? limite=220160 ; fallos=  1720 ; referencias=200000
+CacheSize? limite=220416 ; fallos=  1722 ; referencias=200000
+CacheSize? limite=220672 ; fallos=  1724 ; referencias=200000
+CacheSize? limite=220928 ; fallos=  1726 ; referencias=200000
+CacheSize? limite=221184 ; fallos=  1728 ; referencias=200000
+CacheSize? limite=221440 ; fallos=  1730 ; referencias=200000
+CacheSize? limite=221696 ; fallos=  1732 ; referencias=200000
+CacheSize? limite=221952 ; fallos=  1734 ; referencias=200000
+CacheSize? limite=222208 ; fallos=  1736 ; referencias=200000
+CacheSize? limite=222464 ; fallos=  1738 ; referencias=200000
+CacheSize? limite=222720 ; fallos=  1740 ; referencias=200000
+CacheSize? limite=222976 ; fallos=  1742 ; referencias=200000
+CacheSize? limite=223232 ; fallos=  1744 ; referencias=200000
+CacheSize? limite=223488 ; fallos=  1746 ; referencias=200000
+CacheSize? limite=223744 ; fallos=  1748 ; referencias=200000
+CacheSize? limite=224000 ; fallos=  1750 ; referencias=200000
+CacheSize? limite=224256 ; fallos=  1752 ; referencias=200000
+CacheSize? limite=224512 ; fallos=  1754 ; referencias=200000
+CacheSize? limite=224768 ; fallos=  1756 ; referencias=200000
+CacheSize? limite=225024 ; fallos=  1758 ; referencias=200000
+CacheSize? limite=225280 ; fallos=  1760 ; referencias=200000
+CacheSize? limite=225536 ; fallos=  1762 ; referencias=200000
+CacheSize? limite=225792 ; fallos=  1764 ; referencias=200000
+CacheSize? limite=226048 ; fallos=  1766 ; referencias=200000
+CacheSize? limite=226304 ; fallos=  1768 ; referencias=200000
+CacheSize? limite=226560 ; fallos=  1770 ; referencias=200000
+CacheSize? limite=226816 ; fallos=  1772 ; referencias=200000
+CacheSize? limite=227072 ; fallos=  1774 ; referencias=200000
+CacheSize? limite=227328 ; fallos=  1776 ; referencias=200000
+CacheSize? limite=227584 ; fallos=  1778 ; referencias=200000
+CacheSize? limite=227840 ; fallos=  1780 ; referencias=200000
+CacheSize? limite=228096 ; fallos=  1782 ; referencias=200000
+CacheSize? limite=228352 ; fallos=  1784 ; referencias=200000
+CacheSize? limite=228608 ; fallos=  1786 ; referencias=200000
+CacheSize? limite=228864 ; fallos=  1788 ; referencias=200000
+CacheSize? limite=229120 ; fallos=  1790 ; referencias=200000
+CacheSize? limite=229376 ; fallos=  1792 ; referencias=200000
+CacheSize? limite=229632 ; fallos=  1794 ; referencias=200000
+CacheSize? limite=229888 ; fallos=  1796 ; referencias=200000
+CacheSize? limite=230144 ; fallos=  1798 ; referencias=200000
+CacheSize? limite=230400 ; fallos=  1800 ; referencias=200000
+CacheSize? limite=230656 ; fallos=  1802 ; referencias=200000
+CacheSize? limite=230912 ; fallos=  1804 ; referencias=200000
+CacheSize? limite=231168 ; fallos=  1806 ; referencias=200000
+CacheSize? limite=231424 ; fallos=  1808 ; referencias=200000
+CacheSize? limite=231680 ; fallos=  1810 ; referencias=200000
+CacheSize? limite=231936 ; fallos=  1812 ; referencias=200000
+CacheSize? limite=232192 ; fallos=  1814 ; referencias=200000
+CacheSize? limite=232448 ; fallos=  1816 ; referencias=200000
+CacheSize? limite=232704 ; fallos=  1818 ; referencias=200000
+CacheSize? limite=232960 ; fallos=  1820 ; referencias=200000
+CacheSize? limite=233216 ; fallos=  1822 ; referencias=200000
+CacheSize? limite=233472 ; fallos=  1824 ; referencias=200000
+CacheSize? limite=233728 ; fallos=  1826 ; referencias=200000
+CacheSize? limite=233984 ; fallos=  1828 ; referencias=200000
+CacheSize? limite=234240 ; fallos=  1830 ; referencias=200000
+CacheSize? limite=234496 ; fallos=  1832 ; referencias=200000
+CacheSize? limite=234752 ; fallos=  1834 ; referencias=200000
+CacheSize? limite=235008 ; fallos=  1836 ; referencias=200000
+CacheSize? limite=235264 ; fallos=  1838 ; referencias=200000
+CacheSize? limite=235520 ; fallos=  1840 ; referencias=200000
+CacheSize? limite=235776 ; fallos=  1842 ; referencias=200000
+CacheSize? limite=236032 ; fallos=  1844 ; referencias=200000
+CacheSize? limite=236288 ; fallos=  1846 ; referencias=200000
+CacheSize? limite=236544 ; fallos=  1848 ; referencias=200000
+CacheSize? limite=236800 ; fallos=  1850 ; referencias=200000
+CacheSize? limite=237056 ; fallos=  1852 ; referencias=200000
+CacheSize? limite=237312 ; fallos=  1854 ; referencias=200000
+CacheSize? limite=237568 ; fallos=  1856 ; referencias=200000
+CacheSize? limite=237824 ; fallos=  1858 ; referencias=200000
+CacheSize? limite=238080 ; fallos=  1860 ; referencias=200000
+CacheSize? limite=238336 ; fallos=  1862 ; referencias=200000
+CacheSize? limite=238592 ; fallos=  1864 ; referencias=200000
+CacheSize? limite=238848 ; fallos=  1866 ; referencias=200000
+CacheSize? limite=239104 ; fallos=  1868 ; referencias=200000
+CacheSize? limite=239360 ; fallos=  1870 ; referencias=200000
+CacheSize? limite=239616 ; fallos=  1872 ; referencias=200000
+CacheSize? limite=239872 ; fallos=  1874 ; referencias=200000
+CacheSize? limite=240128 ; fallos=  1876 ; referencias=200000
+CacheSize? limite=240384 ; fallos=  1878 ; referencias=200000
+CacheSize? limite=240640 ; fallos=  1880 ; referencias=200000
+CacheSize? limite=240896 ; fallos=  1882 ; referencias=200000
+CacheSize? limite=241152 ; fallos=  1884 ; referencias=200000
+CacheSize? limite=241408 ; fallos=  1886 ; referencias=200000
+CacheSize? limite=241664 ; fallos=  1888 ; referencias=200000
+CacheSize? limite=241920 ; fallos=  1890 ; referencias=200000
+CacheSize? limite=242176 ; fallos=  1892 ; referencias=200000
+CacheSize? limite=242432 ; fallos=  1894 ; referencias=200000
+CacheSize? limite=242688 ; fallos=  1896 ; referencias=200000
+CacheSize? limite=242944 ; fallos=  1898 ; referencias=200000
+CacheSize? limite=243200 ; fallos=  1900 ; referencias=200000
+CacheSize? limite=243456 ; fallos=  1902 ; referencias=200000
+CacheSize? limite=243712 ; fallos=  1904 ; referencias=200000
+CacheSize? limite=243968 ; fallos=  1906 ; referencias=200000
+CacheSize? limite=244224 ; fallos=  1908 ; referencias=200000
+CacheSize? limite=244480 ; fallos=  1910 ; referencias=200000
+CacheSize? limite=244736 ; fallos=  1912 ; referencias=200000
+CacheSize? limite=244992 ; fallos=  1914 ; referencias=200000
+CacheSize? limite=245248 ; fallos=  1916 ; referencias=200000
+CacheSize? limite=245504 ; fallos=  1918 ; referencias=200000
+CacheSize? limite=245760 ; fallos=  1920 ; referencias=200000
+CacheSize? limite=246016 ; fallos=  1922 ; referencias=200000
+CacheSize? limite=246272 ; fallos=  1924 ; referencias=200000
+CacheSize? limite=246528 ; fallos=  1926 ; referencias=200000
+CacheSize? limite=246784 ; fallos=  1928 ; referencias=200000
+CacheSize? limite=247040 ; fallos=  1930 ; referencias=200000
+CacheSize? limite=247296 ; fallos=  1932 ; referencias=200000
+CacheSize? limite=247552 ; fallos=  1934 ; referencias=200000
+CacheSize? limite=247808 ; fallos=  1936 ; referencias=200000
+CacheSize? limite=248064 ; fallos=  1938 ; referencias=200000
+CacheSize? limite=248320 ; fallos=  1940 ; referencias=200000
+CacheSize? limite=248576 ; fallos=  1942 ; referencias=200000
+CacheSize? limite=248832 ; fallos=  1944 ; referencias=200000
+CacheSize? limite=249088 ; fallos=  1946 ; referencias=200000
+CacheSize? limite=249344 ; fallos=  1948 ; referencias=200000
+CacheSize? limite=249600 ; fallos=  1950 ; referencias=200000
+CacheSize? limite=249856 ; fallos=  1952 ; referencias=200000
+CacheSize? limite=250112 ; fallos=  1954 ; referencias=200000
+CacheSize? limite=250368 ; fallos=  1956 ; referencias=200000
+CacheSize? limite=250624 ; fallos=  1958 ; referencias=200000
+CacheSize? limite=250880 ; fallos=  1960 ; referencias=200000
+CacheSize? limite=251136 ; fallos=  1962 ; referencias=200000
+CacheSize? limite=251392 ; fallos=  1964 ; referencias=200000
+CacheSize? limite=251648 ; fallos=  1966 ; referencias=200000
+CacheSize? limite=251904 ; fallos=  1968 ; referencias=200000
+CacheSize? limite=252160 ; fallos=  1970 ; referencias=200000
+CacheSize? limite=252416 ; fallos=  1972 ; referencias=200000
+CacheSize? limite=252672 ; fallos=  1974 ; referencias=200000
+CacheSize? limite=252928 ; fallos=  1976 ; referencias=200000
+CacheSize? limite=253184 ; fallos=  1978 ; referencias=200000
+CacheSize? limite=253440 ; fallos=  1980 ; referencias=200000
+CacheSize? limite=253696 ; fallos=  1982 ; referencias=200000
+CacheSize? limite=253952 ; fallos=  1984 ; referencias=200000
+CacheSize? limite=254208 ; fallos=  1986 ; referencias=200000
+CacheSize? limite=254464 ; fallos=  1988 ; referencias=200000
+CacheSize? limite=254720 ; fallos=  1990 ; referencias=200000
+CacheSize? limite=254976 ; fallos=  1992 ; referencias=200000
+CacheSize? limite=255232 ; fallos=  1994 ; referencias=200000
+CacheSize? limite=255488 ; fallos=  1996 ; referencias=200000
+CacheSize? limite=255744 ; fallos=  1998 ; referencias=200000
+CacheSize? limite=256000 ; fallos=  2000 ; referencias=200000
+CacheSize? limite=256256 ; fallos=  2002 ; referencias=200000
+CacheSize? limite=256512 ; fallos=  2004 ; referencias=200000
+CacheSize? limite=256768 ; fallos=  2006 ; referencias=200000
+CacheSize? limite=257024 ; fallos=  2008 ; referencias=200000
+CacheSize? limite=257280 ; fallos=  2010 ; referencias=200000
+CacheSize? limite=257536 ; fallos=  2012 ; referencias=200000
+CacheSize? limite=257792 ; fallos=  2014 ; referencias=200000
+CacheSize? limite=258048 ; fallos=  2016 ; referencias=200000
+CacheSize? limite=258304 ; fallos=  2018 ; referencias=200000
+CacheSize? limite=258560 ; fallos=  2020 ; referencias=200000
+CacheSize? limite=258816 ; fallos=  2022 ; referencias=200000
+CacheSize? limite=259072 ; fallos=  2024 ; referencias=200000
+CacheSize? limite=259328 ; fallos=  2026 ; referencias=200000
+CacheSize? limite=259584 ; fallos=  2028 ; referencias=200000
+CacheSize? limite=259840 ; fallos=  2030 ; referencias=200000
+CacheSize? limite=260096 ; fallos=  2032 ; referencias=200000
+CacheSize? limite=260352 ; fallos=  2034 ; referencias=200000
+CacheSize? limite=260608 ; fallos=  2036 ; referencias=200000
+CacheSize? limite=260864 ; fallos=  2038 ; referencias=200000
+CacheSize? limite=261120 ; fallos=  2040 ; referencias=200000
+CacheSize? limite=261376 ; fallos=  2042 ; referencias=200000
+CacheSize? limite=261632 ; fallos=  2044 ; referencias=200000
+CacheSize? limite=261888 ; fallos=  2046 ; referencias=200000
+CacheSize? limite=262144 ; fallos=  2048 ; referencias=200000
+CacheSize? limite=262400 ; fallos=  2436 ; referencias=200000
+CacheSize? limite=262656 ; fallos=  2824 ; referencias=200000
+CacheSize? limite=262912 ; fallos=  3212 ; referencias=200000
+CacheSize? limite=263168 ; fallos=  3600 ; referencias=200000
+CacheSize? limite=263424 ; fallos=  3988 ; referencias=200000
+CacheSize? limite=263680 ; fallos=  4376 ; referencias=200000
+CacheSize? limite=263936 ; fallos=  4736 ; referencias=200000
+CacheSize? limite=264192 ; fallos=  5120 ; referencias=200000
+CacheSize? limite=264448 ; fallos=  5504 ; referencias=200000
+CacheSize? limite=264704 ; fallos=  5888 ; referencias=200000
+CacheSize? limite=264960 ; fallos=  6272 ; referencias=200000
+CacheSize? limite=265216 ; fallos=  6656 ; referencias=200000
+CacheSize? limite=265472 ; fallos=  7040 ; referencias=200000
+CacheSize? limite=265728 ; fallos=  7424 ; referencias=200000
+CacheSize? limite=265984 ; fallos=  7808 ; referencias=200000
+CacheSize? limite=266240 ; fallos=  8192 ; referencias=200000
+CacheSize? limite=266496 ; fallos=  8576 ; referencias=200000
+CacheSize? limite=266752 ; fallos=  8888 ; referencias=200000
+CacheSize? limite=267008 ; fallos=  9268 ; referencias=200000
+CacheSize? limite=267264 ; fallos=  9648 ; referencias=200000
+CacheSize? limite=267520 ; fallos= 10028 ; referencias=200000
+CacheSize? limite=267776 ; fallos= 10408 ; referencias=200000
+CacheSize? limite=268032 ; fallos= 10788 ; referencias=200000
+CacheSize? limite=268288 ; fallos= 11168 ; referencias=200000
+CacheSize? limite=268544 ; fallos= 11548 ; referencias=200000
+CacheSize? limite=268800 ; fallos= 11928 ; referencias=200000
+CacheSize? limite=269056 ; fallos= 12308 ; referencias=200000
+CacheSize? limite=269312 ; fallos= 12688 ; referencias=200000
+CacheSize? limite=269568 ; fallos= 12952 ; referencias=200000
+CacheSize? limite=269824 ; fallos= 13328 ; referencias=200000
+CacheSize? limite=270080 ; fallos= 13704 ; referencias=200000
+CacheSize? limite=270336 ; fallos= 14080 ; referencias=200000
+CacheSize? limite=270592 ; fallos= 14456 ; referencias=200000
+CacheSize? limite=270848 ; fallos= 14832 ; referencias=200000
+CacheSize? limite=271104 ; fallos= 15208 ; referencias=200000
+CacheSize? limite=271360 ; fallos= 15584 ; referencias=200000
+CacheSize? limite=271616 ; fallos= 15960 ; referencias=200000
+CacheSize? limite=271872 ; fallos= 16336 ; referencias=200000
+CacheSize? limite=272128 ; fallos= 16712 ; referencias=200000
+CacheSize? limite=272384 ; fallos= 16976 ; referencias=200000
+CacheSize? limite=272640 ; fallos= 17300 ; referencias=200000
+CacheSize? limite=272896 ; fallos= 17672 ; referencias=200000
+CacheSize? limite=273152 ; fallos= 18044 ; referencias=200000
+CacheSize? limite=273408 ; fallos= 18416 ; referencias=200000
+CacheSize? limite=273664 ; fallos= 18788 ; referencias=200000
+CacheSize? limite=273920 ; fallos= 19160 ; referencias=200000
+CacheSize? limite=274176 ; fallos= 19532 ; referencias=200000
+CacheSize? limite=274432 ; fallos= 19904 ; referencias=200000
+CacheSize? limite=274688 ; fallos= 20276 ; referencias=200000
+CacheSize? limite=274944 ; fallos= 20648 ; referencias=200000
+CacheSize? limite=275200 ; fallos= 20968 ; referencias=200000
+CacheSize? limite=275456 ; fallos= 21184 ; referencias=200000
+CacheSize? limite=275712 ; fallos= 21552 ; referencias=200000
+CacheSize? limite=275968 ; fallos= 21920 ; referencias=200000
+CacheSize? limite=276224 ; fallos= 22288 ; referencias=200000
+CacheSize? limite=276480 ; fallos= 22656 ; referencias=200000
+CacheSize? limite=276736 ; fallos= 23024 ; referencias=200000
+CacheSize? limite=276992 ; fallos= 23392 ; referencias=200000
+CacheSize? limite=277248 ; fallos= 23760 ; referencias=200000
+CacheSize? limite=277504 ; fallos= 24128 ; referencias=200000
+CacheSize? limite=277760 ; fallos= 24496 ; referencias=200000
+CacheSize? limite=278016 ; fallos= 24864 ; referencias=200000
+CacheSize? limite=278272 ; fallos= 25098 ; referencias=200000
+CacheSize? limite=278528 ; fallos= 25344 ; referencias=200000
+CacheSize? limite=278784 ; fallos= 25708 ; referencias=200000
+CacheSize? limite=279040 ; fallos= 26072 ; referencias=200000
+CacheSize? limite=279296 ; fallos= 26436 ; referencias=200000
+CacheSize? limite=279552 ; fallos= 26800 ; referencias=200000
+CacheSize? limite=279808 ; fallos= 27164 ; referencias=200000
+CacheSize? limite=280064 ; fallos= 27528 ; referencias=200000
+CacheSize? limite=280320 ; fallos= 27892 ; referencias=200000
+CacheSize? limite=280576 ; fallos= 28256 ; referencias=200000
+CacheSize? limite=280832 ; fallos= 28620 ; referencias=200000
+CacheSize? limite=281088 ; fallos= 28984 ; referencias=200000
+CacheSize? limite=281344 ; fallos= 29180 ; referencias=200000
+CacheSize? limite=281600 ; fallos= 29408 ; referencias=200000
+CacheSize? limite=281856 ; fallos= 29768 ; referencias=200000
+CacheSize? limite=282112 ; fallos= 30128 ; referencias=200000
+CacheSize? limite=282368 ; fallos= 30488 ; referencias=200000
+CacheSize? limite=282624 ; fallos= 30848 ; referencias=200000
+CacheSize? limite=282880 ; fallos= 31208 ; referencias=200000
+CacheSize? limite=283136 ; fallos= 31568 ; referencias=200000
+CacheSize? limite=283392 ; fallos= 31928 ; referencias=200000
+CacheSize? limite=283648 ; fallos= 32288 ; referencias=200000
+CacheSize? limite=283904 ; fallos= 32648 ; referencias=200000
+CacheSize? limite=284160 ; fallos= 33008 ; referencias=200000
+CacheSize? limite=284416 ; fallos= 33214 ; referencias=200000
+CacheSize? limite=284672 ; fallos= 33392 ; referencias=200000
+CacheSize? limite=284928 ; fallos= 33732 ; referencias=200000
+CacheSize? limite=285184 ; fallos= 34088 ; referencias=200000
+CacheSize? limite=285440 ; fallos= 34444 ; referencias=200000
+CacheSize? limite=285696 ; fallos= 34800 ; referencias=200000
+CacheSize? limite=285952 ; fallos= 35156 ; referencias=200000
+CacheSize? limite=286208 ; fallos= 35512 ; referencias=200000
+CacheSize? limite=286464 ; fallos= 35868 ; referencias=200000
+CacheSize? limite=286720 ; fallos= 36224 ; referencias=200000
+CacheSize? limite=286976 ; fallos= 36580 ; referencias=200000
+CacheSize? limite=287232 ; fallos= 36936 ; referencias=200000
+CacheSize? limite=287488 ; fallos= 37200 ; referencias=200000
+CacheSize? limite=287744 ; fallos= 37376 ; referencias=200000
+CacheSize? limite=288000 ; fallos= 37600 ; referencias=200000
+CacheSize? limite=288256 ; fallos= 37952 ; referencias=200000
+CacheSize? limite=288512 ; fallos= 38304 ; referencias=200000
+CacheSize? limite=288768 ; fallos= 38656 ; referencias=200000
+CacheSize? limite=289024 ; fallos= 39008 ; referencias=200000
+CacheSize? limite=289280 ; fallos= 39360 ; referencias=200000
+CacheSize? limite=289536 ; fallos= 39712 ; referencias=200000
+CacheSize? limite=289792 ; fallos= 40064 ; referencias=200000
+CacheSize? limite=290048 ; fallos= 40416 ; referencias=200000
+CacheSize? limite=290304 ; fallos= 40768 ; referencias=200000
+CacheSize? limite=290560 ; fallos= 41120 ; referencias=200000
+CacheSize? limite=290816 ; fallos= 41312 ; referencias=200000
+CacheSize? limite=291072 ; fallos= 41486 ; referencias=200000
+CacheSize? limite=291328 ; fallos= 41720 ; referencias=200000
+CacheSize? limite=291584 ; fallos= 42068 ; referencias=200000
+CacheSize? limite=291840 ; fallos= 42416 ; referencias=200000
+CacheSize? limite=292096 ; fallos= 42764 ; referencias=200000
+CacheSize? limite=292352 ; fallos= 43112 ; referencias=200000
+CacheSize? limite=292608 ; fallos= 43460 ; referencias=200000
+CacheSize? limite=292864 ; fallos= 43808 ; referencias=200000
+CacheSize? limite=293120 ; fallos= 44156 ; referencias=200000
+CacheSize? limite=293376 ; fallos= 44504 ; referencias=200000
+CacheSize? limite=293632 ; fallos= 44852 ; referencias=200000
+CacheSize? limite=293888 ; fallos= 45200 ; referencias=200000
+CacheSize? limite=294144 ; fallos= 45372 ; referencias=200000
+CacheSize? limite=294400 ; fallos= 45544 ; referencias=200000
+CacheSize? limite=294656 ; fallos= 45736 ; referencias=200000
+CacheSize? limite=294912 ; fallos= 46080 ; referencias=200000
+CacheSize? limite=295168 ; fallos= 46424 ; referencias=200000
+CacheSize? limite=295424 ; fallos= 46768 ; referencias=200000
+CacheSize? limite=295680 ; fallos= 47112 ; referencias=200000
+CacheSize? limite=295936 ; fallos= 47456 ; referencias=200000
+CacheSize? limite=296192 ; fallos= 47800 ; referencias=200000
+CacheSize? limite=296448 ; fallos= 48144 ; referencias=200000
+CacheSize? limite=296704 ; fallos= 48488 ; referencias=200000
+CacheSize? limite=296960 ; fallos= 48832 ; referencias=200000
+CacheSize? limite=297216 ; fallos= 49176 ; referencias=200000
+CacheSize? limite=297472 ; fallos= 49380 ; referencias=200000
+CacheSize? limite=297728 ; fallos= 49550 ; referencias=200000
+CacheSize? limite=297984 ; fallos= 49720 ; referencias=200000
+CacheSize? limite=298240 ; fallos= 49988 ; referencias=200000
+CacheSize? limite=298496 ; fallos= 50328 ; referencias=200000
+CacheSize? limite=298752 ; fallos= 50668 ; referencias=200000
+CacheSize? limite=299008 ; fallos= 51008 ; referencias=200000
+CacheSize? limite=299264 ; fallos= 51348 ; referencias=200000
+CacheSize? limite=299520 ; fallos= 51688 ; referencias=200000
+CacheSize? limite=299776 ; fallos= 52028 ; referencias=200000
+CacheSize? limite=300032 ; fallos= 52368 ; referencias=200000
+CacheSize? limite=300288 ; fallos= 52708 ; referencias=200000
+CacheSize? limite=300544 ; fallos= 53048 ; referencias=200000
+CacheSize? limite=300800 ; fallos= 53336 ; referencias=200000
+CacheSize? limite=301056 ; fallos= 53504 ; referencias=200000
+CacheSize? limite=301312 ; fallos= 53672 ; referencias=200000
+CacheSize? limite=301568 ; fallos= 53840 ; referencias=200000
+CacheSize? limite=301824 ; fallos= 54128 ; referencias=200000
+CacheSize? limite=302080 ; fallos= 54464 ; referencias=200000
+CacheSize? limite=302336 ; fallos= 54800 ; referencias=200000
+CacheSize? limite=302592 ; fallos= 55136 ; referencias=200000
+CacheSize? limite=302848 ; fallos= 55472 ; referencias=200000
+CacheSize? limite=303104 ; fallos= 55808 ; referencias=200000
+CacheSize? limite=303360 ; fallos= 56144 ; referencias=200000
+CacheSize? limite=303616 ; fallos= 56480 ; referencias=200000
+CacheSize? limite=303872 ; fallos= 56816 ; referencias=200000
+CacheSize? limite=304128 ; fallos= 57152 ; referencias=200000
+CacheSize? limite=304384 ; fallos= 57406 ; referencias=200000
+CacheSize? limite=304640 ; fallos= 57572 ; referencias=200000
+CacheSize? limite=304896 ; fallos= 57738 ; referencias=200000
+CacheSize? limite=305152 ; fallos= 57904 ; referencias=200000
+CacheSize? limite=305408 ; fallos= 58156 ; referencias=200000
+CacheSize? limite=305664 ; fallos= 58488 ; referencias=200000
+CacheSize? limite=305920 ; fallos= 58820 ; referencias=200000
+CacheSize? limite=306176 ; fallos= 59152 ; referencias=200000
+CacheSize? limite=306432 ; fallos= 59484 ; referencias=200000
+CacheSize? limite=306688 ; fallos= 59816 ; referencias=200000
+CacheSize? limite=306944 ; fallos= 60148 ; referencias=200000
+CacheSize? limite=307200 ; fallos= 60480 ; referencias=200000
+CacheSize? limite=307456 ; fallos= 60812 ; referencias=200000
+CacheSize? limite=307712 ; fallos= 61144 ; referencias=200000
+CacheSize? limite=307968 ; fallos= 61420 ; referencias=200000
+CacheSize? limite=308224 ; fallos= 61584 ; referencias=200000
+CacheSize? limite=308480 ; fallos= 61748 ; referencias=200000
+CacheSize? limite=308736 ; fallos= 61912 ; referencias=200000
+CacheSize? limite=308992 ; fallos= 62076 ; referencias=200000
+CacheSize? limite=309248 ; fallos= 62400 ; referencias=200000
+CacheSize? limite=309504 ; fallos= 62728 ; referencias=200000
+CacheSize? limite=309760 ; fallos= 63056 ; referencias=200000
+CacheSize? limite=310016 ; fallos= 63384 ; referencias=200000
+CacheSize? limite=310272 ; fallos= 63712 ; referencias=200000
+CacheSize? limite=310528 ; fallos= 64040 ; referencias=200000
+CacheSize? limite=310784 ; fallos= 64368 ; referencias=200000
+CacheSize? limite=311040 ; fallos= 64696 ; referencias=200000
+CacheSize? limite=311296 ; fallos= 65024 ; referencias=200000
+CacheSize? limite=311552 ; fallos= 65352 ; referencias=200000
+CacheSize? limite=311808 ; fallos= 65540 ; referencias=200000
+CacheSize? limite=312064 ; fallos= 65702 ; referencias=200000
+CacheSize? limite=312320 ; fallos= 65864 ; referencias=200000
+CacheSize? limite=312576 ; fallos= 66026 ; referencias=200000
+CacheSize? limite=312832 ; fallos= 66200 ; referencias=200000
+CacheSize? limite=313088 ; fallos= 66524 ; referencias=200000
+CacheSize? limite=313344 ; fallos= 66848 ; referencias=200000
+CacheSize? limite=313600 ; fallos= 67172 ; referencias=200000
+CacheSize? limite=313856 ; fallos= 67496 ; referencias=200000
+CacheSize? limite=314112 ; fallos= 67820 ; referencias=200000
+CacheSize? limite=314368 ; fallos= 68144 ; referencias=200000
+CacheSize? limite=314624 ; fallos= 68468 ; referencias=200000
+CacheSize? limite=314880 ; fallos= 68792 ; referencias=200000
+CacheSize? limite=315136 ; fallos= 69116 ; referencias=200000
+CacheSize? limite=315392 ; fallos= 69440 ; referencias=200000
+CacheSize? limite=315648 ; fallos= 69600 ; referencias=200000
+CacheSize? limite=315904 ; fallos= 69760 ; referencias=200000
+CacheSize? limite=316160 ; fallos= 69920 ; referencias=200000
+CacheSize? limite=316416 ; fallos= 70080 ; referencias=200000
+CacheSize? limite=316672 ; fallos= 70240 ; referencias=200000
+CacheSize? limite=316928 ; fallos= 70528 ; referencias=200000
+CacheSize? limite=317184 ; fallos= 70848 ; referencias=200000
+CacheSize? limite=317440 ; fallos= 71168 ; referencias=200000
+CacheSize? limite=317696 ; fallos= 71488 ; referencias=200000
+CacheSize? limite=317952 ; fallos= 71808 ; referencias=200000
+CacheSize? limite=318208 ; fallos= 72128 ; referencias=200000
+CacheSize? limite=318464 ; fallos= 72448 ; referencias=200000
+CacheSize? limite=318720 ; fallos= 72768 ; referencias=200000
+CacheSize? limite=318976 ; fallos= 73088 ; referencias=200000
+CacheSize? limite=319232 ; fallos= 73408 ; referencias=200000
+CacheSize? limite=319488 ; fallos= 73600 ; referencias=200000
+CacheSize? limite=319744 ; fallos= 73758 ; referencias=200000
+CacheSize? limite=320000 ; fallos= 73916 ; referencias=200000
+CacheSize? limite=320256 ; fallos= 74074 ; referencias=200000
+CacheSize? limite=320512 ; fallos= 74232 ; referencias=200000
+CacheSize? limite=320768 ; fallos= 74412 ; referencias=200000
+CacheSize? limite=321024 ; fallos= 74728 ; referencias=200000
+CacheSize? limite=321280 ; fallos= 75044 ; referencias=200000
+CacheSize? limite=321536 ; fallos= 75360 ; referencias=200000
+CacheSize? limite=321792 ; fallos= 75676 ; referencias=200000
+CacheSize? limite=322048 ; fallos= 75992 ; referencias=200000
+CacheSize? limite=322304 ; fallos= 76308 ; referencias=200000
+CacheSize? limite=322560 ; fallos= 76624 ; referencias=200000
+CacheSize? limite=322816 ; fallos= 76940 ; referencias=200000
+CacheSize? limite=323072 ; fallos= 77256 ; referencias=200000
+CacheSize? limite=323328 ; fallos= 77540 ; referencias=200000
+CacheSize? limite=323584 ; fallos= 77696 ; referencias=200000
+CacheSize? limite=323840 ; fallos= 77852 ; referencias=200000
+CacheSize? limite=324096 ; fallos= 78008 ; referencias=200000
+CacheSize? limite=324352 ; fallos= 78164 ; referencias=200000
+CacheSize? limite=324608 ; fallos= 78320 ; referencias=200000
+CacheSize? limite=324864 ; fallos= 78488 ; referencias=200000
+CacheSize? limite=325120 ; fallos= 78800 ; referencias=200000
+CacheSize? limite=325376 ; fallos= 79112 ; referencias=200000
+CacheSize? limite=325632 ; fallos= 79424 ; referencias=200000
+CacheSize? limite=325888 ; fallos= 79736 ; referencias=200000
+CacheSize? limite=326144 ; fallos= 80048 ; referencias=200000
+CacheSize? limite=326400 ; fallos= 80360 ; referencias=200000
+CacheSize? limite=326656 ; fallos= 80672 ; referencias=200000
+CacheSize? limite=326912 ; fallos= 80984 ; referencias=200000
+CacheSize? limite=327168 ; fallos= 81296 ; referencias=200000
+CacheSize? limite=327424 ; fallos= 81574 ; referencias=200000
+CacheSize? limite=327680 ; fallos= 81728 ; referencias=200000
+CacheSize? limite=327936 ; fallos= 81882 ; referencias=200000
+CacheSize? limite=328192 ; fallos= 82036 ; referencias=200000
+CacheSize? limite=328448 ; fallos= 82190 ; referencias=200000
+CacheSize? limite=328704 ; fallos= 82344 ; referencias=200000
+CacheSize? limite=328960 ; fallos= 82498 ; referencias=200000
+CacheSize? limite=329216 ; fallos= 82744 ; referencias=200000
+CacheSize? limite=329472 ; fallos= 83052 ; referencias=200000
+CacheSize? limite=329728 ; fallos= 83360 ; referencias=200000
+CacheSize? limite=329984 ; fallos= 83668 ; referencias=200000
+CacheSize? limite=330240 ; fallos= 83976 ; referencias=200000
+CacheSize? limite=330496 ; fallos= 84284 ; referencias=200000
+CacheSize? limite=330752 ; fallos= 84592 ; referencias=200000
+CacheSize? limite=331008 ; fallos= 84900 ; referencias=200000
+CacheSize? limite=331264 ; fallos= 85208 ; referencias=200000
+CacheSize? limite=331520 ; fallos= 85516 ; referencias=200000
+CacheSize? limite=331776 ; fallos= 85696 ; referencias=200000
+CacheSize? limite=332032 ; fallos= 85848 ; referencias=200000
+CacheSize? limite=332288 ; fallos= 86000 ; referencias=200000
+CacheSize? limite=332544 ; fallos= 86152 ; referencias=200000
+CacheSize? limite=332800 ; fallos= 86304 ; referencias=200000
+CacheSize? limite=333056 ; fallos= 86456 ; referencias=200000
+CacheSize? limite=333312 ; fallos= 86608 ; referencias=200000
+CacheSize? limite=333568 ; fallos= 86864 ; referencias=200000
+CacheSize? limite=333824 ; fallos= 87168 ; referencias=200000
+CacheSize? limite=334080 ; fallos= 87472 ; referencias=200000
+CacheSize? limite=334336 ; fallos= 87776 ; referencias=200000
+CacheSize? limite=334592 ; fallos= 88080 ; referencias=200000
+CacheSize? limite=334848 ; fallos= 88384 ; referencias=200000
+CacheSize? limite=335104 ; fallos= 88688 ; referencias=200000
+CacheSize? limite=335360 ; fallos= 88992 ; referencias=200000
+CacheSize? limite=335616 ; fallos= 89296 ; referencias=200000
+CacheSize? limite=335872 ; fallos= 89600 ; referencias=200000
+CacheSize? limite=336128 ; fallos= 89750 ; referencias=200000
+CacheSize? limite=336384 ; fallos= 89900 ; referencias=200000
+CacheSize? limite=336640 ; fallos= 90050 ; referencias=200000
+CacheSize? limite=336896 ; fallos= 90200 ; referencias=200000
+CacheSize? limite=337152 ; fallos= 90350 ; referencias=200000
+CacheSize? limite=337408 ; fallos= 90500 ; referencias=200000
+CacheSize? limite=337664 ; fallos= 90650 ; referencias=200000
+CacheSize? limite=337920 ; fallos= 90848 ; referencias=200000
+CacheSize? limite=338176 ; fallos= 91148 ; referencias=200000
+CacheSize? limite=338432 ; fallos= 91448 ; referencias=200000
+CacheSize? limite=338688 ; fallos= 91748 ; referencias=200000
+CacheSize? limite=338944 ; fallos= 92048 ; referencias=200000
+CacheSize? limite=339200 ; fallos= 92348 ; referencias=200000
+CacheSize? limite=339456 ; fallos= 92648 ; referencias=200000
+CacheSize? limite=339712 ; fallos= 92948 ; referencias=200000
+CacheSize? limite=339968 ; fallos= 93248 ; referencias=200000
+CacheSize? limite=340224 ; fallos= 93548 ; referencias=200000
+CacheSize? limite=340480 ; fallos= 93736 ; referencias=200000
+CacheSize? limite=340736 ; fallos= 93884 ; referencias=200000
+CacheSize? limite=340992 ; fallos= 94032 ; referencias=200000
+CacheSize? limite=341248 ; fallos= 94180 ; referencias=200000
+CacheSize? limite=341504 ; fallos= 94328 ; referencias=200000
+CacheSize? limite=341760 ; fallos= 94476 ; referencias=200000
+CacheSize? limite=342016 ; fallos= 94624 ; referencias=200000
+CacheSize? limite=342272 ; fallos= 94772 ; referencias=200000
+CacheSize? limite=342528 ; fallos= 94992 ; referencias=200000
+CacheSize? limite=342784 ; fallos= 95288 ; referencias=200000
+CacheSize? limite=343040 ; fallos= 95584 ; referencias=200000
+CacheSize? limite=343296 ; fallos= 95880 ; referencias=200000
+CacheSize? limite=343552 ; fallos= 96176 ; referencias=200000
+CacheSize? limite=343808 ; fallos= 96472 ; referencias=200000
+CacheSize? limite=344064 ; fallos= 96768 ; referencias=200000
+CacheSize? limite=344320 ; fallos= 97064 ; referencias=200000
+CacheSize? limite=344576 ; fallos= 97360 ; referencias=200000
+CacheSize? limite=344832 ; fallos= 97654 ; referencias=200000
+CacheSize? limite=345088 ; fallos= 97800 ; referencias=200000
+CacheSize? limite=345344 ; fallos= 97946 ; referencias=200000
+CacheSize? limite=345600 ; fallos= 98092 ; referencias=200000
+CacheSize? limite=345856 ; fallos= 98238 ; referencias=200000
+CacheSize? limite=346112 ; fallos= 98384 ; referencias=200000
+CacheSize? limite=346368 ; fallos= 98530 ; referencias=200000
+CacheSize? limite=346624 ; fallos= 98676 ; referencias=200000
+CacheSize? limite=346880 ; fallos= 98822 ; referencias=200000
+CacheSize? limite=347136 ; fallos= 98992 ; referencias=200000
+CacheSize? limite=347392 ; fallos= 99284 ; referencias=200000
+CacheSize? limite=347648 ; fallos= 99576 ; referencias=200000
+CacheSize? limite=347904 ; fallos= 99868 ; referencias=200000
+CacheSize? limite=348160 ; fallos=100160 ; referencias=200000
+CacheSize? limite=348416 ; fallos=100452 ; referencias=200000
+CacheSize? limite=348672 ; fallos=100744 ; referencias=200000
+CacheSize? limite=348928 ; fallos=101036 ; referencias=200000
+CacheSize? limite=349184 ; fallos=101328 ; referencias=200000
+CacheSize? limite=349440 ; fallos=101620 ; referencias=200000
+CacheSize? limite=349696 ; fallos=101792 ; referencias=200000
+CacheSize? limite=349952 ; fallos=101936 ; referencias=200000
+CacheSize? limite=350208 ; fallos=102080 ; referencias=200000
+CacheSize? limite=350464 ; fallos=102224 ; referencias=200000
+CacheSize? limite=350720 ; fallos=102368 ; referencias=200000
+CacheSize? limite=350976 ; fallos=102512 ; referencias=200000
+CacheSize? limite=351232 ; fallos=102656 ; referencias=200000
+CacheSize? limite=351488 ; fallos=102800 ; referencias=200000
+CacheSize? limite=351744 ; fallos=102944 ; referencias=200000
+CacheSize? limite=352000 ; fallos=103136 ; referencias=200000
+CacheSize? limite=352256 ; fallos=103424 ; referencias=200000
+CacheSize? limite=352512 ; fallos=103712 ; referencias=200000
+CacheSize? limite=352768 ; fallos=104000 ; referencias=200000
+CacheSize? limite=353024 ; fallos=104288 ; referencias=200000
+CacheSize? limite=353280 ; fallos=104576 ; referencias=200000
+CacheSize? limite=353536 ; fallos=104864 ; referencias=200000
+CacheSize? limite=353792 ; fallos=105152 ; referencias=200000
+CacheSize? limite=354048 ; fallos=105440 ; referencias=200000
+CacheSize? limite=354304 ; fallos=105712 ; referencias=200000
+CacheSize? limite=354560 ; fallos=105854 ; referencias=200000
+CacheSize? limite=354816 ; fallos=105996 ; referencias=200000
+CacheSize? limite=355072 ; fallos=106138 ; referencias=200000
+CacheSize? limite=355328 ; fallos=106280 ; referencias=200000
+CacheSize? limite=355584 ; fallos=106422 ; referencias=200000
+CacheSize? limite=355840 ; fallos=106564 ; referencias=200000
+CacheSize? limite=356096 ; fallos=106706 ; referencias=200000
+CacheSize? limite=356352 ; fallos=106848 ; referencias=200000
+CacheSize? limite=356608 ; fallos=106990 ; referencias=200000
+CacheSize? limite=356864 ; fallos=107132 ; referencias=200000
+CacheSize? limite=357120 ; fallos=107412 ; referencias=200000
+CacheSize? limite=357376 ; fallos=107696 ; referencias=200000
+CacheSize? limite=357632 ; fallos=107980 ; referencias=200000
+CacheSize? limite=357888 ; fallos=108264 ; referencias=200000
+CacheSize? limite=358144 ; fallos=108548 ; referencias=200000
+CacheSize? limite=358400 ; fallos=108832 ; referencias=200000
+CacheSize? limite=358656 ; fallos=109116 ; referencias=200000
+CacheSize? limite=358912 ; fallos=109400 ; referencias=200000
+CacheSize? limite=359168 ; fallos=109684 ; referencias=200000
+CacheSize? limite=359424 ; fallos=109840 ; referencias=200000
+CacheSize? limite=359680 ; fallos=109980 ; referencias=200000
+CacheSize? limite=359936 ; fallos=110120 ; referencias=200000
+CacheSize? limite=360192 ; fallos=110260 ; referencias=200000
+CacheSize? limite=360448 ; fallos=110400 ; referencias=200000
+CacheSize? limite=360704 ; fallos=110540 ; referencias=200000
+CacheSize? limite=360960 ; fallos=110680 ; referencias=200000
+CacheSize? limite=361216 ; fallos=110820 ; referencias=200000
+CacheSize? limite=361472 ; fallos=110960 ; referencias=200000
+CacheSize? limite=361728 ; fallos=111100 ; referencias=200000
+CacheSize? limite=361984 ; fallos=111248 ; referencias=200000
+CacheSize? limite=362240 ; fallos=111528 ; referencias=200000
+CacheSize? limite=362496 ; fallos=111808 ; referencias=200000
+CacheSize? limite=362752 ; fallos=112088 ; referencias=200000
+CacheSize? limite=363008 ; fallos=112368 ; referencias=200000
+CacheSize? limite=363264 ; fallos=112648 ; referencias=200000
+CacheSize? limite=363520 ; fallos=112928 ; referencias=200000
+CacheSize? limite=363776 ; fallos=113208 ; referencias=200000
+CacheSize? limite=364032 ; fallos=113488 ; referencias=200000
+CacheSize? limite=364288 ; fallos=113750 ; referencias=200000
+CacheSize? limite=364544 ; fallos=113888 ; referencias=200000
+CacheSize? limite=364800 ; fallos=114026 ; referencias=200000
+CacheSize? limite=365056 ; fallos=114164 ; referencias=200000
+CacheSize? limite=365312 ; fallos=114302 ; referencias=200000
+CacheSize? limite=365568 ; fallos=114440 ; referencias=200000
+CacheSize? limite=365824 ; fallos=114578 ; referencias=200000
+CacheSize? limite=366080 ; fallos=114716 ; referencias=200000
+CacheSize? limite=366336 ; fallos=114854 ; referencias=200000
+CacheSize? limite=366592 ; fallos=114992 ; referencias=200000
+CacheSize? limite=366848 ; fallos=115130 ; referencias=200000
+CacheSize? limite=367104 ; fallos=115268 ; referencias=200000
+CacheSize? limite=367360 ; fallos=115484 ; referencias=200000
+CacheSize? limite=367616 ; fallos=115760 ; referencias=200000
+CacheSize? limite=367872 ; fallos=116036 ; referencias=200000
+CacheSize? limite=368128 ; fallos=116312 ; referencias=200000
+CacheSize? limite=368384 ; fallos=116588 ; referencias=200000
+CacheSize? limite=368640 ; fallos=116864 ; referencias=200000
+CacheSize? limite=368896 ; fallos=117140 ; referencias=200000
+CacheSize? limite=369152 ; fallos=117416 ; referencias=200000
+CacheSize? limite=369408 ; fallos=117692 ; referencias=200000
+CacheSize? limite=369664 ; fallos=117856 ; referencias=200000
+CacheSize? limite=369920 ; fallos=117992 ; referencias=200000
+CacheSize? limite=370176 ; fallos=118128 ; referencias=200000
+CacheSize? limite=370432 ; fallos=118264 ; referencias=200000
+CacheSize? limite=370688 ; fallos=118400 ; referencias=200000
+CacheSize? limite=370944 ; fallos=118536 ; referencias=200000
+CacheSize? limite=371200 ; fallos=118672 ; referencias=200000
+CacheSize? limite=371456 ; fallos=118808 ; referencias=200000
+CacheSize? limite=371712 ; fallos=118944 ; referencias=200000
+CacheSize? limite=371968 ; fallos=119080 ; referencias=200000
+CacheSize? limite=372224 ; fallos=119216 ; referencias=200000
+CacheSize? limite=372480 ; fallos=119352 ; referencias=200000
+CacheSize? limite=372736 ; fallos=119552 ; referencias=200000
+CacheSize? limite=372992 ; fallos=119824 ; referencias=200000
+CacheSize? limite=373248 ; fallos=120096 ; referencias=200000
+CacheSize? limite=373504 ; fallos=120368 ; referencias=200000
+CacheSize? limite=373760 ; fallos=120640 ; referencias=200000
+CacheSize? limite=374016 ; fallos=120912 ; referencias=200000
+CacheSize? limite=374272 ; fallos=121184 ; referencias=200000
+CacheSize? limite=374528 ; fallos=121456 ; referencias=200000
+CacheSize? limite=374784 ; fallos=121728 ; referencias=200000
+CacheSize? limite=375040 ; fallos=121878 ; referencias=200000
+CacheSize? limite=375296 ; fallos=122012 ; referencias=200000
+CacheSize? limite=375552 ; fallos=122146 ; referencias=200000
+CacheSize? limite=375808 ; fallos=122280 ; referencias=200000
+CacheSize? limite=376064 ; fallos=122414 ; referencias=200000
+CacheSize? limite=376320 ; fallos=122548 ; referencias=200000
+CacheSize? limite=376576 ; fallos=122682 ; referencias=200000
+CacheSize? limite=376832 ; fallos=122816 ; referencias=200000
+CacheSize? limite=377088 ; fallos=122950 ; referencias=200000
+CacheSize? limite=377344 ; fallos=123084 ; referencias=200000
+CacheSize? limite=377600 ; fallos=123218 ; referencias=200000
+CacheSize? limite=377856 ; fallos=123352 ; referencias=200000
+CacheSize? limite=378112 ; fallos=123486 ; referencias=200000
+CacheSize? limite=378368 ; fallos=123720 ; referencias=200000
+CacheSize? limite=378624 ; fallos=123988 ; referencias=200000
+CacheSize? limite=378880 ; fallos=124256 ; referencias=200000
+CacheSize? limite=379136 ; fallos=124524 ; referencias=200000
+CacheSize? limite=379392 ; fallos=124792 ; referencias=200000
+CacheSize? limite=379648 ; fallos=125060 ; referencias=200000
+CacheSize? limite=379904 ; fallos=125328 ; referencias=200000
+CacheSize? limite=380160 ; fallos=125596 ; referencias=200000
+CacheSize? limite=380416 ; fallos=125816 ; referencias=200000
+CacheSize? limite=380672 ; fallos=125948 ; referencias=200000
+CacheSize? limite=380928 ; fallos=126080 ; referencias=200000
+CacheSize? limite=381184 ; fallos=126212 ; referencias=200000
+CacheSize? limite=381440 ; fallos=126344 ; referencias=200000
+CacheSize? limite=381696 ; fallos=126476 ; referencias=200000
+CacheSize? limite=381952 ; fallos=126608 ; referencias=200000
+CacheSize? limite=382208 ; fallos=126740 ; referencias=200000
+CacheSize? limite=382464 ; fallos=126872 ; referencias=200000
+CacheSize? limite=382720 ; fallos=127004 ; referencias=200000
+CacheSize? limite=382976 ; fallos=127136 ; referencias=200000
+CacheSize? limite=383232 ; fallos=127268 ; referencias=200000
+CacheSize? limite=383488 ; fallos=127400 ; referencias=200000
+CacheSize? limite=383744 ; fallos=127532 ; referencias=200000
+CacheSize? limite=384000 ; fallos=127712 ; referencias=200000
+CacheSize? limite=384256 ; fallos=127976 ; referencias=200000
+CacheSize? limite=384512 ; fallos=128240 ; referencias=200000
+CacheSize? limite=384768 ; fallos=128504 ; referencias=200000
+CacheSize? limite=385024 ; fallos=128768 ; referencias=200000
+CacheSize? limite=385280 ; fallos=129032 ; referencias=200000
+CacheSize? limite=385536 ; fallos=129296 ; referencias=200000
+CacheSize? limite=385792 ; fallos=129560 ; referencias=200000
+CacheSize? limite=386048 ; fallos=129800 ; referencias=200000
+CacheSize? limite=386304 ; fallos=129930 ; referencias=200000
+CacheSize? limite=386560 ; fallos=130060 ; referencias=200000
+CacheSize? limite=386816 ; fallos=130190 ; referencias=200000
+CacheSize? limite=387072 ; fallos=130320 ; referencias=200000
+CacheSize? limite=387328 ; fallos=130450 ; referencias=200000
+CacheSize? limite=387584 ; fallos=130580 ; referencias=200000
+CacheSize? limite=387840 ; fallos=130710 ; referencias=200000
+CacheSize? limite=388096 ; fallos=130840 ; referencias=200000
+CacheSize? limite=388352 ; fallos=130970 ; referencias=200000
+CacheSize? limite=388608 ; fallos=131100 ; referencias=200000
+CacheSize? limite=388864 ; fallos=131230 ; referencias=200000
+CacheSize? limite=389120 ; fallos=131360 ; referencias=200000
+CacheSize? limite=389376 ; fallos=131490 ; referencias=200000
+CacheSize? limite=389632 ; fallos=131620 ; referencias=200000
+CacheSize? limite=389888 ; fallos=131788 ; referencias=200000
+CacheSize? limite=390144 ; fallos=132048 ; referencias=200000
+CacheSize? limite=390400 ; fallos=132308 ; referencias=200000
+CacheSize? limite=390656 ; fallos=132568 ; referencias=200000
+CacheSize? limite=390912 ; fallos=132828 ; referencias=200000
+CacheSize? limite=391168 ; fallos=133088 ; referencias=200000
+CacheSize? limite=391424 ; fallos=133348 ; referencias=200000
+CacheSize? limite=391680 ; fallos=133608 ; referencias=200000
+CacheSize? limite=391936 ; fallos=133824 ; referencias=200000
+CacheSize? limite=392192 ; fallos=133952 ; referencias=200000
+CacheSize? limite=392448 ; fallos=134080 ; referencias=200000
+CacheSize? limite=392704 ; fallos=134208 ; referencias=200000
+CacheSize? limite=392960 ; fallos=134336 ; referencias=200000
+CacheSize? limite=393216 ; fallos=134464 ; referencias=200000
+CacheSize? limite=393472 ; fallos=134592 ; referencias=200000
+CacheSize? limite=393728 ; fallos=134720 ; referencias=200000
+CacheSize? limite=393984 ; fallos=134848 ; referencias=200000
+CacheSize? limite=394240 ; fallos=134976 ; referencias=200000
+CacheSize? limite=394496 ; fallos=135104 ; referencias=200000
+CacheSize? limite=394752 ; fallos=135232 ; referencias=200000
+CacheSize? limite=395008 ; fallos=135360 ; referencias=200000
+CacheSize? limite=395264 ; fallos=135488 ; referencias=200000
+CacheSize? limite=395520 ; fallos=135616 ; referencias=200000
+CacheSize? limite=395776 ; fallos=135744 ; referencias=200000
+CacheSize? limite=396032 ; fallos=135936 ; referencias=200000
+CacheSize? limite=396288 ; fallos=136192 ; referencias=200000
+CacheSize? limite=396544 ; fallos=136448 ; referencias=200000
+CacheSize? limite=396800 ; fallos=136704 ; referencias=200000
+CacheSize? limite=397056 ; fallos=136960 ; referencias=200000
+CacheSize? limite=397312 ; fallos=137216 ; referencias=200000
+CacheSize? limite=397568 ; fallos=137472 ; referencias=200000
+CacheSize? limite=397824 ; fallos=137728 ; referencias=200000
+CacheSize? limite=398080 ; fallos=137882 ; referencias=200000
+CacheSize? limite=398336 ; fallos=138008 ; referencias=200000
+CacheSize? limite=398592 ; fallos=138134 ; referencias=200000
+CacheSize? limite=398848 ; fallos=138260 ; referencias=200000
+CacheSize? limite=399104 ; fallos=138386 ; referencias=200000
+CacheSize? limite=399360 ; fallos=138512 ; referencias=200000
+CacheSize? limite=399616 ; fallos=138638 ; referencias=200000
+CacheSize? limite=399872 ; fallos=138764 ; referencias=200000
+CacheSize? limite=400128 ; fallos=138890 ; referencias=200000
+CacheSize? limite=400384 ; fallos=139016 ; referencias=200000
+CacheSize? limite=400640 ; fallos=139142 ; referencias=200000
+CacheSize? limite=400896 ; fallos=139268 ; referencias=200000
+CacheSize? limite=401152 ; fallos=139394 ; referencias=200000
+CacheSize? limite=401408 ; fallos=139520 ; referencias=200000
+CacheSize? limite=401664 ; fallos=139646 ; referencias=200000
+CacheSize? limite=401920 ; fallos=139772 ; referencias=200000
+CacheSize? limite=402176 ; fallos=139898 ; referencias=200000
+CacheSize? limite=402432 ; fallos=140144 ; referencias=200000
+CacheSize? limite=402688 ; fallos=140396 ; referencias=200000
+CacheSize? limite=402944 ; fallos=140648 ; referencias=200000
+CacheSize? limite=403200 ; fallos=140900 ; referencias=200000
+CacheSize? limite=403456 ; fallos=141152 ; referencias=200000
+CacheSize? limite=403712 ; fallos=141404 ; referencias=200000
+CacheSize? limite=403968 ; fallos=141656 ; referencias=200000
+CacheSize? limite=404224 ; fallos=141844 ; referencias=200000
+CacheSize? limite=404480 ; fallos=141968 ; referencias=200000
+CacheSize? limite=404736 ; fallos=142092 ; referencias=200000
+CacheSize? limite=404992 ; fallos=142216 ; referencias=200000
+CacheSize? limite=405248 ; fallos=142340 ; referencias=200000
+CacheSize? limite=405504 ; fallos=142464 ; referencias=200000
+CacheSize? limite=405760 ; fallos=142588 ; referencias=200000
+CacheSize? limite=406016 ; fallos=142712 ; referencias=200000
+CacheSize? limite=406272 ; fallos=142836 ; referencias=200000
+CacheSize? limite=406528 ; fallos=142960 ; referencias=200000
+CacheSize? limite=406784 ; fallos=143084 ; referencias=200000
+CacheSize? limite=407040 ; fallos=143208 ; referencias=200000
+CacheSize? limite=407296 ; fallos=143332 ; referencias=200000
+CacheSize? limite=407552 ; fallos=143456 ; referencias=200000
+CacheSize? limite=407808 ; fallos=143580 ; referencias=200000
+CacheSize? limite=408064 ; fallos=143704 ; referencias=200000
+CacheSize? limite=408320 ; fallos=143828 ; referencias=200000
+CacheSize? limite=408576 ; fallos=143952 ; referencias=200000
+CacheSize? limite=408832 ; fallos=144152 ; referencias=200000
+CacheSize? limite=409088 ; fallos=144400 ; referencias=200000
+CacheSize? limite=409344 ; fallos=144648 ; referencias=200000
+CacheSize? limite=409600 ; fallos=144896 ; referencias=200000
+CacheSize? limite=409856 ; fallos=145144 ; referencias=200000
+CacheSize? limite=410112 ; fallos=145392 ; referencias=200000
+CacheSize? limite=410368 ; fallos=145640 ; referencias=200000
+CacheSize? limite=410624 ; fallos=145832 ; referencias=200000
+CacheSize? limite=410880 ; fallos=145954 ; referencias=200000
+CacheSize? limite=411136 ; fallos=146076 ; referencias=200000
+CacheSize? limite=411392 ; fallos=146198 ; referencias=200000
+CacheSize? limite=411648 ; fallos=146320 ; referencias=200000
+CacheSize? limite=411904 ; fallos=146442 ; referencias=200000
+CacheSize? limite=412160 ; fallos=146564 ; referencias=200000
+CacheSize? limite=412416 ; fallos=146686 ; referencias=200000
+CacheSize? limite=412672 ; fallos=146808 ; referencias=200000
+CacheSize? limite=412928 ; fallos=146930 ; referencias=200000
+CacheSize? limite=413184 ; fallos=147052 ; referencias=200000
+CacheSize? limite=413440 ; fallos=147174 ; referencias=200000
+CacheSize? limite=413696 ; fallos=147296 ; referencias=200000
+CacheSize? limite=413952 ; fallos=147418 ; referencias=200000
+CacheSize? limite=414208 ; fallos=147540 ; referencias=200000
+CacheSize? limite=414464 ; fallos=147662 ; referencias=200000
+CacheSize? limite=414720 ; fallos=147784 ; referencias=200000
+CacheSize? limite=414976 ; fallos=147906 ; referencias=200000
+CacheSize? limite=415232 ; fallos=148028 ; referencias=200000
+CacheSize? limite=415488 ; fallos=148204 ; referencias=200000
+CacheSize? limite=415744 ; fallos=148448 ; referencias=200000
+CacheSize? limite=416000 ; fallos=148692 ; referencias=200000
+CacheSize? limite=416256 ; fallos=148936 ; referencias=200000
+CacheSize? limite=416512 ; fallos=149180 ; referencias=200000
+CacheSize? limite=416768 ; fallos=149424 ; referencias=200000
+CacheSize? limite=417024 ; fallos=149668 ; referencias=200000
+CacheSize? limite=417280 ; fallos=149840 ; referencias=200000
+CacheSize? limite=417536 ; fallos=149960 ; referencias=200000
+CacheSize? limite=417792 ; fallos=150080 ; referencias=200000
+CacheSize? limite=418048 ; fallos=150200 ; referencias=200000
+CacheSize? limite=418304 ; fallos=150320 ; referencias=200000
+CacheSize? limite=418560 ; fallos=150440 ; referencias=200000
+CacheSize? limite=418816 ; fallos=150560 ; referencias=200000
+CacheSize? limite=419072 ; fallos=150680 ; referencias=200000
+CacheSize? limite=419328 ; fallos=150800 ; referencias=200000
+CacheSize? limite=419584 ; fallos=150920 ; referencias=200000
+CacheSize? limite=419840 ; fallos=151040 ; referencias=200000
+CacheSize? limite=420096 ; fallos=151160 ; referencias=200000
+CacheSize? limite=420352 ; fallos=151280 ; referencias=200000
+CacheSize? limite=420608 ; fallos=151400 ; referencias=200000
+CacheSize? limite=420864 ; fallos=151520 ; referencias=200000
+CacheSize? limite=421120 ; fallos=151640 ; referencias=200000
+CacheSize? limite=421376 ; fallos=151760 ; referencias=200000
+CacheSize? limite=421632 ; fallos=151880 ; referencias=200000
+CacheSize? limite=421888 ; fallos=152000 ; referencias=200000
+CacheSize? limite=422144 ; fallos=152120 ; referencias=200000
+CacheSize? limite=422400 ; fallos=152288 ; referencias=200000
+CacheSize? limite=422656 ; fallos=152528 ; referencias=200000
+CacheSize? limite=422912 ; fallos=152768 ; referencias=200000
+CacheSize? limite=423168 ; fallos=153008 ; referencias=200000
+CacheSize? limite=423424 ; fallos=153248 ; referencias=200000
+CacheSize? limite=423680 ; fallos=153488 ; referencias=200000
+CacheSize? limite=423936 ; fallos=153728 ; referencias=200000
+CacheSize? limite=424192 ; fallos=153862 ; referencias=200000
+CacheSize? limite=424448 ; fallos=153980 ; referencias=200000
+CacheSize? limite=424704 ; fallos=154098 ; referencias=200000
+CacheSize? limite=424960 ; fallos=154216 ; referencias=200000
+CacheSize? limite=425216 ; fallos=154334 ; referencias=200000
+CacheSize? limite=425472 ; fallos=154452 ; referencias=200000
+CacheSize? limite=425728 ; fallos=154570 ; referencias=200000
+CacheSize? limite=425984 ; fallos=154688 ; referencias=200000
+CacheSize? limite=426240 ; fallos=154806 ; referencias=200000
+CacheSize? limite=426496 ; fallos=154924 ; referencias=200000
+CacheSize? limite=426752 ; fallos=155042 ; referencias=200000
+CacheSize? limite=427008 ; fallos=155160 ; referencias=200000
+CacheSize? limite=427264 ; fallos=155278 ; referencias=200000
+CacheSize? limite=427520 ; fallos=155396 ; referencias=200000
+CacheSize? limite=427776 ; fallos=155514 ; referencias=200000
+CacheSize? limite=428032 ; fallos=155632 ; referencias=200000
+CacheSize? limite=428288 ; fallos=155750 ; referencias=200000
+CacheSize? limite=428544 ; fallos=155868 ; referencias=200000
+CacheSize? limite=428800 ; fallos=155986 ; referencias=200000
+CacheSize? limite=429056 ; fallos=156104 ; referencias=200000
+CacheSize? limite=429312 ; fallos=156222 ; referencias=200000
+CacheSize? limite=429568 ; fallos=156392 ; referencias=200000
+CacheSize? limite=429824 ; fallos=156628 ; referencias=200000
+CacheSize? limite=430080 ; fallos=156864 ; referencias=200000
+CacheSize? limite=430336 ; fallos=157100 ; referencias=200000
+CacheSize? limite=430592 ; fallos=157336 ; referencias=200000
+CacheSize? limite=430848 ; fallos=157572 ; referencias=200000
+CacheSize? limite=431104 ; fallos=157776 ; referencias=200000
+CacheSize? limite=431360 ; fallos=157892 ; referencias=200000
+CacheSize? limite=431616 ; fallos=158008 ; referencias=200000
+CacheSize? limite=431872 ; fallos=158124 ; referencias=200000
+CacheSize? limite=432128 ; fallos=158240 ; referencias=200000
+CacheSize? limite=432384 ; fallos=158356 ; referencias=200000
+CacheSize? limite=432640 ; fallos=158472 ; referencias=200000
+CacheSize? limite=432896 ; fallos=158588 ; referencias=200000
+CacheSize? limite=433152 ; fallos=158704 ; referencias=200000
+CacheSize? limite=433408 ; fallos=158820 ; referencias=200000
+CacheSize? limite=433664 ; fallos=158936 ; referencias=200000
+CacheSize? limite=433920 ; fallos=159052 ; referencias=200000
+CacheSize? limite=434176 ; fallos=159168 ; referencias=200000
+CacheSize? limite=434432 ; fallos=159284 ; referencias=200000
+CacheSize? limite=434688 ; fallos=159400 ; referencias=200000
+CacheSize? limite=434944 ; fallos=159516 ; referencias=200000
+CacheSize? limite=435200 ; fallos=159632 ; referencias=200000
+CacheSize? limite=435456 ; fallos=159748 ; referencias=200000
+CacheSize? limite=435712 ; fallos=159864 ; referencias=200000
+CacheSize? limite=435968 ; fallos=159980 ; referencias=200000
+CacheSize? limite=436224 ; fallos=160096 ; referencias=200000
+CacheSize? limite=436480 ; fallos=160212 ; referencias=200000
+CacheSize? limite=436736 ; fallos=160328 ; referencias=200000
+CacheSize? limite=436992 ; fallos=160504 ; referencias=200000
+CacheSize? limite=437248 ; fallos=160736 ; referencias=200000
+CacheSize? limite=437504 ; fallos=160968 ; referencias=200000
+CacheSize? limite=437760 ; fallos=161200 ; referencias=200000
+CacheSize? limite=438016 ; fallos=161432 ; referencias=200000
+CacheSize? limite=438272 ; fallos=161664 ; referencias=200000
+CacheSize? limite=438528 ; fallos=161810 ; referencias=200000
+CacheSize? limite=438784 ; fallos=161924 ; referencias=200000
+CacheSize? limite=439040 ; fallos=162038 ; referencias=200000
+CacheSize? limite=439296 ; fallos=162152 ; referencias=200000
+CacheSize? limite=439552 ; fallos=162266 ; referencias=200000
+CacheSize? limite=439808 ; fallos=162380 ; referencias=200000
+CacheSize? limite=440064 ; fallos=162494 ; referencias=200000
+CacheSize? limite=440320 ; fallos=162608 ; referencias=200000
+CacheSize? limite=440576 ; fallos=162722 ; referencias=200000
+CacheSize? limite=440832 ; fallos=162836 ; referencias=200000
+CacheSize? limite=441088 ; fallos=162950 ; referencias=200000
+CacheSize? limite=441344 ; fallos=163064 ; referencias=200000
+CacheSize? limite=441600 ; fallos=163178 ; referencias=200000
+CacheSize? limite=441856 ; fallos=163292 ; referencias=200000
+CacheSize? limite=442112 ; fallos=163406 ; referencias=200000
+CacheSize? limite=442368 ; fallos=163520 ; referencias=200000
+CacheSize? limite=442624 ; fallos=163634 ; referencias=200000
+CacheSize? limite=442880 ; fallos=163748 ; referencias=200000
+CacheSize? limite=443136 ; fallos=163862 ; referencias=200000
+CacheSize? limite=443392 ; fallos=163976 ; referencias=200000
+CacheSize? limite=443648 ; fallos=164090 ; referencias=200000
+CacheSize? limite=443904 ; fallos=164204 ; referencias=200000
+CacheSize? limite=444160 ; fallos=164318 ; referencias=200000
+CacheSize? limite=444416 ; fallos=164432 ; referencias=200000
+CacheSize? limite=444672 ; fallos=164612 ; referencias=200000
+CacheSize? limite=444928 ; fallos=164840 ; referencias=200000
+CacheSize? limite=445184 ; fallos=165068 ; referencias=200000
+CacheSize? limite=445440 ; fallos=165296 ; referencias=200000
+CacheSize? limite=445696 ; fallos=165524 ; referencias=200000
+CacheSize? limite=445952 ; fallos=165728 ; referencias=200000
+CacheSize? limite=446208 ; fallos=165840 ; referencias=200000
+CacheSize? limite=446464 ; fallos=165952 ; referencias=200000
+CacheSize? limite=446720 ; fallos=166064 ; referencias=200000
+CacheSize? limite=446976 ; fallos=166176 ; referencias=200000
+CacheSize? limite=447232 ; fallos=166288 ; referencias=200000
+CacheSize? limite=447488 ; fallos=166400 ; referencias=200000
+CacheSize? limite=447744 ; fallos=166512 ; referencias=200000
+CacheSize? limite=448000 ; fallos=166624 ; referencias=200000
+CacheSize? limite=448256 ; fallos=166736 ; referencias=200000
+CacheSize? limite=448512 ; fallos=166848 ; referencias=200000
+CacheSize? limite=448768 ; fallos=166960 ; referencias=200000
+CacheSize? limite=449024 ; fallos=167072 ; referencias=200000
+CacheSize? limite=449280 ; fallos=167184 ; referencias=200000
+CacheSize? limite=449536 ; fallos=167296 ; referencias=200000
+CacheSize? limite=449792 ; fallos=167408 ; referencias=200000
+CacheSize? limite=450048 ; fallos=167520 ; referencias=200000
+CacheSize? limite=450304 ; fallos=167632 ; referencias=200000
+CacheSize? limite=450560 ; fallos=167744 ; referencias=200000
+CacheSize? limite=450816 ; fallos=167856 ; referencias=200000
+CacheSize? limite=451072 ; fallos=167968 ; referencias=200000
+CacheSize? limite=451328 ; fallos=168080 ; referencias=200000
+CacheSize? limite=451584 ; fallos=168192 ; referencias=200000
+CacheSize? limite=451840 ; fallos=168304 ; referencias=200000
+CacheSize? limite=452096 ; fallos=168416 ; referencias=200000
+CacheSize? limite=452352 ; fallos=168528 ; referencias=200000
+CacheSize? limite=452608 ; fallos=168704 ; referencias=200000
+CacheSize? limite=452864 ; fallos=168928 ; referencias=200000
+CacheSize? limite=453120 ; fallos=169152 ; referencias=200000
+CacheSize? limite=453376 ; fallos=169376 ; referencias=200000
+CacheSize? limite=453632 ; fallos=169600 ; referencias=200000
+CacheSize? limite=453888 ; fallos=169750 ; referencias=200000
+CacheSize? limite=454144 ; fallos=169860 ; referencias=200000
+CacheSize? limite=454400 ; fallos=169970 ; referencias=200000
+CacheSize? limite=454656 ; fallos=170080 ; referencias=200000
+CacheSize? limite=454912 ; fallos=170190 ; referencias=200000
+CacheSize? limite=455168 ; fallos=170300 ; referencias=200000
+CacheSize? limite=455424 ; fallos=170410 ; referencias=200000
+CacheSize? limite=455680 ; fallos=170520 ; referencias=200000
+CacheSize? limite=455936 ; fallos=170630 ; referencias=200000
+CacheSize? limite=456192 ; fallos=170740 ; referencias=200000
+CacheSize? limite=456448 ; fallos=170850 ; referencias=200000
+CacheSize? limite=456704 ; fallos=170960 ; referencias=200000
+CacheSize? limite=456960 ; fallos=171070 ; referencias=200000
+CacheSize? limite=457216 ; fallos=171180 ; referencias=200000
+CacheSize? limite=457472 ; fallos=171290 ; referencias=200000
+CacheSize? limite=457728 ; fallos=171400 ; referencias=200000
+CacheSize? limite=457984 ; fallos=171510 ; referencias=200000
+CacheSize? limite=458240 ; fallos=171620 ; referencias=200000
+CacheSize? limite=458496 ; fallos=171730 ; referencias=200000
+CacheSize? limite=458752 ; fallos=171840 ; referencias=200000
+CacheSize? limite=459008 ; fallos=171950 ; referencias=200000
+CacheSize? limite=459264 ; fallos=172060 ; referencias=200000
+CacheSize? limite=459520 ; fallos=172170 ; referencias=200000
+CacheSize? limite=459776 ; fallos=172280 ; referencias=200000
+CacheSize? limite=460032 ; fallos=172390 ; referencias=200000
+CacheSize? limite=460288 ; fallos=172500 ; referencias=200000
+CacheSize? limite=460544 ; fallos=172610 ; referencias=200000
+CacheSize? limite=460800 ; fallos=172768 ; referencias=200000
+CacheSize? limite=461056 ; fallos=172988 ; referencias=200000
+CacheSize? limite=461312 ; fallos=173208 ; referencias=200000
+CacheSize? limite=461568 ; fallos=173428 ; referencias=200000
+CacheSize? limite=461824 ; fallos=173648 ; referencias=200000
+CacheSize? limite=462080 ; fallos=173756 ; referencias=200000
+CacheSize? limite=462336 ; fallos=173864 ; referencias=200000
+CacheSize? limite=462592 ; fallos=173972 ; referencias=200000
+CacheSize? limite=462848 ; fallos=174080 ; referencias=200000
+CacheSize? limite=463104 ; fallos=174188 ; referencias=200000
+CacheSize? limite=463360 ; fallos=174296 ; referencias=200000
+CacheSize? limite=463616 ; fallos=174404 ; referencias=200000
+CacheSize? limite=463872 ; fallos=174512 ; referencias=200000
+CacheSize? limite=464128 ; fallos=174620 ; referencias=200000
+CacheSize? limite=464384 ; fallos=174728 ; referencias=200000
+CacheSize? limite=464640 ; fallos=174836 ; referencias=200000
+CacheSize? limite=464896 ; fallos=174944 ; referencias=200000
+CacheSize? limite=465152 ; fallos=175052 ; referencias=200000
+CacheSize? limite=465408 ; fallos=175160 ; referencias=200000
+CacheSize? limite=465664 ; fallos=175268 ; referencias=200000
+CacheSize? limite=465920 ; fallos=175376 ; referencias=200000
+CacheSize? limite=466176 ; fallos=175484 ; referencias=200000
+CacheSize? limite=466432 ; fallos=175592 ; referencias=200000
+CacheSize? limite=466688 ; fallos=175700 ; referencias=200000
+CacheSize? limite=466944 ; fallos=175808 ; referencias=200000
+CacheSize? limite=467200 ; fallos=175916 ; referencias=200000
+CacheSize? limite=467456 ; fallos=176024 ; referencias=200000
+CacheSize? limite=467712 ; fallos=176132 ; referencias=200000
+CacheSize? limite=467968 ; fallos=176240 ; referencias=200000
+CacheSize? limite=468224 ; fallos=176348 ; referencias=200000
+CacheSize? limite=468480 ; fallos=176456 ; referencias=200000
+CacheSize? limite=468736 ; fallos=176564 ; referencias=200000
+CacheSize? limite=468992 ; fallos=176672 ; referencias=200000
+CacheSize? limite=469248 ; fallos=176792 ; referencias=200000
+CacheSize? limite=469504 ; fallos=177008 ; referencias=200000
+CacheSize? limite=469760 ; fallos=177224 ; referencias=200000
+CacheSize? limite=470016 ; fallos=177440 ; referencias=200000
+CacheSize? limite=470272 ; fallos=177634 ; referencias=200000
+CacheSize? limite=470528 ; fallos=177740 ; referencias=200000
+CacheSize? limite=470784 ; fallos=177846 ; referencias=200000
+CacheSize? limite=471040 ; fallos=177952 ; referencias=200000
+CacheSize? limite=471296 ; fallos=178058 ; referencias=200000
+CacheSize? limite=471552 ; fallos=178164 ; referencias=200000
+CacheSize? limite=471808 ; fallos=178270 ; referencias=200000
+CacheSize? limite=472064 ; fallos=178376 ; referencias=200000
+CacheSize? limite=472320 ; fallos=178482 ; referencias=200000
+CacheSize? limite=472576 ; fallos=178588 ; referencias=200000
+CacheSize? limite=472832 ; fallos=178694 ; referencias=200000
+CacheSize? limite=473088 ; fallos=178800 ; referencias=200000
+CacheSize? limite=473344 ; fallos=178906 ; referencias=200000
+CacheSize? limite=473600 ; fallos=179012 ; referencias=200000
+CacheSize? limite=473856 ; fallos=179118 ; referencias=200000
+CacheSize? limite=474112 ; fallos=179224 ; referencias=200000
+CacheSize? limite=474368 ; fallos=179330 ; referencias=200000
+CacheSize? limite=474624 ; fallos=179436 ; referencias=200000
+CacheSize? limite=474880 ; fallos=179542 ; referencias=200000
+CacheSize? limite=475136 ; fallos=179648 ; referencias=200000
+CacheSize? limite=475392 ; fallos=179754 ; referencias=200000
+CacheSize? limite=475648 ; fallos=179860 ; referencias=200000
+CacheSize? limite=475904 ; fallos=179966 ; referencias=200000
+CacheSize? limite=476160 ; fallos=180072 ; referencias=200000
+CacheSize? limite=476416 ; fallos=180178 ; referencias=200000
+CacheSize? limite=476672 ; fallos=180284 ; referencias=200000
+CacheSize? limite=476928 ; fallos=180390 ; referencias=200000
+CacheSize? limite=477184 ; fallos=180496 ; referencias=200000
+CacheSize? limite=477440 ; fallos=180602 ; referencias=200000
+CacheSize? limite=477696 ; fallos=180708 ; referencias=200000
+CacheSize? limite=477952 ; fallos=180814 ; referencias=200000
+CacheSize? limite=478208 ; fallos=180976 ; referencias=200000
+CacheSize? limite=478464 ; fallos=181188 ; referencias=200000
+CacheSize? limite=478720 ; fallos=181400 ; referencias=200000
+CacheSize? limite=478976 ; fallos=181592 ; referencias=200000
+CacheSize? limite=479232 ; fallos=181696 ; referencias=200000
+CacheSize? limite=479488 ; fallos=181800 ; referencias=200000
+CacheSize? limite=479744 ; fallos=181904 ; referencias=200000
+CacheSize? limite=480000 ; fallos=182008 ; referencias=200000
+CacheSize? limite=480256 ; fallos=182112 ; referencias=200000
+CacheSize? limite=480512 ; fallos=182216 ; referencias=200000
+CacheSize? limite=480768 ; fallos=182320 ; referencias=200000
+CacheSize? limite=481024 ; fallos=182424 ; referencias=200000
+CacheSize? limite=481280 ; fallos=182528 ; referencias=200000
+CacheSize? limite=481536 ; fallos=182632 ; referencias=200000
+CacheSize? limite=481792 ; fallos=182736 ; referencias=200000
+CacheSize? limite=482048 ; fallos=182840 ; referencias=200000
+CacheSize? limite=482304 ; fallos=182944 ; referencias=200000
+CacheSize? limite=482560 ; fallos=183048 ; referencias=200000
+CacheSize? limite=482816 ; fallos=183152 ; referencias=200000
+CacheSize? limite=483072 ; fallos=183256 ; referencias=200000
+CacheSize? limite=483328 ; fallos=183360 ; referencias=200000
+CacheSize? limite=483584 ; fallos=183464 ; referencias=200000
+CacheSize? limite=483840 ; fallos=183568 ; referencias=200000
+CacheSize? limite=484096 ; fallos=183672 ; referencias=200000
+CacheSize? limite=484352 ; fallos=183776 ; referencias=200000
+CacheSize? limite=484608 ; fallos=183880 ; referencias=200000
+CacheSize? limite=484864 ; fallos=183984 ; referencias=200000
+CacheSize? limite=485120 ; fallos=184088 ; referencias=200000
+CacheSize? limite=485376 ; fallos=184192 ; referencias=200000
+CacheSize? limite=485632 ; fallos=184296 ; referencias=200000
+CacheSize? limite=485888 ; fallos=184400 ; referencias=200000
+CacheSize? limite=486144 ; fallos=184504 ; referencias=200000
+CacheSize? limite=486400 ; fallos=184608 ; referencias=200000
+CacheSize? limite=486656 ; fallos=184712 ; referencias=200000
+CacheSize? limite=486912 ; fallos=184816 ; referencias=200000
+CacheSize? limite=487168 ; fallos=184920 ; referencias=200000
+CacheSize? limite=487424 ; fallos=185088 ; referencias=200000
+CacheSize? limite=487680 ; fallos=185296 ; referencias=200000
+CacheSize? limite=487936 ; fallos=185504 ; referencias=200000
+CacheSize? limite=488192 ; fallos=185618 ; referencias=200000
+CacheSize? limite=488448 ; fallos=185720 ; referencias=200000
+CacheSize? limite=488704 ; fallos=185822 ; referencias=200000
+CacheSize? limite=488960 ; fallos=185924 ; referencias=200000
+CacheSize? limite=489216 ; fallos=186026 ; referencias=200000
+CacheSize? limite=489472 ; fallos=186128 ; referencias=200000
+CacheSize? limite=489728 ; fallos=186230 ; referencias=200000
+CacheSize? limite=489984 ; fallos=186332 ; referencias=200000
+CacheSize? limite=490240 ; fallos=186434 ; referencias=200000
+CacheSize? limite=490496 ; fallos=186536 ; referencias=200000
+CacheSize? limite=490752 ; fallos=186638 ; referencias=200000
+CacheSize? limite=491008 ; fallos=186740 ; referencias=200000
+CacheSize? limite=491264 ; fallos=186842 ; referencias=200000
+CacheSize? limite=491520 ; fallos=186944 ; referencias=200000
+CacheSize? limite=491776 ; fallos=187046 ; referencias=200000
+CacheSize? limite=492032 ; fallos=187148 ; referencias=200000
+CacheSize? limite=492288 ; fallos=187250 ; referencias=200000
+CacheSize? limite=492544 ; fallos=187352 ; referencias=200000
+CacheSize? limite=492800 ; fallos=187454 ; referencias=200000
+CacheSize? limite=493056 ; fallos=187556 ; referencias=200000
+CacheSize? limite=493312 ; fallos=187658 ; referencias=200000
+CacheSize? limite=493568 ; fallos=187760 ; referencias=200000
+CacheSize? limite=493824 ; fallos=187862 ; referencias=200000
+CacheSize? limite=494080 ; fallos=187964 ; referencias=200000
+CacheSize? limite=494336 ; fallos=188066 ; referencias=200000
+CacheSize? limite=494592 ; fallos=188168 ; referencias=200000
+CacheSize? limite=494848 ; fallos=188270 ; referencias=200000
+CacheSize? limite=495104 ; fallos=188372 ; referencias=200000
+CacheSize? limite=495360 ; fallos=188474 ; referencias=200000
+CacheSize? limite=495616 ; fallos=188576 ; referencias=200000
+CacheSize? limite=495872 ; fallos=188678 ; referencias=200000
+CacheSize? limite=496128 ; fallos=188780 ; referencias=200000
+CacheSize? limite=496384 ; fallos=188882 ; referencias=200000
+CacheSize? limite=496640 ; fallos=188984 ; referencias=200000
+CacheSize? limite=496896 ; fallos=189116 ; referencias=200000
+CacheSize? limite=497152 ; fallos=189320 ; referencias=200000
+CacheSize? limite=497408 ; fallos=189500 ; referencias=200000
+CacheSize? limite=497664 ; fallos=189600 ; referencias=200000
+CacheSize? limite=497920 ; fallos=189700 ; referencias=200000
+CacheSize? limite=498176 ; fallos=189800 ; referencias=200000
+CacheSize? limite=498432 ; fallos=189900 ; referencias=200000
+CacheSize? limite=498688 ; fallos=190000 ; referencias=200000
+CacheSize? limite=498944 ; fallos=190100 ; referencias=200000
+CacheSize? limite=499200 ; fallos=190200 ; referencias=200000
+CacheSize? limite=499456 ; fallos=190300 ; referencias=200000
+CacheSize? limite=499712 ; fallos=190400 ; referencias=200000
+CacheSize? limite=499968 ; fallos=190500 ; referencias=200000
+CacheSize? limite=500224 ; fallos=190600 ; referencias=200000
+CacheSize? limite=500480 ; fallos=190700 ; referencias=200000
+CacheSize? limite=500736 ; fallos=190800 ; referencias=200000
+CacheSize? limite=500992 ; fallos=190900 ; referencias=200000
+CacheSize? limite=501248 ; fallos=191000 ; referencias=200000
+CacheSize? limite=501504 ; fallos=191100 ; referencias=200000
+CacheSize? limite=501760 ; fallos=191200 ; referencias=200000
+CacheSize? limite=502016 ; fallos=191300 ; referencias=200000
+CacheSize? limite=502272 ; fallos=191400 ; referencias=200000
+CacheSize? limite=502528 ; fallos=191500 ; referencias=200000
+CacheSize? limite=502784 ; fallos=191600 ; referencias=200000
+CacheSize? limite=503040 ; fallos=191700 ; referencias=200000
+CacheSize? limite=503296 ; fallos=191800 ; referencias=200000
+CacheSize? limite=503552 ; fallos=191900 ; referencias=200000
+CacheSize? limite=503808 ; fallos=192000 ; referencias=200000
+CacheSize? limite=504064 ; fallos=192100 ; referencias=200000
+CacheSize? limite=504320 ; fallos=192200 ; referencias=200000
+CacheSize? limite=504576 ; fallos=192300 ; referencias=200000
+CacheSize? limite=504832 ; fallos=192400 ; referencias=200000
+CacheSize? limite=505088 ; fallos=192500 ; referencias=200000
+CacheSize? limite=505344 ; fallos=192600 ; referencias=200000
+CacheSize? limite=505600 ; fallos=192700 ; referencias=200000
+CacheSize? limite=505856 ; fallos=192800 ; referencias=200000
+CacheSize? limite=506112 ; fallos=192900 ; referencias=200000
+CacheSize? limite=506368 ; fallos=193000 ; referencias=200000
+CacheSize? limite=506624 ; fallos=193100 ; referencias=200000
+CacheSize? limite=506880 ; fallos=193248 ; referencias=200000
+CacheSize? limite=507136 ; fallos=193434 ; referencias=200000
+CacheSize? limite=507392 ; fallos=193532 ; referencias=200000
+CacheSize? limite=507648 ; fallos=193630 ; referencias=200000
+CacheSize? limite=507904 ; fallos=193728 ; referencias=200000
+CacheSize? limite=508160 ; fallos=193826 ; referencias=200000
+CacheSize? limite=508416 ; fallos=193924 ; referencias=200000
+CacheSize? limite=508672 ; fallos=194022 ; referencias=200000
+CacheSize? limite=508928 ; fallos=194120 ; referencias=200000
+CacheSize? limite=509184 ; fallos=194218 ; referencias=200000
+CacheSize? limite=509440 ; fallos=194316 ; referencias=200000
+CacheSize? limite=509696 ; fallos=194414 ; referencias=200000
+CacheSize? limite=509952 ; fallos=194512 ; referencias=200000
+CacheSize? limite=510208 ; fallos=194610 ; referencias=200000
+CacheSize? limite=510464 ; fallos=194708 ; referencias=200000
+CacheSize? limite=510720 ; fallos=194806 ; referencias=200000
+CacheSize? limite=510976 ; fallos=194904 ; referencias=200000
+CacheSize? limite=511232 ; fallos=195002 ; referencias=200000
+CacheSize? limite=511488 ; fallos=195100 ; referencias=200000
+CacheSize? limite=511744 ; fallos=195198 ; referencias=200000
+CacheSize? limite=512000 ; fallos=195296 ; referencias=200000
+CacheSize? limite=512256 ; fallos=195394 ; referencias=200000
+CacheSize? limite=512512 ; fallos=195492 ; referencias=200000
+CacheSize? limite=512768 ; fallos=195590 ; referencias=200000
+CacheSize? limite=513024 ; fallos=195688 ; referencias=200000
+CacheSize? limite=513280 ; fallos=195786 ; referencias=200000
+CacheSize? limite=513536 ; fallos=195884 ; referencias=200000
+CacheSize? limite=513792 ; fallos=195982 ; referencias=200000
+CacheSize? limite=514048 ; fallos=196080 ; referencias=200000
+CacheSize? limite=514304 ; fallos=196178 ; referencias=200000
+CacheSize? limite=514560 ; fallos=196276 ; referencias=200000
+CacheSize? limite=514816 ; fallos=196374 ; referencias=200000
+CacheSize? limite=515072 ; fallos=196472 ; referencias=200000
+CacheSize? limite=515328 ; fallos=196570 ; referencias=200000
+CacheSize? limite=515584 ; fallos=196668 ; referencias=200000
+CacheSize? limite=515840 ; fallos=196766 ; referencias=200000
+CacheSize? limite=516096 ; fallos=196864 ; referencias=200000
+CacheSize? limite=516352 ; fallos=196962 ; referencias=200000
+CacheSize? limite=516608 ; fallos=197060 ; referencias=200000
+CacheSize? limite=516864 ; fallos=197158 ; referencias=200000
+CacheSize? limite=517120 ; fallos=197264 ; referencias=200000
+CacheSize? limite=517376 ; fallos=197408 ; referencias=200000
+CacheSize? limite=517632 ; fallos=197504 ; referencias=200000
+CacheSize? limite=517888 ; fallos=197600 ; referencias=200000
+CacheSize? limite=518144 ; fallos=197696 ; referencias=200000
+CacheSize? limite=518400 ; fallos=197792 ; referencias=200000
+CacheSize? limite=518656 ; fallos=197888 ; referencias=200000
+CacheSize? limite=518912 ; fallos=197984 ; referencias=200000
+CacheSize? limite=519168 ; fallos=198080 ; referencias=200000
+CacheSize? limite=519424 ; fallos=198176 ; referencias=200000
+CacheSize? limite=519680 ; fallos=198272 ; referencias=200000
+CacheSize? limite=519936 ; fallos=198368 ; referencias=200000
+CacheSize? limite=520192 ; fallos=198464 ; referencias=200000
+CacheSize? limite=520448 ; fallos=198560 ; referencias=200000
+CacheSize? limite=520704 ; fallos=198656 ; referencias=200000
+CacheSize? limite=520960 ; fallos=198752 ; referencias=200000
+CacheSize? limite=521216 ; fallos=198848 ; referencias=200000
+CacheSize? limite=521472 ; fallos=198944 ; referencias=200000
+CacheSize? limite=521728 ; fallos=199040 ; referencias=200000
+CacheSize? limite=521984 ; fallos=199136 ; referencias=200000
+CacheSize? limite=522240 ; fallos=199232 ; referencias=200000
+CacheSize? limite=522496 ; fallos=199328 ; referencias=200000
+CacheSize? limite=522752 ; fallos=199424 ; referencias=200000
+CacheSize? limite=523008 ; fallos=199520 ; referencias=200000
+CacheSize? limite=523264 ; fallos=199616 ; referencias=200000
+CacheSize? limite=523520 ; fallos=199712 ; referencias=200000
+CacheSize? limite=523776 ; fallos=199808 ; referencias=200000
+CacheSize? limite=524032 ; fallos=199904 ; referencias=200000
+CacheSize? limite=524288 ; fallos=200000 ; referencias=200000

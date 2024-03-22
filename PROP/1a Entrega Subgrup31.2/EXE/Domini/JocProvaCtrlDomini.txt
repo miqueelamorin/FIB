@@ -1,0 +1,348 @@
+Prova 1
+Descripció:
+    Es prova: Crear usuari / CtrlDomini
+Objectiu:
+    Comprovar que crea un usuari correctament
+Entrada:
+    <String nom> pere <String contrasenya> 1234
+Sortida:
+    Missatge "Usuari creat correctament"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 2
+Descripció:
+    Es prova: Crear usuari / CtrlDomini
+Objectiu:
+    Comprovar que informa si el nom d'usuari està repetit
+Entrada:
+    <String nom> pere ...
+Sortida:
+    Missatge "Ja existeix un usuari amb aquest nom"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 3
+Descripció:
+    Es prova: Iniciar sessió / CtrlDomini
+Objectiu:
+    Comprovar que verifica un usuari
+Entrada:
+    <String nom> pere <String contrasenya> 1234
+Sortida:
+    Missatge "Has entrat correctament al teu compte"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 4
+Descripció:
+    Es prova: Iniciar sessió / CtrlDomini
+Objectiu:
+    Comprovar que verifica la contrasenya
+Entrada:
+    <String nom> pere <String contrasenya> 4321
+Sortida:
+    Missatge "Contrasenya incorrecta"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 5
+Descripció:
+    Es prova: Iniciar sessió / CtrlDomini
+Objectiu:
+    Comprovar que verifica el nom d'usuari
+Entrada:
+    <String nom> andreu <String contrasenya> 1234
+Sortida:
+    Missatge "No existeix cap usuari amb id andreu"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 6
+Descripció:
+    Es prova: Tancar sessió / CtrlDomini
+Objectiu:
+    Comprovar que tanca sessió
+Entrada:
+    <entrada (Si/No)> Si
+Sortida:
+    Missatge "Sessió tancada correctament"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 7
+Descripció:
+    Es prova: Consultar teclats / CtrlDomini, Teclat
+Objectiu:
+    Comprovar cas en què no hi han teclats
+Entrada:
+    -
+Sortida:
+    Missatge "No tens cap teclat creat"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 8
+Descripció:
+    Es prova: Crear Teclat / CtrlDomini, Teclat, QAP, Greedy
+Objectiu:
+    Comprovar que crea correctament un teclat
+Entrada:
+    1. <String nom_teclat> teclat1
+    2. <char> C (crear nou alfabet per terminal)
+    3. <String nom_alfabet> alfabet1
+    4. <[] char> a b c d e f g h i j k l m n o p q r s t u v w x y z @
+    5. <char> T (introduir text)
+    6. <String nom_text> text1
+    7. <char> M (introduir per terminal)
+    8. <[] String text> hola que tal
+    9. <char> @
+    10. <Format> RODO(encara no implementat)
+Sortida:
+    Creant teclat...
+    a l d o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 9
+Descripció:
+    Es prova: Crear teclat / CtrlDomini, Teclat
+Objectiu:
+    Comprovar que no es pot crear un teclat amb nom repetit
+Entrada:
+    <String nom_teclat> teclat1
+Sortida:
+    Missatge "El nom teclat1 ja esta agafat"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 10
+Descripció:
+    Es prova: Crear Teclat / CtrlDomini, Teclat, QAP, Greedy
+Objectiu:
+    Comprovar que crea correctament un teclat amb alfabet existent
+Entrada:
+    1. <String nom_teclat> teclat2
+    2. <char> E (alfabet existent)
+    3. <String nom_alfabet> alfabet1
+    5. <char> T (introduir text)
+    6. <String nom_text> text1
+    7. <char> M (introduir per terminal)
+    8. <[] String text> hola que tal
+    9. <char> @
+    10. <Format> RODO(encara no implementat)
+Sortida:
+    Creant teclat...
+    a l d o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 11
+Descripció:
+    Es prova: Crear Teclat / CtrlDomini, Teclat, QAP, Greedy
+Objectiu:
+    Triar un alfabet incorrecte al triar alfabet existent
+Entrada:
+    1. <String nom_teclat> teclat3
+    2. <char> E (alfabet existent)
+    3. <String nom_alfabet> alfabet2
+Sortida:
+    Missatge "No existeix l'alfabet alfabet2"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 12
+Descripció:
+    Es prova: Consultar teclats / CtrlDomini, Teclat
+Objectiu:
+    Consulta correcta dels teclats creats
+Entrada:
+    -
+Sortida:
+    1. teclat1
+    a l d o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+    2. teclat2
+    a l d o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+Resultat de la prova:
+
+---------------------------------------------------------
+
+Prova 13
+Descripció:
+    Es prova: Seleccionar Teclat / CtrlDomini, Teclat
+Objectiu:
+    Seleccionar un teclat dels creats
+Entrada:
+    <int idTeclat> 1
+Sortida:
+    Has seleccionat el teclat teclat1!
+    a l d o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 14
+Descripció:
+    Es prova: Seleccionar Teclat / CtrlDomini, Teclat
+Objectiu:
+    Seleccionar un teclat no creat
+Entrada:
+    <int idTeclat> 3
+Sortida:
+    Missatge "Identificador de teclat incorrecte"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 15
+Descripció:
+    Es prova: Modificar Nom Teclat / CtrlDomini, Teclat
+Objectiu:
+    Modificar el nom d'un teclat creat
+Entrada:
+    <int idTeclat> 1
+    <String nou_nom> teclat4
+Sortida:
+    Missatge "El nom del teclat s'ha actualitzat correctament!"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 16
+Descripció:
+    Es prova: Modificar Tecles Teclat / CtrlDomini, Teclat
+Objectiu:
+    Intercanviar dues tecles del teclat
+Entrada:
+    1. <int idTeclat> 1
+    2. <char tecla1> a
+    3. <char tecla2> d
+Sortida:
+    Canvi realitzat correctament
+    d l a o h e u q b c
+    t f g i j k m n p r
+        s v w x y z
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 17
+Descripció:
+    Es prova: Modificar Tecles Teclat / CtrlDomini, Teclat
+Objectiu:
+    Intercanviar dues tecles del teclat, on una de les tecles no pertany a l'alfabet
+Entrada:
+    1. <int idTeclat> 1
+    2. <char tecla1> &
+    3. <char tecla2> a
+Sortida:
+    Missatge "La tecla & no es troba al teclat"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 18
+Descripció:
+    Es prova: Modificar Tecles Teclat / CtrlDomini, Teclat
+Objectiu:
+    Intercanviar dues tecles del teclat, on cap de les tecles pertany a l'alfabet
+Entrada:
+    1. <int idTeclat> 1
+    2. <char tecla1> &
+    3. <char tecla2> (
+Sortida:
+    Missatge "Cap de les tecles es troba en el teclat"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 19
+Descripció:
+    Es prova: Consultar Alfabets / CtrlDomini, Alfabet
+Objectiu:
+    Comprovar els alfabets creats
+Entrada:
+    -
+Sortida:
+    1. alfabet1
+    a b c d e f g h i j k l m n o p q r s t u v w x y z
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 20
+Descripció:
+    Es prova: Consultar Alfabets / CtrlDomini, Alfabet
+Objectiu:
+    Canviar el nom d'un alfabet
+Entrada:
+    1. <String Nom_Alfabet_a_canviar> alfabet1
+    2. <String nou_nom> alfabet2
+Sortida:
+    Missatge "Canvi realitzat correctament"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 21
+Descripció:
+    Es prova: Eliminar teclat / CtrlDomini
+Objectiu:
+    Eliminar un teclat
+Entrada:
+    <int idteclat> 1
+Sortida:
+    Has seleccionat el teclat teclat1!
+    El teclat teclat1 s'ha eliminat correctament!
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 22
+Descripció:
+    Es prova: Canviar id usuari / CtrlDomini, UsuariActiu
+Objectiu:
+    Canviar l'id/nom de l'usuari que ha iniciat sessió
+Entrada:
+    1. <String contrasenya> 1234
+    2. <String nouId> andreu
+Sortida:
+    Missatge "Id modificat correctament"
+Resultat de la prova: OK
+
+---------------------------------------------------------
+
+Prova 23
+Descripció:
+    Es prova: Canviar contrasenya usuari / CtrlDomini, UsuariActiu
+Objectiu:
+    Canviar la contrasenya de l'usuari que ha iniciat sessió
+Entrada:
+    1. <String contrasenya> 1234
+    2. <String nouPassword> 4321
+Sortida:
+    Missatge "Contrasenya modificada correctament"
+Resultat de la prova: OK
+
+---------------------------------------------------------

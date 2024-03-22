@@ -1,0 +1,61 @@
+----JOC DE PROVA CAIXA BLANCA----
+
+-Objecte de la prova:
+	Amb aquest joc d’assaigs es proven els següents casos d’us:
+	Afegir Text
+	Obtenir Noms Textos
+	Obtenir Contingut Text
+	Eliminar Text
+	Modificar Text
+
+-Fitxers necessaris:
+	TextProvaImportat.txt
+
+-Entrada del joc de proves (valors estudiats):
+    1
+    2
+    TextProvaManual
+    1
+    En un rincón secreto de la ciudad, una librería escondía historias encantadas entre sus estantes desgastados. Un visitante curioso, atraído por la promesa de conocimientos mágicos, descubrió un libro parlante que susurraba cuentos olvidados. Mientras hojeaba las páginas, la atmósfera se llenó de un aire misterioso, y el joven aventurero partió con ojos brillantes, llevando consigo la magia de las historias entrelazadas. La librería, ahora imbuida de un aura de misterio, aguardaba a futuros soñadores.
+    2
+    TextProvaImportat
+    2
+    TextProvaImportat.txt
+    2
+    TextProvaManual
+    1
+    En la cafetería de la esquina, donde el aroma del café flotaba en el aire, dos extraños compartieron sonrisas furtivas mientras el barista preparaba sus bebidas. En un intercambio de palabras breves, descubrieron conexiones inesperadas: una ciudad natal común, pasiones compartidas. Entre sorbos de café, el encuentro casual tejía un vínculo fugaz pero significativo, recordándoles que las historias entrelazadas pueden surgir en los lugares más cotidianos.
+    2
+    test
+    1
+    En el mercado bullicioso, dos corazones se encontraron entre puestos de colores. Una breve conversación, risas compartidas, y el destino los separó. En la multitud, quedaron los recuerdos de un encuentro casual.
+    3
+    4
+    TextProvaManual
+    4
+    Text
+    5
+    TextProvaImportat
+    5
+    Text
+    3
+    5
+    TextProvaImportat
+    6
+    TextProvaManual
+    Bajo luces de neón, la lluvia pintaba reflejos en las calles. En una esquina, dos extraños intercambiaron miradas cómplices. Palabras no dichas, pero un instante compartido que resonaría mucho después en sus pensamientos.
+    4
+    TextProvaManual
+    6
+    Text
+    En el parque silencioso, hojas crujían bajo sus pasos. Un banco vacío los reunió. Compartieron risas efímeras, dos historias entrelazadas por un instante, antes de seguir caminos separados.
+    0
+
+La missio d’aquests valors es veure el bon funcionament del programa en general passant per totes les funcionalitats d’aquest.  Un dels objectius és comprovar que passa quan afegim un text amb un nom que ja existeix o intentem modificar/eliminar/visualitzar el contingut un text que no existeix.
+La conclusió del joc de prova es COMPLETAT AMB ÈXIT ja que el programa és capaç de detectar els casos excepcionals comentats anteriorment i completa amb èxit tots els casos dús posats a prova. 
+
+- Operativa:
+Executar la següent ordre: make exeDriverText anar introduint línia a línia el contingut del document.
+
+
+

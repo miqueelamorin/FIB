@@ -1,0 +1,81 @@
+----JOC DE PROVA CAIXA BLANCA----
+
+-Objecte de la prova:
+	Amb aquest joc d’assaigs es proven els següents casos d’us:
+	Afegir Llista
+	Obtenir Noms Llista
+	Obtenir Contingut Llista
+	Eliminar Text
+	Modificar Text
+	Afegir Text a LLista
+	Eliminar Text de LLista
+
+-Fitxers necessaris:
+	ParaulesFrequenciaProvaImportat.txt
+
+-Entrada del joc de proves (valors estudiats):
+    1
+    2
+    PFProvaManual
+    1
+    crepuscular:7;voraz:4;serendipia:9;efímero:5;sinuoso:8;brillante:6;candor:3;murmurar:1;lúdico:10;susurro:2;
+    2
+    PFProvaText
+    2
+    test
+    LoremIpsum
+    0
+    2
+    PFProvaText2
+    2
+    test
+    prova
+    0
+    2
+    PFProvaImportat
+    3
+    ParaulesFrequenciaProvaImportat.txt
+    2
+    PFProvaManual
+    1
+    claridad:5;efervescente:8;serenidad:3;efímero:6;luminoso:7;intrincado:4;sosegado:2;resplandor:9;furtivo:1;efusivo:10;
+    3
+    4
+    PFProvaManual
+    4
+    prova
+    5
+    PFProvaManual
+    5
+    prova
+    6
+    PFProvaImportat
+    esplendor:8;etéreo:3;intrínseco:5;efusivo:7;cálido:6;efímero:2;serenidad:9;majestuoso:4;resplandor:10;sutil:1;
+    6
+    prova
+    esplendor:8;etéreo:3;intrínseco:5;efusivo:7;cálido:6;efímero:2;serenidad:9;majestuoso:4;resplandor:10;sutil:1;
+    7
+    PFProvaImportat
+    7
+    PFProvaText
+    The quick brown fox
+    7
+    PFProvaText
+    prova
+    7
+    llista
+    8
+    PFProvaText
+    test
+    8
+    PFProvaText
+    prova
+    8
+    llista
+    0
+
+La missio d’aquests valors es veure el bon funcionament del programa en general passant per totes les funcionalitats d’aquest.  
+Amb el joc de temes comprovem que si intentem afegir una nova llista de freqüència de paraules (ja sigui manualment, mitjançant un conjunt de textos o importada) amb un nom que ja existeix, salta una excepció que t'impedeix fer-ho. Passa el mateix si volem obtenir el contingut d'una llista o intentem eliminar o modificar una llista inexistent.
+En cas de voler afegir/eliminar un text d'una llista, la llista ha d'haver estat creada a base de textos i aquests textos que volem afegir o eliminar han d'existir al sistema, el joc de proves també explora aquests casos.
+
+Totes les excepcions i els casos de proves s'executen correctament.

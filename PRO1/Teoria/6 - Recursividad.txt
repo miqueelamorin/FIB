@@ -1,0 +1,239 @@
+Notas de Recursividad
+=====================
+
+
+Recurso que permite expresar una secuencia de items (instrucciones, computos 
+o tareas) de forma concisa.
+
+De uso habitual en definiciones:
+
+        Ejemplo: 
+            
+            """
+            Un numero n es una potencia de 2 cuando o bien 
+            (1) n es 1 , o bien
+            (2) n es par y n/2 es una potencia de 2
+            """
+
+        esta definicion sugiere la funcion ---recursiva---:
+            
+             //pre: n >= 1
+             //post: retorna true si n es potencia de 2 y false en caso contrario
+             bool es_pot_2(int n) {
+                if (n == 1) return true;
+                else if (n%2 == 1) return false;
+                else return es_pot_2(n/2);
+            }
+
+
+Fortalezas vs Debilidades
+=========================
+
+Pros: Con relativa frecuencia (pero no siempre), una solución recursiva puede ser 
+      (mucho) mas simple y concisa que una solucion iterativa.
+
+Cons: Las soluciones recursivas suelen ser menos eficientes ---> conclusion: cuando 
+      una funcion tiene una solucion iterativa sencilla, preferimos esta a una recursiva.
+
+      Por tanto, preferimos la siguiente version iterativa para decidir si un numero es una potencia de 2:
+
+             //pre: n >= 1
+             //post: retorna true si n es potencia de 2 y false en caso contrario
+             bool es_pot_2(int n) {
+                while (n%2 == 0) n = n/2;
+                return n == 1;
+             }
+
+
+
+Guia de programacion recursiva
+==============================
+
+
+Proponemos una estrategia formada por varias etapas. Se establecen reglas generales (que, por ser generales,
+estan sujetas a excepciones)
+
+Desarrollamos las etapas en paralelo con  un ejemplo de uso:
+
+Ejemplo >> Se pide una funcion recursiva para juntar dos numeros en uno. 
+           joint(351, 23) ---> 35123
+           joint(34, 987) ---> 34987
+
+         
+         //pre: m >= 0 y n >= 0
+         //post: retorna el numero cuyas primeras cifras son las de m y las ultimas las de n
+         int joint(int m, int n)
+
+
+Etapas:
+
+  Etapa 0:  (peliminar) El esqueleto de una funcion (o accion) recusiva es una estructura alternativa:
+            
+            if (...) .......
+            else if (...) ...
+            ................
+            else if (...)
+            ese ...
+       
+            los casos sin llamada recursiva son los "casos directos". El resto de casos son los "casos
+            recursivos"
+
+  Etapa 1: Los casos directos de obtienen respondiendo a "para que valores de los parametros es facil calcular
+          el resultado?".
+
+          joint(m,n) es facil de calcular cuando n solo tiene un digito (n < 10). En este caso el resultado es 
+          10*m + n
+          
+          Por ejemplo, joint(89, 7) es 10*89 + 7 (= 897)
+
+          proponemos el esquema:
+
+          if (n < 10) ....//caso directo  
+          else       .....//caso recursivo
+
+  Etapa 2: resolvemos los casos directos, que por eleccion son faciles
+
+          if (n < 10) return 10*m + n;
+          else ....
+
+  Etapa 3: resolvemos el caso recursivo en tres pasos
+
+      3.a) Proponemos una llamada recursiva. El argumento con el que se hace la llamada
+           ***ha de acercarse a uno de los casos directos****
+
+           En nuestro ejemplo, una propuesta de llamada recursiva puede ser joint(m, n/10).
+           La propuesta de llamada joint(m, 10*n) no tiene sentido porque no se acerca al caso base
+      
+      3.b) Punto **magico**: suponemos que la llamada recursiva que proponemos funciona correctamente. 
+           Documentamos el resultado que obtenemos de la llamada en un comentario.  (La **magia** equivale 
+           a la frase "por hipotesis de induccion" en una demostracion por induccion)
+
+           En nuestro ejemplo:
+
+            if (n < 10) return 10*m + n;
+            else {
+                int z = joint(m, n/10)
+                //z es el numero cuyas primeras cifras son las de m y sus ultimas son las de n/10 
+                ....
+                ....
+
+      3.c) Completamos el caso recursivo con el codigo necesario para que se cumpla la postconcicion. Si no 
+           se consigue, volvemos al paso 3.a)
+
+           En nuestro ejemplo, necesitamos completar el caso recursivo
+
+                //z es el numero cuyas primeras cifras son las de m y sus ultimas son las de n/10 
+                ....
+                ....
+                //post: retorna el numero cuyas primeras cifras son las de m y las ultimas las de n
+   
+              
+                Completamos haciendo 
+
+                return 10*z + n%10
+
+
+    Codigo completo:
+          
+        //pre: m >= 0 y n >= 0
+        //post: retorna el numero cuyas primeras cifras son las de m y las ultimas las de n
+        int joint(int m, int n) {
+            if (n < 10) return 10*m + n;
+            else {
+                int z = joint(m, n/10);
+                //z es el numero cuyas primeras cifras son las de m y sus ultimas son las de n/10 
+                return 10*z + n%10;
+            }
+        }
+
+            
+Otro ejemplo
+============
+
+Escribir una lista de numeros que hay en  el canal de entrada en orden inverso al que aparecen
+
+in >> 14 3 238 0 12 9
+out >> 9 
+       12 
+       0 
+       238
+       3
+       14
+
+Documentacion:
+
+    //pre: una lista de enteros en la entrada
+    //post: escribe al reves la lista en el canal de salida 
+    void escribir_al_reves() 
+
+Nota: el razonamiento es mas obscuro porque el parametro "lista de numeros en entrada" no es 
+      un parametro explicito de la accion.
+
+
+Etapas:
+
+    Etapas 1 & 2:
+
+        Caso directo --> cuando en la entrada no hay ningun numero (lista vacia 
+                         de numeros) (nada a hacer!)
+        Caso recursivo --> la entrada no es vacia
+
+        Proponemos el esqueleto:
+         
+        int n;
+        if (not (cin >> n)); //caso directo, nada a hacer
+        else ... //caso recursivo
+
+
+    Etapa 3.a:
+
+        Propuesta de llamada recursiva: hemos de acercarnos al caso directo (entrada vacia). 
+        Ya hemos extraido (leido)  el primer  valor (esta en la variable n) de la lista.
+        Podemos proponer la llamada recursiva:
+            
+        escribir_al_reves() //   ---> esta llamada recursiva tiene sentido porque se hace sobre 
+                            //        una lista mas pequenna (la lista original excepto su primer 
+                            //        elemento, que hemos leido en n)
+       
+    Etapa 3.b:
+    
+        **Punto mágico** Suponemos que la llamada recursiva funciona bien. Documentamos 
+        el resultado de la llamada.
+        
+        escribir_al_reves();
+        //hipotesis: escribe al reves la lista de numeros que sigue al primer numero
+
+    Etapa 3.c:
+
+         Ahora para completar el caso recursivo solo tenemos que escribir el primer elemnto de
+         la lista. Recordemos que ese valor lo tenemos almacenado en la variable n:
+
+         cout << n << endl;
+
+
+Codigo completo:
+
+        //pre: una lista de enteros en la entrada
+        //post: escribe al reves la lista en el canal de salida 
+        void escribir_al_reves() {
+            int n;
+            if (not (cin >> n));
+            else {
+                esribir_al_reves();
+                //hipotesis: escribe al reves la lista de numeros que siguen a n 
+                cout << n << endl;
+            }
+        }
+
+
+        puesto bonito ---eliminando la rama vacia de la alternativa:
+
+        //pre: una lista de enteros en la entrada
+        //post: escribe al reves la lista en el canal de salida 
+        void escribir_al_reves() {
+            int n;
+            if (cin >> n) {
+                esribir_al_reves();
+                //hipotesis: escribe al reves la lista de numeros que siguen a n 
+                cout << n << endl;
+            }

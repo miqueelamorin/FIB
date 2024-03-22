@@ -1,0 +1,137 @@
+Vectores: (2) Paso de vectores como parámetros
+==============================================
+
+Recordamos que el paso por valor de un parámetro  exige hacer (internamente) una
+copia de la información que se trasmite en el punto de llamada, de forma que
+la función (o acción) trabaja sobre la copia. La copia no se hace en el paso
+por referencia en el que la función trabaja directamente sobre la info original. 
+Como los vectores pueden representar conjuntos de información muy grandes,
+el paso por valor un vector, que supone un gasto de memoria no desdeñable 
+para almacenar la copia cuando el vector es grande, sólo es aceptable cuando 
+ese gasto es inevitable.
+
+
+
+Hay tres formas de pasar un vector como parámetro:
+
+    1) el vector es un parámetro de ENTRADA y no hay razón que justifique 
+       duplicar el uso de memoria que requiere su almacenamiento ---->
+       Lo trasmitimos por **referencia constante*** que es simplemente
+       un paso por referencia (que no duplica la info) con un
+       aviso de que no se van a cambiar lo valores del vector.
+
+       Es un caso **muy frecuente**
+
+       Ejemplos: 
+       ---------
+          //pre: ---
+          //post retorna la suma de los valores de v
+          int suma(const vector<int>& v)
+
+
+          //pre: u y v tienen el mismo tamanyo
+          //post: retorna el producto escalar de u y v
+          double producto_escalar(const vector<double>& u, const vector<double>& v)
+
+
+     2) el vector es un parámetro de SALIDA o de ENTRADA/SALIDA. Lo trasmitimos 
+        por referencia.
+
+        Es un caso **frecuente***
+
+        Ejemplos:
+        --------
+            //pre: En el canal de entrada hay al menos v.size()  palabras
+            //post: el vector v contiene las primeras v.size() pabras del cin
+            void leer_vector(vector<string>& v)
+
+           
+            //pre: ---
+            //post: cada valor del vector se ha cambiado por su cuadrado
+            void cuadrado(vector<int>& v)
+
+
+     3) El vector es un parámetro de ENTRADA y **es necesario o inevitable**
+        duplicar el espacio de memoria dedicada a su almacenamiento. Lo 
+        trasmitimos por valor  
+
+        Es un caso **infrecuente**
+
+        
+        Ejemplo: 
+        -------
+             Disponemos de una lista de números en un vector v. Queremos mantener
+             este vector y a la vez disponer en otro vector, llamémosle w tal que 
+             el valor w[i] se el primer primo mayor o igual a v[i]. Por ejemplo,
+             si v es el vector 1, 5, 4, 9, 15, 10 entonces el vector w será
+             2, 5, 5, 11, 17, 11.
+             
+             Aquí podríamos plantear esta solución donde el vector v se pasa por valor,
+             Como el paso es por valor, los cambios de la función en v no afectan 
+             al argumento en el punto de llamada. 
+
+             //pre: todos los valores de v son enteros positivos
+             //post: retorna un vector en cuya posicion i aparece el primer primo mayor 
+                     o igual al valor original de v
+             vector<int> primos_mayores(vector<int> v) {
+                int n = v.size();
+                for (int i = 0; i < n; ++i)
+                    while (not is_prime(v[i])) ++v[i];
+                return v;
+            }
+
+
+            **Atención** este mismo código no es admisible (no compila) si el paso
+                         es por referencia constante
+
+
+            Después de la llamada:
+
+               vector<int> w = primos_mayores(v);
+
+            obtenemos el vector de primos w y el vector v no ha cambiado.
+
+
+
+Example: Birth analysis revisited  
+=================================
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+const int MIN = 1991;
+const int MAX = 2020;
+
+//pre: counters is a vector of size MAX - MIN + 1. All birth years 
+//     on input seq are in range [MIN, MAX]
+//post: counters is the birth year frequencies vector: counters[i] 
+//      is the frequency of births on year MIN + i          
+void counter_vector_gen(vector<int>& counters) {
+    int n = counters.size();
+    for (int i = 0; i < n; ++i) counters[i] = 0;
+    int year;
+    while (cin >> year) ++counters[year - MIN];
+ }
+
+
+//pre: ---
+//post: write frequency vector counters  on output chanel
+void write_vector(const vector<int>& counters) {
+    int n = counters.size();
+    for (int i = 0; i < n; ++i) 
+        cout << "El numero de personas nacidas en " << MIN + i 
+            << " es " << counters[i] << endl; 
+}
+
+    
+//in: una secuencia con los anyos de naciemiento de una poblacion desde 1991
+//    en le canal de entrada
+//out: escribe la frecuencia de nacimientos de cada anyo
+int main() {
+    vector<int> counters(MAX - MIN + 1); 
+    counter_vector_gen(counters);
+    write_vector(counters);
+}
+ 
+

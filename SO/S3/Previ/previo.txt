@@ -1,0 +1,81 @@
+ejemplo_fork1:
+    Soy el proceso 1619
+    Soy el proceso 1620
+
+    El primer mensaje es del proceso padre y luego del hijo. Aparecen dos porque al hacer un fork se crea un proceso hijo con el mismo espacio de direcciones lógico que el padre (código, pila, datos).
+
+ejemplo_fork2:
+    Antes del fork: Soy el proceso 22
+    PADRE: Soy el proceso 22
+    HIJO: Soy el proceso 23
+    Los DOS: Soy el proceso 22
+    Los DOS: Soy el proceso 23
+
+    El primer mensaje lo ejecuta solo el padre, ya que es antes de ejecutar el fork. Después el hijo recibe un pid = 0 y el padre recibe el PID del hijo.
+    El segundo mensaje lo emite el proceso padre, ya que no ha entrado en el caso 0 porque su pid != 0, ni en el caso -1, ya que no ha habido ningún error. Entonces ejecuta el default.
+    El tercer mensaje lo emite también el padre al acabar el caso default.
+    El cuarto mensaje lo escribe el hijo ya que entra en el caso 0
+    El quinto lo escribe también el hijo al salir del caso 0.
+
+ejemplo_fork3:
+    Antes del fork: Soy el proceso 26
+    PADRE: Soy el proceso 26
+    Solo lo ejecuta el padre: Soy el proceso 26
+    HIJO: Soy el proceso 27
+
+    El primer mensaje lo emite el padre antes del fork.
+    El segundo mensaje lo emite el proceso padre, ya que no ha entrado en el caso 0 porque su pid != 0, ni en el caso -1, ya que no ha habido ningún error. Entonces ejecuta el default.
+    El tercer mensaje lo emite también el padre al acabar el caso default. Solo lo ejecuta el proceso padre ya que el hijo cuando entra en el caso 0 escribe el mensaje y luego tenemos un exit(0). Así que ya no ejecutara nada más del código ya que el proceso hijo se ha terminado.
+
+
+ejemplo_fork4:
+    Antes del fork: Soy el proceso 28
+    PADRE: Soy el proceso 28
+    Solo lo ejecuta el padre: Soy el proceso 28
+    HIJO: Soy el proceso 29
+    HIJO acaba: Soy el proceso 29
+
+    El primer mensaje lo emite el padre antes del fork.
+    El segundo mensaje lo emite el proceso padre, ya que no ha entrado en el caso 0 porque su pid != 0, ni en el caso -1, ya que no ha habido ningún error. Entonces ejecuta el default.
+    El tercer mensaje lo emite también el padre al acabar el caso default. Solo lo ejecuta el proceso padre ya que el hijo cuando entra en el caso 0 escribe el mensaje y luego tenemos un exit(0). Así que ya no ejecutara nada más del código ya que el proceso hijo se ha terminado.
+
+    Se puede observar que el proceso padre acaba antes. Esto se consigue añadiendo el waitpid justo despues del caso default, así el padre se queda esperando a que su hijo realice un exit(0) antes de continuar la ejecución.
+
+ejemplo_fork5:
+    Antes del fork: Soy el proceso 70
+    PADRE: Soy el proceso 70
+    HIJO: Soy el proceso 71
+    HIJO:La variable_global vale A y la local a
+    PADRE:La variable_global vale A y la local a
+    Solo lo ejecuta el padre: Soy el proceso 70
+
+    El primer mensaje lo emite el padre antes del fork.
+    El segundo mensaje lo emite el proceso padre, ya que no ha entrado en el caso 0 porque su pid != 0, ni en el caso -1, ya que no ha habido ningún error. Entonces ejecuta el default y espera a que su hijo termine el codigo.
+    El hijo ejecuta el caso 0 y emite el tercer y cuarto mensaje. Luego termina al hacer un exit(0) y el padre sigue su ejecución y escribe el quinto y sexto mensaje.
+
+    Para conseguir que el proceso hijo modifique el valor de la variable_local y variable_global antes de imprimir su valor se escribe en el caso 0, "variable_local = 'b' y variable_global = 'B';" de esta manera solo lo ejecutará el hijo y para el padre las variables seguirán tieniendo el mismo valor definido al principio del código.
+
+ejemplo_fork6:
+    El primer mensaje lo emite el padre antes del fork.
+    El segundo mensaje lo emite el proceso padre, ya que no ha entrado en el caso 0 porque su pid != 0, ni en el caso -1, ya que no ha habido ningún error. Entonces ejecuta el default y se escriben los 100000 mensajes y cada 10000 iteraciones cambiamos el valor de la variable global.
+    Mientras, el hijo escribe "HIJO: Soy el proceso x" y también empieza a ejecutar los 100000 mensajes.
+
+    No se puede suponer que el contenido del fichero siempre será al mismo porque la CPU no siempre repartira los recursos de la misma manera y eso hace que puedan haber modificaciones respecto a cada ejecución.
+
+ejemplo_fork7:
+    No compila porque en la función Escribe_variables utilizamos una variable_local que no esta definida, solo en el main. No, no tiene nada que ver. Para que escriba el valor de la variable_local hay que definirla después de definir la variable_global.
+
+ejemplo_exec1:
+    En pantalla se ve el pid del proceso y luego los archivos de la carpeta donde estoy. Ejecuta un ls -l.
+    Solo aparece una vez en pantalla el pid del proceso.
+    debido a que cuando el proceso muta (execlp) se cambia el contenido de espacio de direcciones (código, datos, pila) menos el pid. Por eso después de execlp ya no se ejecuta nada más. Despues del execlp la llamada sobreescribe la primera.
+
+ejemplo_exec2:
+    Aparece el primer mensaje de ejemplo_exec2. Las siguientes dos son escritas por ejemplo_fork1 cuando lo llamamos con execlp.
+    Con la función execlp, todo lo que esté después de esta no se ejecutara y el nuevo proceso sobreescriurà a l'anterior.
+
+man:
+    Pertenecen a la página 1: ps
+    Pertenecen a la página 2: getpid, fork, waitpid
+    Pertenecen a la página 3: perror, exit
+    Pertenecen a la página 5: proc

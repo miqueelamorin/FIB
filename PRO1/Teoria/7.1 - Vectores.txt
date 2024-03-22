@@ -1,0 +1,200 @@
+Vectores: (1) Introducción
+==========================
+
+Los vectores son un recurso de programación para representar  un conjunto de 
+datos uniforme (homogéneo). Es la primera **estructura de información** que
+usamos en Pro1.
+
+        vector de enteros --> todos los datos del conjunto son enteros
+        vector de booleanos ---> "      "             "        booleanos
+        vector de strings   ---> "      "             "        strings
+        etc..
+
+
+Fortalezas/Debilidades
+=====================
+
+Pros: con un vector, tenemos acceso inmmediato (acceso directo) a los datos 
+      que forman parte de la estructura y podemos manipular individualmente 
+      cada dato del conjunto como nos convenga.
+
+Cons: Un vector **no puede** representar un conjunto de datos ilimitado. 
+      Los vectores se almacenan en la memoria interna de la computadora 
+      (que impone un límite físico) y por defecto, al crearlos, tenemos 
+      que definir su tamaño.
+
+
+Construcción
+============
+
+Para usar este recurso tenemos que escribir la línea:
+
+#include <vector>
+
+como una directiva de las que aparecen al principio del código.
+
+Para declarar y construir un vector de tamaño n (un entero positivo), hacemos:
+
+vector<int> v(n);  //declara y construye un vector de enteros v de tamaño n;
+vector<bool> w(n); //declara y construye un vector de booleanos w de tamaño n;
+
+
+Ejemplo:
+--------
+
+    La línea
+
+        vector<int> v(4);
+
+    declara y construye un vector v para cuatro enteros, que se referencian como
+    v[0], v[1], v[2] y v[3]. Si queremos inicializar el primero con el entero 8 
+    lo hacemos con una asignación:
+
+        v[0] = 8; //decimos: el vector v toma el valor 8 en el índice 0
+
+    En general, si queremos asignar el valor z  en la posición (o "índice") i del 
+    vector v, hacemos:
+
+        v[i] = z // sera un error si  i no es un indice válido (en este 
+                 // ejemplo: 0, 1, 2 o 3).
+
+    Después del la líneas de código:
+
+        v[0] = 1;
+        v[3] = 5*v[0] - 2;
+        v[2] = 5;
+        v[1] = (v[2] - 1)/v[0];
+        v[2] = 0;
+
+    Los valores del vector v son 1, 4, 0 y 3.
+
+    
+    
+Si u es un vector, podemos saber su tamaño escribiendo u.size(). Usaremos 
+esto más tarde. Si n es el valor de u.size(), entonces los índices o posiciones
+del vector u son 0, 1, 2,..., n - 1. En el último ejemplo el valor de v.size() 
+es 4 y los índices del vector son 0, 1, 2 y 3
+
+
+Warning!
+--------
+
+    u.size() **no** es del tipo entero y su uso a pelo  puede tener consecuencias 
+    inesperadas (probad cout << u.size() - w.size(); cuando w es más grande).
+    Sugerimos **convertirlo a entero** antes de usarlo, haciendo:
+
+        int n = u.size();
+
+    
+    
+Ejemplo: estudio de natalidad
+-------
+
+    Disponemos en el canal de entrada de los años de nacimiento de una población 
+    desde 1991. Se pide calcular cuantas personas han nacido en el año 2000.
+
+       in --> 1991 2000 1999 2001 2000 2000
+     
+       (con esta entrada, la respuesta es tres)
+
+    Este problema es fácil de resolver
+  
+       //pre: una secuencia de anyos de nacimiento en el canal de entrada
+       //post: el valor de counter2000 es la frecuencia del anyo 2000
+       const int YEAR = 2000; --> declara la constante YEAR como 2000
+       int counter2000 = 0;
+       int year;
+       while (cin >> year)
+          if (year == YEAR) ++counter2000;
+      
+
+    ...pero, cómo lo resolvemos  si lo que queremos es saber cuantas personas han
+    nacido en cada año desde 1991? ---> Necesitamos una variable "counterXXXX" para cada
+    año distinto. Lo resolvemos introduciendo un vector "counters", cada posición 
+    de "counters" representa un año en el rango 1991::2020. La posicion 0 representa 
+    1991, la posición 1 representa 1992,...., la última (la posición 29) 2020. Notemos
+    que el vector counters necesita representar un conjunto de 30 (= 2020 - 1991 + 1) 
+    enteros.
+
+        //pre: una secuencia con los  anyos de nacimiento de una poblacion desde 1991
+        //     en el canal de entrada
+        //post: la frecuencia de nacimientos por anyo  en el vector counters       
+        const int MIN = 1991;   
+        const int MAX = 2020;
+        vector<int> counters(MAX - MIN + 1); 
+        for (int i = 0; i < MAX - MIN + 1; ++i) counters[i] = 0; 
+        int year;
+        while (cin >> year) ++counters[year - MIN];
+    
+    ahora, si queremos mostrar lo resultados, podemos hacer:
+
+        for (int i = 0; i < MAX - MIN + 1; ++i) 
+            cout << "El numero de personas nacidas en " << MIN + i 
+                 << " es " << counters[i] << endl; 
+
+
+
+    Código completo:
+
+    #include <iostream>
+    #include <vector>
+    using namespace std;
+    
+    //pre: una secuencia con los anyos de naciemiento de una poblacion desde 1991
+           en le canal de entrada
+    //post: escribe la frecuencia de nacimientos de cada anyo
+    int main() {
+        const int MIN = 1991;   
+        const int MAX = 2020;
+        vector<int> counters(MAX - MIN + 1); 
+        for (int i = 0; i < MAX - MIN + 1; ++i) counters[i] = 0; 
+        int year;
+        while (cin >> year) ++counters[year - MIN];
+        for (int i = 0; i < MAX - MIN + 1; ++i) 
+           cout << "El numero de personas nacidas en " << MIN + i 
+                << " es " << counters[i] << endl; 
+    }
+       
+
+Strings como vectores
+=====================
+
+Podemos usar los strings como vectores de caracteres si incluimos la librería **string**
+entre las directivas de inclusión:
+
+    #include <string>;
+
+Si s es un string, podemos conocer su tamaño haciendo s.length() (pero también sirve s.size()
+como con el resto de vectores)
+
+
+Ejemplo: Número de letras distintas en una palabra.
+-------
+
+    Tenemos que calcular el número de letras distintas de un string que hay en el canal de 
+    entrada. Lo resolvemos comparando cada caracter del string con los anteriores --cosa que
+    podemos hacer si interpretamos el string como vector de caracteres--. 
+
+    #include<iostream>
+    #include<string>
+    using namespace std;
+
+    //pre: hay  una palabra  en el canal de entrada
+    //post: el numero de letras diferentes de la palabra
+    int main() {
+        string s;
+        cin >> s;
+        int n = s.length(); //tambien sirve int n = s.size()
+        int count = 0;
+        for (int i = 0; i < n; ++i) {
+            //hacemos a la letra en la posicion i el test **letra nueva**
+            int j = 0;
+            while (s[j] != s[i]) ++j;
+            //si no hemos encontrado la letra de la posicion i en una posicion anterior, es nueva
+            if (j == i) ++count;
+        }
+        cout << count << endl;
+    }
+
+         
+

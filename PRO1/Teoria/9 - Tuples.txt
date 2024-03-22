@@ -1,0 +1,344 @@
+Tuplas (structs)
+================
+
+Con frecuencia disponemos de datos de distintos tipos que en conjunto representan 
+una única información o entidad. Por ejemplo, el *código postal* (string), el nombre
+de la *calle* (string) y su *número* (int) representan una única  dirección postal. 
+Los lenguajes de programación disponen de un recurso (conocido como tupla, struct o 
+registro) para representar una información (una dirección) compuesta de otros datos 
+más simples(código postal, calle y número).
+
+
+En C++ procedemos como sigue para representar direcciones postales. Primero definimos 
+el nuevo tipo que representa al mundo "dirección".
+
+typedef struct {
+    string codigo_postal;
+    string calle;
+    int num;
+    } Direccion;
+
+Esta es la forma de definir el tipo Direccion como una tupla con tres atributos (o 
+campos), que son respectivamente  el codigo_postal (string), la calle (string) y el 
+número (int) en la notación moderna de C++. Sin embargo, en Pro1 usamos frecuentemente 
+la notación antigua de C:
+
+struct Direccion {
+    string codigo_postal;
+    string calle;
+    int num;
+    };
+
+que equivale a la typedef anterior.
+
+Ahora podemos declarar variables de tipo Direccion como se muestra en estas líneas:
+
+    Direccion mi_domicilio;
+    mi_domicilio.calle = "Diagonal";
+    mi_domicilio.num = 354;
+    mi_domicilio.codigo_postal = "08031";
+
+
+Ejemplo: Censo
+==============
+
+La información censal de un individuo recoge su dni, nombre, edad, dirección y si 
+tiene derecho a voto. Para representarla, definimos el tipo tupla Persona:
+
+struct  Persona {
+    string dni;
+    string nombre;
+    Direccion domicilio;
+    int edad;
+    bool puede_votar;
+    };
+
+ahora podemos declarar variables Persona:
+
+    Persona person;
+    person.dni = "34263786L"
+    person.nombre = "Jorge";
+    person.edad = 57;
+    person.domicilio = mi_domicilio //mi_domicilio como se ha definido arriba
+    //tambien se puede hacer directamente:
+    //person.domicilio.codigo_postal = "08031"
+    //person.domicilio.num = ....
+    //person.domicilio.calle =.....
+    //
+    person.puede_votar = person.edad > 17 //normalmente es asi
+
+
+Una vez inicializada la variable person, podemos crear una copia con una simple asignación:
+
+    Persona  copia_person = person;
+
+Si en una población hay n individuos, la información censal de todos ellos se pude
+almacenar en un vector de Persona de tamaño n:
+
+    vector<Persona> persons(n);
+
+donde el valor  persons[i] es la información correspondiente al individuo i-ésimo 
+de la población.
+
+    persons[i].dni ---> el dni del individuo i-ésimo
+    persons[i].nombre ---> el nombre del indiviuo i-ésimo
+    ...................
+    
+    
+
+
+
+Ejemplo: Informe de ventas
+==========================
+
+Una ferretería  dispone de la información anual de ventas. Para cada producto se 
+conoce el precio de venta y el número de unidades vendidas. Se desea 
+procesar esta información para obtener el listado  de productos ordenado por 
+ingreso bruto, de mayor a menor y resolviendo empates según el orden alfabético de 
+los identificadores de producto. El ingreso bruto de un producto es el importe 
+generado por  todas las ventas del mismo.
+
+-------
+in: 
+        10                          //el numero de productos a la venta
+        BombillaLed5W   2.50  575   //id. producto, precio y cantidad vendida
+        CafeteraIta4T  12.30   45
+        LlaveIngles5S  23.00   67
+        LlaveAllen5MM   1.00  452
+        ManguitoAg300   5.75  123
+        FiambreraVip5  15.25   78    
+        SierraCalarFP  45.00   23
+        SerruchoCarp3   7.90   45
+        TenazasCroMod   8.00   53
+        LinternaLed3W   4.00  139
+
+out:
+
+        LlaveIngles5S 1541
+        BombillaLed5W 1437.5
+        FiambreraVip5 1189.5
+        SierraCalarFP 1035
+        ManguitoAg300 707.25
+        LinternaLed3W 556
+        CafeteraIta4T 553.5
+        LlaveAllen5MM 452
+        TenazasCroMod 424
+        SerruchoCarp3 355.5
+
+-------
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+struct Info {
+    string prod_id;
+    double ing_bruto;
+};
+
+
+//pre:--
+//post: v es el vector de ingresos brutos deducidos de los datos de entrada
+void leer_vector(vector<Info>& v) {
+    int n = v.size();
+    for (int i = 0; i < n; ++i) {
+        cin >> v[i].prod_id;
+        double precio;
+        cin >> precio;
+        int cantidad;
+        cin >> cantidad;
+        v[i].ing_bruto = precio*cantidad;
+    }
+}
+
+
+//pre:--
+//post: escribe el vector de Info v: primero el producto id y luego el ingreso bruto
+void escribir_vector(const vector<Info>& v) {
+    int n = v.size();
+    for (int i = 0; i < n; ++i) 
+        cout << v[i].prod_id << ' ' << v[i].ing_bruto << endl;
+}
+
+//pre: --
+//post: retorna true cuando a es anterior a b  y false en caso contrario
+bool cmp(Info a, Info b) {
+    if (a.ing_bruto == b.ing_bruto) return a.prod_id < b.prod_id;
+    else return a.ing_bruto > b.ing_bruto;
+
+}
+
+
+int main() {
+    int n;
+    cin >> n;
+    vector<Info> v_info(n);
+    leer_vector(v_info);
+    sort(v_info.begin(), v_info.end(), cmp);
+    escribir_vector(v_info);
+}
+
+
+
+Ejemplo: El nombre de moda de los nacidos el año 2000
+=====================================================
+
+Disponemos en el canal de entrada de tres informaciones:   primero un número 
+n > 0 que representa el número de nacimientos en el año 2000, segundo un 
+número m, 0 < m <= n, que es el número de nombres **distintos** con los que 
+los nacidos fueron registrados y por último  la  secuencia de n nombres 
+de los nacidos ese año. Queremos calcular el nombre de moda, es  decir el 
+nombre más  frecuente. Resolvemos posibles empates escogiendo el más pequeño 
+en el orden alfabético.
+
+-----
+in: 10 5 Joan Marta Pere Marta  Anna Pere Manel Joan Marta Joan
+
+out: Joan
+-----
+
+Explicación intuitiva de la solución:
+
+1) leemos los nombres en un vector v_nom y lo ordenamos
+
+   v_nom --> Anna Joan Joan Joan Marta Marta Marta Manel Pere Pere
+
+2) calculamos el vector de tuplas <nombre, frecuencia>
+
+   <Anna, 1> <Joan, 3> <Marta, 3> <Manel, 1> <Pere,2>
+
+3) escribimos el primer nombre que alcanza la frecuencia máxima:
+
+   Joan
+
+------
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//tupla para representar la frecuencia de un nombre
+struct NomFreq {
+    string name;
+    int freq;
+    };
+
+
+//pre: n >= 0
+//post: retorna un vector de n nombres leidos del input
+vector<string> lee_vector(int n) {
+    vector<string> v(n);
+    for (int i = 0; i < n; ++i) cin >> v[i];
+    return v;
+}
+
+
+//pre: m > 0 y noms esta ordenado alfabeticamente
+//post: retorna el vector de NomFreq que representa la frecuencia 
+//      de cada uno de los m nombres en el vector noms
+vector<NomFreq> frecuencias(const vector<string>& noms, int m) {
+    vector<NomFreq> res(m);
+    int k = 0; //siempre indica la primera posicion libre de res
+    int n = noms.size();
+    int counter = 1; //contador de frecuencia del nombre de noms
+                     //en evaluacion: noms[i - 1] en iter. for:
+    for (int i = 1; i < n; ++i) {
+        if (noms[i] == noms[i - 1]) ++counter;
+        else {
+            res[k].name = noms[i - 1];
+            res[k].freq = counter;
+            counter = 1;
+            ++k;
+        }
+    }
+    res[k].name = noms[n - 1];
+    res[k].freq = counter;
+    return res;
+}
+
+
+//pre: w no es vacío
+//post: retorna el primer nombre en w con atributo freq maximo
+string moda(const vector<NomFreq>& w) {
+    int m = w.size();
+    string top_name;
+    int max_freq = 0;
+    for (int i = 0; i < m; ++i) 
+        if (w[i].freq > max_freq) {
+            max_freq = w[i].freq;
+            top_name = w[i].name;
+        }
+    return top_name;
+}
+
+
+
+int main() {
+    int n;
+    cin >> n;
+    int m;
+    cin >> m;
+    vector<string> v_nom = lee_vector(n);
+    sort(v_nom.begin(), v_nom.end());
+    vector<NomFreq> w = frecuencias(v_nom, m);
+    cout << moda(w) << endl;
+}
+
+
+****************************************************************
+Variante: Listar los nombres por su frecuencia, de mayor a menor
+****************************************************************
+
+Procedemos como con la moda, pero ahora una vez hemos calculado el vector
+w de NomFreq, lo ordenamos por frecuencias, resolviendo empates según el orden
+alfabético. El main será:
+    
+int main() {
+    int n;
+    cin >> n;
+    int m;
+    cin >> m;
+    vector<string> v_nom = lee_vector(n);
+    sort(v_nom.begin(), v_nom.end());
+    vector<NomFreq> w = frecuencias(v_nom, m);
+    sort(w.begin(), w.end(), cmp);
+    escribir(w);
+}
+
+donde la función de comparación es:
+
+//pre: ----
+//post: retorna true cuando a es anterior a b: o bien a.freq > b.freq o tienen
+//      la misma freq y a.name < b.name. Retorna false en caso contrario
+bool cmp(const NomFreq& a, const NomFreq& b) {
+    if (a.freq == b.freq) return a.name < b.name;
+    return a.freq > b.freq;
+}
+    
+y la acción de escritura:
+
+//pre:----
+//post: escribe nombres y frecuencias de w, un par por línea
+void escribir(const vector<NomFreq>& w) {
+    int n = w.size();
+    for (int i = 0; i < n; ++ i) 
+        cout << w[i].name << ' ' << w[i].freq << endl;
+}
+
+
+
+
+in: 
+    10 5 Joan Marta Pere Marta  Anna Pere Manel Joan Marta Joan
+
+out:
+    Joan 3
+    Marta 3
+    Pere 2
+    Anna 1
+    Manel 1
+

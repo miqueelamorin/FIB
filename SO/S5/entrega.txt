@@ -1,0 +1,78 @@
+Pregunta 35:
+
+    Aparecen las variables "globalArray" que está en el BSS en la direccion 00000000006010a0.
+
+Pregunta 36:
+
+    Se diferecian en que el compilado con las librerias estáticas ocupa mucho mas puesto que almacena esa libreria en el ejecutable.
+    Tamaño:
+        mem1_dynamic -> 11936 bytes
+        mem1_static -> 4930688 bytes
+    El codigo en ensamblador tambíen es mayor en el compilado en estatico.
+
+Pregunta 37:
+
+    mem1_dynamic:
+
+    INICIAL  FINAL                                                           ETIQUETA
+    00400000-00401000 r-xp 00000000 00:38 19673881                           /dades/miquel.amorin/SO/S5/mem1_dynamic
+    00600000-00601000 r--p 00000000 00:38 19673881                           /dades/miquel.amorin/SO/S5/mem1_dynamic
+    00601000-00602000 rw-p 00001000 00:38 19673881                           /dades/miquel.amorin/SO/S5/mem1_dynamic
+    00602000-00603000 rw-p 00000000 00:00 0
+    01687000-016a8000 rw-p 00000000 00:00 0                                  [heap]
+    7f24197fb000-7f24199e1000 r-xp 00000000 103:07 308705                    /lib64/libc-2.31.so
+    7f24199e1000-7f2419be1000 ---p 001e6000 103:07 308705                    /lib64/libc-2.31.so
+    7f2419be1000-7f2419be4000 r--p 001e6000 103:07 308705                    /lib64/libc-2.31.so
+    7f2419be4000-7f2419bec000 rw-p 001e9000 103:07 308705                    /lib64/libc-2.31.so
+    7f2419bec000-7f2419bf0000 rw-p 00000000 00:00 0
+    7f2419bf0000-7f2419c1a000 r-xp 00000000 103:07 273230                    /lib64/ld-2.31.so
+    7f2419dc5000-7f2419dc8000 rw-p 00000000 00:00 0
+    7f2419e18000-7f2419e1a000 rw-p 00000000 00:00 0
+    7f2419e1a000-7f2419e1b000 r--p 0002a000 103:07 273230                    /lib64/ld-2.31.so
+    7f2419e1b000-7f2419e1d000 rw-p 0002b000 103:07 273230                    /lib64/ld-2.31.so
+    7fffa8bdc000-7fffa8bfe000 rw-p 00000000 00:00 0                          [stack]
+    7fffa8c11000-7fffa8c15000 r--p 00000000 00:00 0                          [vvar]
+    7fffa8c15000-7fffa8c17000 r-xp 00000000 00:00 0                          [vdso]
+    ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+    mem1_static:
+
+    INICIAL  FINAL                                                           ETIQUETA
+    00400000-004b0000 r-xp 00000000 00:38 19673882                           /dades/miquel.amorin/SO/S5/mem1_static
+    006b0000-006b3000 r--p 000b0000 00:38 19673882                           /dades/miquel.amorin/SO/S5/mem1_static
+    006b3000-006b7000 rw-p 000b3000 00:38 19673882                           /dades/miquel.amorin/SO/S5/mem1_static
+    006b7000-006b9000 rw-p 00000000 00:00 0
+    018a5000-018c8000 rw-p 00000000 00:00 0                                  [heap]
+    7ffc4a17e000-7ffc4a1a0000 rw-p 00000000 00:00 0                          [stack]
+    7ffc4a1d1000-7ffc4a1d5000 r--p 00000000 00:00 0                          [vvar]
+    7ffc4a1d5000-7ffc4a1d7000 r-xp 00000000 00:00 0                          [vdso]
+    ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+    La diferencia entre los dos archivos es que el compilado con static no incluye las referencias a memoria donde estan las librerias incluidas.
+
+Pregunta 38:
+
+    Totes les variables reservades amb malloc es guarden al heap. mem1_static: [018a5000-018c8000] mem1_dynamic: [01687000-016a8000]
+
+Pregunta 39:
+
+    3: 3 mallocs, [01871000-01892000], tamaño: 0x00021000
+    5 -> 5 mallocs, [00975000-00996000], tamaño: 0x00021000
+    100 -> 100 mallocs, [021c5000-02249000], tamaño: 0x00084000
+
+    Dado que malloc reserva siempre mas espacio del pedido, para el 3 y el 5 solo hace un sbrk. Para el 100 se sale de su prevision y tiene que ejecutar mas sbrks y aumentar el tamaño del heap.
+
+Pregunta 40:
+
+    En este caso el tamaño del heap es de 0x00021000
+    Cambia el tamaño dado que con la instruccion free no llenaremos en heap y tendremos que ejecutar mas sbrk.
+
+Pregunta 41:
+
+    3: 3 mallocs, [0195e000-01961000], tamaño: 0x00003000
+    5 -> 5 mallocs, [01a0b000-01a10000], tamaño: 0x00005000
+    100 -> 100 mallocs, [0237c000-023e0000], tamaño: 0x00064000
+
+    Cambia ya que el sbrk reserva justo el espacio pedido en bytes a cada iteración.
+
+

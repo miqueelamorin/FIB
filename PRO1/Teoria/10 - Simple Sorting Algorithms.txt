@@ -1,0 +1,230 @@
+Algoritmos de ordenación
+========================
+
+Problema: ordenar un vector v de n elementos. Por comodidad, asumiremos que 
+el vector es de enteros y que queremos ordenar de menor a mayor. Preferiremos 
+que los algoritmos trabajen sobre el vector que queremos ordenar, evitando
+en lo posible el uso de vectores auxiliares. Trabajando así lograremos un uso 
+más eficiente de la memoria.
+
+
+Presentaremos dos tipos de algoritmos de ordenación. Los primeros, a los que 
+llamaremos  **simples**, tienen un tiempo de ejecución proporcinal a n*n, son 
+algoritmos O(n^2). Entre los mismos se encuentran los siguientes:
+
+    *** Ordenación por inserción (generalmente el preferible entre los "simples")
+    *** Ordenación por selección del mínimo (o del máximo, tanto da)
+    *** Ordenación por burbuja ---bubblesort--- (generalmente el menos eficiente)
+
+Reservaremos el uso de los algoritmos simples para ordenar vectores  pequeños
+(con n del orden de centenares o apurando, miles).
+
+La segunda clase de algoritmos de ordenación son los que llamaremos 
+**sofisticados** y consiguen un rendimiento muy superior. En general, 
+podemos esperar de ellos un tiempo de ejecución proporcional a nlogn, 
+son algoritmos O(nlogn) lo que supone una diferencia de  tiempo muy 
+notable respecto a los simples. El precio a pagar por esta mejora de 
+rendimiento es un algoritmo algo más complejo. Entre otros, los 
+siguientes algoritmos son de este tipo:
+
+    *** Ordenación por fusión o Mergesort ---> lo explicaremos la 
+                                               semana que viene
+    *** Quicksort ---> lo estudiaréis en Pro2
+
+Por ejemplo, el sort() de C++ es una implementación de Quicksort. Este 
+algoritmo, que en algunos casos excepcionales puede ser lento (proporcional 
+a n^2) es en la casi totalidad de los casos  el mejor o más rápido y suele 
+ser el algoritmo escogido para ordenar vectores grandes. Mergesort funciona 
+siempre (en todos los casos) rápido,  en tiempo O(nlogn), pero en media es 
+un pelo más lento que Quikcsort. En cualquier caso, las diferencias de tiempo de 
+ejecución entre Mergesort y cualquier algoritmo de ordenación simple 
+son abismales cuando n es grande. Veremos algunos ejemplos de tiempos de 
+ejecución en la próxima sesión.
+
+
+
+Ordenación por inserción
+========================
+
+Idea básica: insertar (o incorporar) un elemento nuevo en un vector (o la parte 
+de un vector) ordenado de forma que se mantenga ordenado. 
+
+Supongamos que la porción  inicial del vector v formada por los valores
+de las posiciones 0, 1,...., i - 1 están ordenados. De forma breve, decimos 
+que v[0..i-1] está ordenado. Si logramos insertar en orden el valor v[i] 
+entre los valores que le preceden (los de v[0..i-1]) conseguiremos tener 
+una porción más grande (la v[0..i]) ordenada. Repitiendo este proceso n - 1 
+veces conseguiremos tener el vector v ordenado:
+
+    Sea por ejemplo v  ---> 83 23 28 21 76 36
+
+    1) porción ordenada v[0..0]. Insertamos v[1] en orden.  
+    
+        v ---> 23 83 28 21 76 36
+    
+    2) porción ordenada v[0..1]. Insertamos v[2] en orden.
+
+        v ---> 23 28 83 21 76 36
+    
+    3) porción ordenada v[0..2]. Insertamos v[3] en orden.
+
+        v ---> 21 23 28 83 76 36
+
+    4) porción ordenada v[0..3]. Insertamos v[4] en orden.
+
+        v ---> 21 23 28 76 83 36
+
+    5) porción ordenada v[0..4]. Insertamos v[5] en orden. FIN
+
+        v ---> 21 23 28 36 76 83
+
+Esquema algorítmico:
+
+    for (int i = 1; i < n; ++i)
+        "insertar v[i] en orden sobre v[0..i-1]"
+
+
+
+Queda por resolver "insertar v[i] en orden sobre v[0..i-1]" suponiendo que la 
+porción v[0.. i-1] está ordenada. Lo hacemos buscando la posición donde debemos 
+ubicar v[i] y al mismo tiempo desplazamos los valores superiores una posición a 
+la derecha:
+    
+    int x = v[i];
+    int j = i;
+    while (j > 0 and v[j - 1] > x) {
+        v[j] = v[j - 1];
+        --j;
+    }
+    v[j] = x;
+
+
+Veamos una traza de este último código. Supongamos que n = 5, i = 4 y v es
+ 
+    11 23 45 65 13
+
+que tiene la porción v[0..3] ordenada. Insertamos v[i] (= 13).
+ 
+     1) x es 13, j es 4. Como j > 0 y v[j - 1] (=65) > 13 iteramos una vez.
+       
+          ---> v es 11 23 45 65 65
+          ---> j es 3
+
+     2) x es 13, j es 3. Como j > 0 y v[j - 1] (= 45) > 13 iteramos una vez.
+
+          ---> v es  11 23 45 45 65
+          ---> j es 2
+
+     3) x es 13, j es 2. Como j > 0 y v[j - 1] (= 23) > 13 iteramos una vez.
+
+          ---> v es 11 23 23 45 65
+          ---> j es 1
+ 
+     4) x es 13, j es 1. Como j > 0 y v[0] (= 11) <=  13 no iteramos más.
+
+          hacemos la asignación final v[j] = x y  resulta:
+
+          ----> v es 11 13 23 45 66
+
+     y la porción v[0..4] ha quedado ordenada.
+
+
+
+Código completo de ordenación por inserción
+-------------------------------------------
+
+
+// Pre: cap
+// Post: v conte els elements inicials i esta ordenat creixentment
+void insert_sort(vector<int>& v) {
+    int n = v.size();
+    for (int i = 1; i < n; ++i) {
+        int x = v[i];
+        int j = i;
+        while (j > 0 and v[j - 1] > x) {
+            v[j] = v[j - 1];
+            --j;
+        }
+        v[j] = x;
+    }
+}
+   
+El tiempo de ejecución de este código es proporcional a n^2, es un 
+algoritmo O(n^2).
+
+
+
+Ordenación por selección del mínimo
+===================================
+
+Idea básica: seleccionar en la iteración i la posición del mínimo (pos_min)
+de la porción v[i..n-1]. A continuación intercambiar v[i] con v[pos_min].
+             
+    for (int i = 0; i < n - 1; ++i) {
+        calcular pos_min (posicion minimo v[i..n - 1])
+        intercambiar v[i] y v[pos_min]
+    }
+
+
+Ejemplo
+-------
+
+Supongamos que n = 5 y v es 13 91 18 11 45
+
+    0) iteramos una vez con i = 0:
+      
+        pos_min de v[0..4] es 3
+
+        v se actualiza a 11 91 18 13 45
+
+    1) iteramos una vez con i = 1
+
+        pos_min de v[1..4] es 3
+
+        v se actualiza a 11 13 18 91 45
+
+    2) iteramos una vez con i = 2
+
+        pos_min de v[2..4] es 2
+
+        v se actualiza a 11 13 18 91 45
+
+    3) iteramos una vez con i = 3  ---última iteración---
+
+        pos_min de v[3..4] es 4
+
+        v se actualiza  11 13 18 45 91
+
+
+
+Código completo
+---------------
+
+// Pre: cap
+// Post: v conte els elements inicials i esta ordenat creixentment
+void min_selec_sort(vector<int>& v) {
+    int n = v.size();
+    for (int i = 0; i < n - 1; ++i) {
+        int pos_min = i;
+        for (int j = i + 1; j < n; ++j)
+            if (v[j] < v[pos_min]) pos_min = j;
+        swap(v[i], v[pos_min]);
+    }
+}
+
+
+El tiempo de ejecución de este código es proporcional a n^2, es un 
+algoritmo O(n^2).
+
+
+    
+
+Ordenación por burbuja (Bubble sort)
+===================================
+
+Es un algoritmo de ordenación poco recomendable (es peor que el de inserción) y
+no lo explicamos. Si tenéis curiosidad, podéis consultarlo y conocer algunos 
+de sus puntos débiles  en: https://en.wikipedia.org/wiki/Bubble_sort
+
+
+

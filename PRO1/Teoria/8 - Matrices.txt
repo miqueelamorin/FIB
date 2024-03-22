@@ -1,0 +1,244 @@
+Definiciones de tipos. Matrices
+===============================
+
+En C++ podemos dar un nombre a un tipo de datos, por ejemplo podemos escoger
+un nombre para representar al mundo (el tipo) "vector de enteros". Por convenio
+el nombre de un tipo **ha de comenzar por una letra mayúscula**. Las definiciones 
+de tipos se deben escribir justo después de las directivas de inclusión y 
+separándolas de estas con al menos una línea en blanco.
+
+Ejemplo
+-------
+    la definición
+
+    typedef vector<int> Fila;
+
+    introduce el nombre Fila para representar al tipo "vector de enteros"
+
+Ejemplo de uso
+--------------
+    #include <iostream>
+    #include <vector>
+    using namespace std;
+
+    typedef vector<int> Fila;
+
+    //pre: f es una fila no vacia
+    //post: escribe los valores de f en una linea, separados por blancos
+    void escribir_fila(const Fila& f) {
+        int n = f.size();
+        cout << f[0];
+        for (int i = 1; i < n; ++i) cout << ' ' << f[i];
+        cout << endl;
+    }
+
+    int main() {
+        Fila mi_fila(3);
+        mi_fila[2] = 5;
+        mi_fila[0] = 0;
+        mi_fila[1] = 1;
+        escribir_fila(mi_fila);
+    }
+
+
+
+Una matriz de enteros se puede pensar como un vector de filas. La matriz:
+
+        0 3 0 2 1
+        1 2 0 1 1
+
+es un vector de dos filas. La primera componente de ese vector es la fila:
+
+        0 3 0 2 1
+
+y la segunda componente es la segunda fila.
+
+
+
+Podemos definir el mundo (tipo) "matriz de enteros" como "vector de filas" así:
+
+    typedef vector<int> Fila;
+    typedef vector<Fila> Matriu;
+
+de esta forma Matriu identifica al tipo "matriz de enteros". Ahora, si queremos
+declarar y construir una variable mat del tipo Matriu con tres filas y dos columnas
+hacemos:
+ 
+    Matriu mat(3, Fila(2))
+
+Alternativamente, pero de forma menos elegante, podíamos haber hecho:
+
+    typedef vector< vector<int> > Matriu; 
+
+y luego:
+
+   Matriu mat(3, vector<int>(2))
+   
+
+**Nosotros procederemos usualmente de la primera forma, introduciendo primero el 
+tipo Fila y luego Matriu**. Una excepción  esta regla puede ser el tipo Sopa_de_letras:
+
+    typedef vector< vector<char> > Sopa_de_letras;
+
+y luego:
+
+   Sopa_de letras mi_sopa(10, vector<char>(10));
+
+o, directamente y sin definir  el tipo Sopa_de_letras:
+
+   vector< vector<char> > mi_sopa(10, vector<char>(10));
+
+
+
+Ejemplo: matriz identidad 3 x 3 
+-------------------------------
+
+Construimos y escribimos por pantalla la matriz identidad 3 x 3. Recordamos que la matriz 
+identidad es la que tiene unos en la diagonal y el resto son ceros
+
+    #include <iostream>
+    #include <vector>
+    using namespace std;
+
+    typedef vector<int> Fila;
+    typedef vector<Fila> Matriu;
+
+    //pre: mat es no vacía
+    //post: escribe por filas mat, separando con blancos los elementos de cada fila
+    void escribir_mat(const Matriu& mat) {
+        int m = mat.size(); //num. filas
+        int n = mat[0].size(); // num. columns
+        for (int i = 0; i < m; ++i) {
+            cout << mat[i][0];
+            for (int j = 1; j < n; ++j) 
+                cout << ' ' << mat[i][j];
+            cout << endl;
+        }
+    }
+ 
+
+    //pre: n > 0
+    //retorna la matriz n x n identidad
+    Matriu construye_id(int n) {
+        Matriu id = Matriu(n, Fila(n));
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < n; ++j)
+                if (i == j) id[i][j] = 1;
+                else id[i][j] = 0;
+        return id;
+    }
+ 
+
+    int main() {
+        const int N = 3;
+        Matriu mat_id = construye_id(N);
+        escribir_mat(mat_id);
+    }
+
+
+
+
+Supongamos ahora que mat del tipo Matriu es una matriz m x n:
+
+1) Consulta del valor fila i columna j   ---->  mat[i][j]
+ 
+   será un **error** si no se cumple: 0 <= i < m y 0 <= j < n
+    
+2) Recorrido de la fila i ----> for (int j = 0; j < n; ++j) "tratar mat[i][j]"
+ 
+   será un **error** si i no se cumple 0 <= i < m
+
+3) Recorrido de la columna j ----> for (int i = 0; i < m; ++i) "tratar mat[i][j]"
+
+   será un **error** si no se cumple 0<= j < n
+
+
+Supongamos además que m = n (matriz cuadrada)
+
+4) Recorrido de la diagonal principal -----> for (int i = 0; i < m; ++i) "tratar mat[i][i]"
+
+5) Recorrido de la diagonal secundaria -----> for (int i = 0; i < m; ++i) "tratar mat[i][m - 1 - i]"
+
+
+
+
+=======================================
+Ejemplo completo: producto de matrices
+=======================================
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+typedef vector<int> Fila;
+typedef vector<Fila> Matriu;
+
+
+//pre: n, m son mayores que cero
+//post: retorna una matriz m x n leida por filas del input
+Matriu leer_mat(int m, int n) {
+    Matriu mat(m, Fila(n));
+    for (int i = 0; i < m; ++i)
+        for (int j = 0; j < n; ++j) 
+            cin >> mat[i][j];
+    return mat;
+}
+
+
+//pre: mat es una matriz no vacia
+//post: escribe por filas en output la matriz mat
+void escribir_mat(const Matriu& mat) {
+    int m = mat.size();
+    int n = mat[0].size();
+    for (int i = 0; i < m; ++i) {
+        cout << mat[i][0];
+        for (int j = 1; j < n; ++j) 
+            cout << ' ' << mat[i][j];
+        cout << endl;
+    }
+}
+    
+
+//pre: i es el indice de una fila de a
+//     j es un indice de una columna de b
+//     numero columnas de a == numero filas b
+//post: retorna el producto escalar de fila i de a por
+//      columna j de b
+int escalar_product(const Matriu& mat_a, const Matriu& mat_b, int i, int j) {
+    int n = mat_a[0].size();
+    int res = 0;
+    for (int index = 0; index < n; ++index) 
+        res = res + mat_a[i][index]*mat_b[index][j];
+    return res;
+}
+    
+    
+//pre: mat_a y mat_b son matrices con num.columnas(mat_a) ==  num.filas(mat_b)
+//post retorna la matriz producto mat_a*mat_b
+Matriu producto(const Matriu& mat_a, const Matriu& mat_b) {
+    int m = mat_a.size(); //numero de filas de mat_a
+    int n = mat_b[0].size(); //numero de columnas de mat_b
+    Matriu mat_prod(m, Fila(n));
+    for (int i = 0; i < m; ++i)
+        for (int j = 0; j < n; ++j)
+            mat_prod[i][j] = escalar_product(mat_a, mat_b, i, j); 
+    return mat_prod;
+}
+
+
+//en input hay tres numeros m , k y n , una matriz m x k y una k x n
+//escribe en output la matriz producto, que es m x n
+int main() {
+    int m, k, n;
+    cin >> m >> k >> n;
+    Matriu mat_a = leer_mat(m, k);
+    Matriu mat_b = leer_mat(k, n);
+    Matriu mat_prod = producto(mat_a, mat_b);
+    cout << endl;
+    escribir_mat(mat_prod);
+}
+    
+
+    

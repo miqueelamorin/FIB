@@ -1,0 +1,136 @@
+Uso de sort()
+=============
+
+Ordenar un vector puede tener interés o llegar a ser necesario, por ejemplo
+para poder hacer búsquedas en él eficientes (búsquedas dicotómicas). Más
+adelante discutimos esto.
+
+Salvo que se indique lo contrario, podemos ordenar un vector usando el algoritmo
+sort() de la biblioteca "algorithm" de C++. Para usarlo, primero escribimos
+
+    #include <algorithm>
+
+en las cabecera del fichero C++ para incluir la biblioteca "algorithm". Ahora si 
+queremos ordenar el vector v ***de menor a mayor*** hacemos:
+
+    sort(v.begin(), v.end());
+
+después de esta invocación el vector v contiene los mismos valores originales,
+pero ahora dispuestos de menor a mayor.
+
+Ejemplos
+--------
+
+    Si v es el vector 85 23 34 32 11 21 83 67 y hacemos
+
+        sort(v.begin(), v.end());
+
+    los valores de v son ahora 11 21 23 32 34 67 83 85
+
+    Si w es el vector de string "joan" "anna" "marta" "pere" "pau" "isabel" "tom" 
+    y hacemos
+
+        sort(w.begin(), w.end());
+
+    los valores de w son ahora "anna" "isabel" "joan" "marta" "pau" "pere" "tom"
+    es decir el vector se ha ordenado alfabéticamente (que es el orden por defecto 
+    en strings).
+
+
+Criterios de ordenación personalizados
+======================================
+
+Supongamos que queremos ordenar el vector v  en un orden distinto al 
+habitual (de menor a mayor). En ese caso tenemos que especificar en 
+la invocación a sort() un tercer argumento que explique cuál es el 
+criterio de  ordenación. Con más detalle, la invocación  será
+
+    sort(v.begin(), v.end(), cmp);
+
+donde cmp es el nombre de una función (cuyo código tenemos que escribir) 
+que determine como se comparan dos elementos del vector en el nuevo orden. 
+Suponiento que v es un vector del tipo Type, tenemos que implementar cmp 
+con esta documentación
+
+    //pre:---
+    //post: retorna true si x es anterior a y en el orden que queremos usar 
+    //      retorna false en caso contrario
+    bool cmp(Type x, Type y)
+
+
+Ejemplos
+--------
+
+    Si queremos ordenar un vector v de enteros de **mayor a menor** la 
+    función de comparación  será:
+
+    //pre:---
+    //post: retorna true cuando x es anterior a y (es decir cuando x > y)
+    //      retorna false en caso contrario
+    bool cmp(int x, int y) {
+        return x > y;
+    }
+
+    y ahora:
+
+    sort(v.begin(), v.end(), cmp);
+
+
+    Si queremos ordenar un vector de strings de forma que primero aparezcan 
+    los strings mas cortos y que cuando  dos strings son de la misma longitud 
+    se ordenen alfabéticamente, definiremos:
+
+    //pre:---
+    //post: retorna true cuando o bien s1 es mas corto que s2 o bien s1 y s2 
+    //      tienen la misma logitud pero s1 es anterior a s2 en el 
+    //      orden alfabético 
+    bool cmp(const string& s1, const string& s2) {
+        int n = s1.length();
+        int m = s2.length();
+        if (n == m) return s1 < s2;
+        else return n < m;
+    }
+
+    Si w es el vector de nombres del ejemplo anterior y hacemos:
+
+    sort(w.begin(), w.end(), cmp);
+
+    los valores de w serán  "pau" "tom" "anna" "joan" "pere" "marta" "isabel"
+
+
+Cuánto cuesta usar sort()?
+==========================
+
+n es el tamaño del vector que pensamos ordenar
+
+Usar sort() tiene un coste en uso de recursos. Su tiempo de ejecución 
+es proporcinal a  ~~ nlogn. Decimos que es un algoritmo O(nlogn).
+
+Por tanto:
+
+    Ordenar un vector para calcular su valor mínimo  ***malgasta recursos***  
+    porque el mínimo lo podemos calcular en tiempo lineal O(n).
+
+    Ordenar un vector para hacer **una o sólo unas pocas** busqueda(s)  
+    eficiente(s) (una búsqueda dicótomica O(logn)) en vez de 
+    una búsqueda(s)  lineal  (O(n)) ***tampoco tiene sentido*** en 
+    cuanto a eficiencia
+
+    Ordenar un vector para hacer ***muchas búsquedas*** en él de forma que 
+    podamos usar el algoritmo de búsqueda dicotómica
+    ***tiene mucho sentido***  (y es un sinsentido no ordenarlo y hacer 
+    búsquedas lineales)
+
+    Números:
+    --------
+
+    Coste de hacer k búsquedas lineales en un vector 
+    no ordenado v de tamaño n:  ~~ k*n
+
+    Coste de ordenar v y luego hacer k búsquedas 
+    dicotómicas: ~~ n*logn + k*logn
+
+    Si k es pequeño el primer valor es mejor. 
+    Si k es grande (por ejemplo, la raiz de n)  el segundo es mejor. 
+    
+

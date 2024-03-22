@@ -1,0 +1,2 @@
+Se tiene que añadir la opcion -c para generar el fichero objeto
+Se tiene que añadir la opcion -I para que busque .h en el path en el que esta

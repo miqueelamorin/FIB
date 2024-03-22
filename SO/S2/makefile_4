@@ -1,0 +1,3 @@
+all:suma
+suma:suma.c
+	gcc -o suma suma.c

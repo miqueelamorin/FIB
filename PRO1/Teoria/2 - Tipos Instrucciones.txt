@@ -1,0 +1,165 @@
+Basic types
+===========
+
+int         3*4 + 17/3 - 8%5
+
+double      3./2 + 1
+
+string     "Hello World!"    "3*4 + 1"
+
+bool        logical value expressions   (true, false)
+            
+            7 < 5*2
+            3 == 4 - 2
+            5 != 3 + 3
+            6 >= 4*2
+
+            logical operators: not, and, or
+
+            not (3 == 4 - 2) and 7 < 5*2 or 6 >= 4*2
+
+            Precedence rules:
+                    not
+                    * / %
+                    + -
+                    < > <= >=
+                    == !=
+                    and
+                    or
+                    
+                    Use parenthesis to modify default precedence rules!
+
+
+char        Each symbol on keyboard and some more (not visible)
+            's' 'g' 'G' '@' '.' '7' '0'
+
+            Link between **char** and **int**
+ 
+            int('K') is a number, say n. Then char(n) is 'K'
+
+            In general:
+                int(..) provided a char as argument, returns a number
+                char(..) provided an integer (in some specific range) returns a char
+
+                such that 
+
+                    char(int(ch)) is ch ---for any char ch
+                    int(char(n)) is n   ---for any integer n in the 'valid' range
+
+                moreover:
+
+                int('b') is equal to int('a') + 1
+                int('6') is equal to int('5') + 1
+                int('Z') is equal to int('Y') + 1
+
+
+            Examples
+
+                int('7') - int('0')  is int 7
+                char(int('g') - int('a') + int('A')) is char 'G'
+
+
+More instructions
+=================
+
+*** Alternative (or coditional) composition
+    
+    if (B) S
+    else T
+        
+    where B is a boolean expression, S and T are blocks of intrucctions (delimited by braces, 
+    see note ---> below)
+
+    Execution: B is evaluated and if the result is true block S is executed. 
+               Otherwise block T is executed.
+
+    else part can be omitted when T is empty
+
+--->Braces can be omitted when the block has only one instruction 
+
+    Examples:
+        
+        //in: a non negative integer
+        //out: even / odd
+        int x;
+        cin >> x;
+        if (x%2 == 0) cout << "even";
+        else cout << "odd";
+        cout << endl;
+
+        //in: letter or digit
+        //out: letter / digit
+        char ch;
+        cin >> ch;
+        if ('0' <= ch and ch <='9') cout << "digit";
+        else cout << "letter";
+        cout << endl;
+
+
+    if (B1) S1
+    else if(B2) S2
+    ....
+    ....
+    else Sk
+    
+    Example:
+        
+        //in: an integer
+        //out: positive / negative / zero
+        int x;
+        cin >>  x;
+        if (x > 0) cout << "Positive"
+        else if (x == 0) cout << "Zero";
+        else cout << "Negative"
+        cout << endl;
+
+
+***Iteration: while
+
+    while (B) S
+
+    where B is a boolean expression, S is a block of instructions (delimited by braces,
+    see note ---> above)
+
+    B is evaluated. If true block S is executed and B is evaluated. If true block....... As soon as B is false the while instruction finishes.
+    
+    B is also called the continuation condition of the while instruction
+    
+    Multiplication table
+
+    //in: an integer
+    //out: mult table
+    int n;
+    cin >> n;
+    int j = 0;
+    while (j <= 10) {
+        cout << n << '*' << j << " = " << n*j << endl;
+        j = j + 1 // also j += 1,  also: ++j
+    }
+
+    Number of digits
+    
+    //in: a non negative integer
+    //out: its number of digits
+    int n;
+    cin >> n;
+    int ndigits = 0;
+    if (n == 0) ndigits = 1;
+    while (n > 0) {
+        ++ndigits;
+        n /= 10;
+    }
+
+    Number of letters in input chanel
+
+    //in: a sequence of chars in input chanel finished with a dot
+    //out: number of letters of the sequence
+    char ch;
+    cin >> ch;
+    int count_letters = 0;
+    while (ch != '.') {
+        if (('A' <= ch and ch <= 'Z') or ('a' <= ch and ch <= 'z') ++count_letters;
+        cin >> ch;
+    }
+    cout << count_letters << endl;
+

@@ -1,0 +1,66 @@
+Joc de proves de les funcionalitats del Teclat
+
+Utilitzarem jocs de prova CAIXA BLANCA per poder comprovar els casos limits.
+
+Casos d'ús que es comproven amb aquesta prova:
+
+    - Crear Teclat
+    - Eliminar Teclat
+    - Modificar LayOut
+    - Canviar Tecles
+    - Obtenir Teclat
+
+Input:
+
+    1
+    2
+    teclat1
+    llatí
+    3
+    test
+    4
+    teclat1
+    4
+    teclat2
+    6
+    teclat1
+    2
+    7
+    teclat1
+    1
+    1
+    2
+    2
+    4
+    teclat1
+    7
+    teclat1
+    1
+    -1
+    2
+    3
+    2
+    teclat1
+    llatí
+    3
+    test
+    4
+    teclat1
+    5
+    teclat1
+    3
+    0
+
+L'input anterior està format per una sèrie de números que fan referència a les diverses accions possibles del driver
+del driver del Teclat.
+Amb aquesta entrada comprovem que la creació i eliminació d'un teclat funciona satisfactòriament i en cas d'error
+(el text a afegir ja existeix o el text a eliminar NO existeix) el sistema notifica l'usuari.
+
+També comprovem que les excepcions en crear un teclat com indicar una llista de freqüències inexistent o seleccionar un
+layout incorrecte salten correctament.
+
+Amb aquest input també podem comprovar qué passa quan volem canviar tecles del teclat, tant si posem tecles invàlides
+com a correctes.
+
+Per comprovar que els teclats van sent afegits, eliminats o modificant utilitzem la funcionalitat de mostrar l'estat dels
+teclats.

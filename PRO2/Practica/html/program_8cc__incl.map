@@ -1,0 +1,8 @@
+<map id="program.cc" name="program.cc">
+<area shape="rect" id="node1" title="Programa principal." alt="" coords="95,5,189,32"/>
+<area shape="rect" id="node2" href="$_categorias_8hh.html" title="Especificación de la clase Categorias." alt="" coords="5,229,116,256"/>
+<area shape="rect" id="node3" href="$_circuito_8hh.html" title="Especificación de la clase Circuito." alt="" coords="97,80,187,107"/>
+<area shape="rect" id="node5" href="$_cjt___jugadores_8hh.html" title="Especificación de la clase Cjt_Jugadores." alt="" coords="159,229,288,256"/>
+<area shape="rect" id="node4" href="$_torneo_8hh.html" title="Especificación de la clase Torneo." alt="" coords="99,155,185,181"/>
+<area shape="rect" id="node6" href="$_jugador_8hh.html" title="Especificación de la clase Jugador." alt="" coords="178,304,269,331"/>
+</map>

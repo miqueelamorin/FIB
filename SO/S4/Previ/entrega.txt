@@ -1,0 +1,24 @@
+Alarm1:
+    1 - A los 5 segundos no pasa nada ya que en el codigo pone alarm(10) y debería ser alarm(5). Eso sí, a los 10 segundos pone un mensaje en pantalla que pone: "Alarm clock".
+
+    2 - El programa termina su ejecución. Se recibe un mensaje en la terminal que dice: "Killed"
+
+    3 - De eso se encarga el proceso Shell (que muta al ejecutable que se escriba). Ya que en el pseudo código de la terminal no aparece ningun comando de imprimir.
+Con la función waitpid(pid_h, &status, 0), se guardara el estado en la variable status.
+
+    4 - Solo es necesario en el caso de que se salga del sigsuspend por cualquier error (ya que el propio alarm se encarga de terminar el proceso pero en caso de no hacerlo se quedaria en el sigsuspend).
+
+Alarm 2:
+    1 - El control del tiempo no funciona correctamente, el proceso escribe el mensaje aunque no hayan pasado 10 segundos.
+
+    2 - Para todos menos SIGKILL y SIGSTOP.
+
+    3 - El valor de retorno es el tiempo restante hasta la siguiente alarma. Podríamos cambiar la llamada a alarm(10) por if (alarm(10) > 0) error_y_exit("alarm", 1).
+
+Alarm 3:
+    1 - Los dos. Se comprueba ejecutando el programa y viendo que tanto padre como hijo ejecutan la funcion_alarma
+
+Alarm 4:
+    1 - El hijo programa una alarma. Pero los dos se quedan esperando el SIGALRM, en el momento que llega, solo el hijo lo recibe y es el unico que ejecuta funcion_alarma
+        Si le mandas un SIGALRM al padre, empieza a funcionar el contador de segundos. Sino se queda esperando en el sigsuspend.
+

@@ -1,0 +1,90 @@
+Fusión de vectores ordenados
+============================
+
+Tenemos dos vectores de enteros u y v ordenados (de menor a mayor). Queremos 
+fusionarlos (juntarlos) en un único vector que esté a su vez ordenado.
+
+Ejemplo
+-------
+
+    u ---> 12 34 38 54 63 93
+    v ---> 11 15 17 23 28 31 39 42 45 63 76 81
+
+    El vector resultado de la fusión debe ser:
+
+    11 12 15 17 23 28 31 34 38 39 42 45 54 63 63 76 81 93
+
+
+Si no se piensa demasiado, uno puede optar por la solución fácil, pero 
+ineficiente, que sigue:
+
+    int n = u.size();
+    int m = v.size();
+    vector<int> res(n + m);
+    for (int i = 0; i < n; ++i) res[i] = u[i];
+    for (int i= 0; i < m; ++i) res[n + i] = v[i]
+    sort(res.begin(), res.end())
+
+Por comodidad, denotamos por N a n + m en esta explicación. El tiempo de 
+ejecución de este código  es proporcional a NlogN (por el sort()), es 
+un código O(NlogN).
+
+
+Podemos proponer un algoritmo más eficiente O(N) si lo pensamos un poco más. 
+Mantenemos dos índices, el i para u y el j para v, que indican respectivamente 
+cuál es el elemento más pequeño de u (repectivamente, de v) que todavía "no se 
+ha añadido" al vector resultado. Al inicio tanto i como j serán la primera 
+posición 0. En cada iteración añadimos al vector resultado el que sea más pequeño,
+y actualizamos o bien i o bien j (dependiendo del que se haya "añadido").
+
+Simulamos una traza con las primeras iteraciones para 
+
+    u ---> 12 34 38 54 63 93
+    v ---> 11 15 17 23 28 31 39 42 45 63 76 81
+
+    Inicializamos indices i (de u) y j (de v) a cero. Creamos el vector res.
+    
+    1) comparamos u[0] y v[0]. Como 12 > 11 añadimos 11 a res e incrementamos j
+    2) comparamos u[0] y v[1]. Como 12 < 15 añadimos 12 a res e incrementamos i
+    3) comparamos u[1] y v[1]. Como 34 > 15 añadimos 15 a res e incrementamos j
+    4) comparamos u[1] y v[2]. Como 34 > 17 añadimos 17 a res e incrementamos j
+    5) comparamos u[1] y v[3]............
+    ..........
+
+
+Función de fusión de vectores ordenados completa:
+
+
+//pre: u y v estan ordenados crecientemente
+//post: el vector resultado esta ordenado crecientemente y contiene los valores originales de u y v
+vector<int> fusion(const vector<int>& u, const vector<int>& v) {
+	int n = u.size();
+	int m = v.size();
+	vector <int> res(n + m);
+	int i = 0;  //indice de u (sennala el menor de u todavia no incorparado)
+	int j = 0;  //indice de v (sennala el menor de v todavia no incorparado)
+ 	int k = 0;  //indice de res (sennala la primera posicion libre de res)
+	while (i < n and j < m) {
+		if (u[i] <=  v[j]) {
+			res[k] = u[i];
+			++i;
+		}
+		else {
+			res[k] = v[j];
+			++j;
+		}
+		++k;
+	}
+	while (i < n) {
+		res[k] = u[i];
+		++i;
+		++k;
+	}	
+	while (j < m) {
+		res[k] = v[j];
+		++j;
+		++k;
+	}
+	return res;
+}
+

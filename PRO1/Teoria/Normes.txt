@@ -1,0 +1,114 @@
+<iostream>
+<cmath> (M PI, sin(), cos(), tan(), sqrt())
+<vector>
+<string>
+<algorithm> (només per sort())
+using namespace std;
+
+Tipus permesos: int, double, bool, char, string
+Operadors permesos: +=, -=, *=, /=, %=
+
+Noms variables SEMPRE en minuscula i separades per '_'
+Noms constants SEMPRE en majuscula i separades per '_'
+Noms procediments SEMPRE en minuscula i separades per '_'
+
+Declarar variable quan es necessita i inicialitzar en la declaracio una per linia
+NO comparar boolean amb true or false if(boolean) or if(not boolean)
+NO Modificar la variable de control d’un for dins del cos del for.
+NO Posar condicions complexes al for. Transformar a a while.
+Identar amb 4 espais, no més de 78 caracters per linia
+Els operadors *, /, %, ++, --, - (canvi de signe) s’escriuen sense espais.
+
+Sempre que s’obre una clau, va precedit d’un espai en blanc
+Si un if, for, while només té una acció no cal obrir clau
+
+Millor separar trossos de codi amb linia en blanc
+
+const nom_de_tipus nom_de_constant = valor;
+
+cout.setf(ios::fixed);
+cout.precision(4);
+
+vector<type> name(size);
+name.size();
+
+string s1;
+string s2 = “abc”;
+string s3(10,'x'); string of size 10 filled with 'x'
+Comparisons: ==, !=, <, >, <=, >=
+s.length();
+
+vector< vector<int> > name(rows,vector<int>(columns));
+int nrows = a.size();
+int ncols = a[0].size();
+
+struct Person {
+    fields;
+};
+
+Selection Sort: Buscar per cada elem de v el minim elem dreta i swap
+                Tots els emens a la esq del actual estan ordenats
+Insertion Sort: Per cada elem de v l'insereix a la seva esq i far un shift dels altres
+Bubble Sort: Cada 2 elem fer swap si el1 > el2
+Merge Sort: Anar dividint en 2 i juntar
+
+void selection_sort(vector<elem>& v) {
+    int last = v.size() - 1;
+    for (int i = 0; i < last; ++i) {
+        int k = pos_min(v, i, last);
+        swap(v[k], v[i]);
+
+int pos_min(const vector<elem>& v, int left, int right) {
+    int pos = left;
+    for (int i = left + 1; i <= right; ++i) {
+        if (v[i] < v[pos]) pos = i;
+    }
+    return pos;
+
+void insertion_sort(vector<elem>& v) {
+    for (int i = 1; i < v.size(); ++i) {
+        elem x = v[i];
+        int j = i;
+        while (j > 0 and v[j - 1] > x) {
+            v[j] = v[j - 1];
+            --j;
+        }
+        v[j] = x;
+    }
+
+void bubble_sort(vector<elem>& v) {
+    int last = v.size() – 1;
+    while (last > 0) {
+        int last_swap = 0;
+        for (int i = 0; i < last; ++i) {
+            if (v[i] > v[i + 1]) {
+                swap(v[i], v[i + 1]);
+                last_swap = i;
+            }
+        }
+    last = last_swap;
+    }
+
+void merge_sort(vector<elem>& v, int left, int right) {
+    if (left < right) {
+        int m = (left + right)/2;
+        merge_sort(v, left, m);
+        merge_sort(v, m + 1, right);
+        merge(v, left, m, right);
+    }
+
+void merge(vector<elem>& v, int left, int mid, int right) {
+    int n = right - left + 1;
+    vector<elem> aux(n);
+    int i = left;
+    int j = mid + 1;
+    int k = 0;
+    while (i <= mid and j <= right) {
+        if (v[i] <= v[j]) { aux[k] = v[i]; ++i; }
+        else { aux[k] = v[j]; ++j; }
+        ++k;
+    }
+    while (i <= mid) { aux[k] = v[i]; ++k; ++i; }
+    while (j <= right) { aux[k] = v[j]; ++k; ++j; }
+    for (k = 0; k < n; ++k) v[left+k] = aux[k];
+

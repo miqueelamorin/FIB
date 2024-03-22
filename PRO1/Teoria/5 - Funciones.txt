@@ -1,0 +1,118 @@
+Funciones/Acciones:
+===================
+
+Permiten crear capsulas de codigo. Esas capsulas las podemos utlizar (llamar) cuando convenga
+
+**Funciones---> Calculan un valor (y, en nuestro curso, solo uno) 
+
+        Por ejemplo, la raiz cuadrada, el maximo de dos numeros, la suma de digitos de un numero.
+ 
+        return obligatorio
+
+**Acciones ---> Realizan un trabajo que no se puede reducir al calculo de un unico valor. 
+       
+        Por ejemplo, intercambiar valores de variables, hacer un dibujo, ordenar tres numeros. 
+
+        Tambien usamos acciones cuando queremos hacer una capsula con un codigo que calcula mas 
+        de un resultado.     
+
+        sin instruccion   return
+
+Ejemplos
+========
+
+1) Capsula para calcular el maximo de dos numeros:
+
+    FUNCION
+
+    //pre:---
+    //post: retorna (calcula)  el maximo de a y b
+    int maximo(int a, int b) { //----> function head: function name + parametros formales
+        if (a >= b) return a;  //----> cuerpo de la funcion
+        else return b;         //----> cuerpo de la funcion
+    }
+    
+
+2) Capsula para felicitar:
+
+    ACCION
+
+    //pre:--
+    //post: felicita el cumpleannos de nombre
+    void felicitar(string nombre){
+        cout << "Feliz cumpleannos " << nombre << ", que pases un buen dia!" << endl;
+    }   
+
+3) Indicar si un numero es una potencia de 2 
+
+    FUNCION
+
+    //pre: a >= 1
+    //post: retorna true si a es una potencia de 2. Retorna falso en caso contrario.
+    bool es_pot_dos(int a) {
+         while (a%2 == 0) a = a/2;
+         return a == 1; 
+         //if (a == 1) return true;
+         //else return false;   //----> mal estilo de programacion, codigo innecesario
+    }
+
+
+
+Paso de parámetros: por valor o por referencia?
+===============================================
+
+1) Paso por Valor---> Parametros de ENTRADA 
+
+     Caso mas frecuente, expresa una comunicación **unidireccional** de punto de llamada a función. 
+     En el punto de llamada se evaluan las expresiones que dan el valor inicial a los parametros.
+
+    // n es 10 y m es 20
+    cout << maximo(n + 5 , m -3) << endl;
+    // se ha escrito el valor 17
+    ----
+
+    felicitar("Joan");
+    ----
+
+    int n = ...
+    .....
+    .....
+
+    if (es_pot_dos(n)) ....
+    -----
+
+
+2) Paso por Referecia ---> Parametros de SALIDA o de ENTRADA/SALIDA.
+
+    Expresa comunicacion **completa o permanente** entre el punto llamada y los parametros. 
+    Los cambios en los parametros se reflejan  ***en las variables que ha de haber**** en el      
+    punto de llamada. En pro1, el paso por referencia solo se usa en acciones (el 90% de las veces).
+
+    Ejemplo: intercambio
+    
+    ACCION
+    
+    //pre:----
+
+    //post: a y b han intercambiado sus valores
+    void swap(int& a, int& b)   ---> dos parametros de ENTRADA/SALIDA
+
+
+    Ejemplo: capsula para el cociente y resto de una division entera     
+  
+     ACCION (porque se calculan DOS resultados)
+    
+    //pre: a >= 0 y  b > 0
+    //post: c y r son el cociente y el resto de la division entera de a (dividendo) por b (divisor) 
+    void division_entera (int a, int b, int& c, int& r) { ---> dos parametros de ENTRADA y dos de SALIDA 
+        c = a/b;
+        r = a%b;
+    }
+        
+        
+        
+    posibles llamadas:
+
+        division_entera(9834, 46, cociente, resto)
+
+        division_entera(n, m + 1, c, r)

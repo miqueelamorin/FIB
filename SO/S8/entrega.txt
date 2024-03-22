@@ -1,0 +1,13 @@
+67.
+    Inicio
+    Fin
+    Se ve la del padre ya que el hijo muta al cat.
+
+68.
+    No acaba ni el padre ni el hijo, ya que el canal nunca se cierra y el hijo se queda bloqueado esperando que lleguen datos por la pipe.
+
+
+66.
+    Deberíamos crear otra pipe ya que si escribieramos en la actual no habría forma de diferenciar entre los mensajes del programa escritor y los nuestros.
+
+

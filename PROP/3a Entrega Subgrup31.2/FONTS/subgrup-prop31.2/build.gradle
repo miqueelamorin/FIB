@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'domini'
+
+ext {
+    javaMainClass = 'domini.Main'
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+}
+
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // this is just an example of importing an external library, you do not need to use it in your project
+    implementation 'com.google.code.gson:gson:2.8.9'
+    //implementation 'org.jetbrains:annotations:24.0.0'
+    //implementation 'junit:junit:4.13.1'
+    //testImplementation('junit:junit:4.13.1')
+    //testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.9.0'
+
+}
+
+gradle.taskGraph.whenReady {
+    tasks.withType(JavaExec).tap {
+        configureEach {
+            if (name.endsWith(".main()")) {
+                println("Setting executable to java launcher for ${name}")
+                it.setExecutable(javaLauncher.get().executablePath.asFile.absolutePath)
+            }
+        }
+    }
+}
+
+run {
+    standardInput = System.in
+    jvmArgs("-D sun.awt.disablegrab=true")
+}
+
+javadoc{
+    title = 'Generador de Teclats'
+}

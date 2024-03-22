@@ -1,0 +1,67 @@
+***Algoritmo***: Secuencia precisa de instrucciones que permiten hacer una tarea.
+
+Ejemplos:
+   
+   Ikea assembly instructions
+
+   algoritmos  para la suma, multiplicación, división...
+
+    1345
+    +391
+    =====
+    1736
+     
+***Programa***: algoritmo descrito en un lenguaje de programación. También: algoritmo 
+                codificado de una forma que puede interpretar un computador.
+
+
+  Ejemplos:
+
+    1) HelloWorld (string)
+    2) cout << 3*5 + 2 << endl; (int)
+    2) cout << "3*5 + 2" << "=" << 3*5 + 2  << endl; (string,int)
+    3) arithmetic expressions: +, *, /, %. Prioridad.
+    4) 3/2 vs 3.0/2 (int, double)
+
+
+***Protagonistas en un programa  --main characters--*** 
+
+    ---Variables ---: permiten conservar un valor. Cada variable tiene asociado un **tipo** (int, string, double,....)  
+       que limita la info que puede conservar.
+
+    ---Instrucciones---:
+
+        Lectura de un valor del canal de entrada (teclado)
+
+            cin >> x;
+
+
+        Asignación de un valor:
+  
+            x = E
+
+        Composición secuencial (o bloque):
+
+            int x; 
+            cin >> x;
+            cout << x + 1 << endl;
+
+
+Ejemplo:
+
+  Dada una cantidad de segundos, se pide un programa para calcular el número de horas, minutos y segundos equivalente
+
+  input: 7428
+  output: 2:3:48
+
+  int n;
+  cin >> n;
+  int min = n/60;
+  int sec = n%60;
+  // n seconds are min minuts and sec seconds and 0 <= sec < 60
+  int hours = min/60;
+  min = min%60;
+  cout << hours << ':' << min << ':' << sec << endl;
+
+
+Continuará....

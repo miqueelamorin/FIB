@@ -1,0 +1,128 @@
+Búsqueda en vectores
+====================
+
+En este capítulo y si no se señala lo contrario v será un vector de enteros y n su tamaño.
+
+Búsqueda secuencial:
+-------------------
+
+//pre:--
+//post: retorna i tal que v[i] es x cuando x esta en v 
+//      retorna -1 cuando x no esta en v 
+int search(const vector<int>& v, int x) {
+    int n = v.size();
+    for (int i = 0; i < n; ++i) 
+        if (v[i] == x) return i;
+    return  -1;
+}
+
+
+Tiempo de ejecución proporcional al número de tests (v[i] == x)  que se realizan ~~ n
+
+Es un algoritmo O(n)
+
+
+Búsqueda dicotómica: 
+-------------------
+
+Para  vectores ***ordenados***
+
+Idea: En un diccionario ***no buscamos las palabras secuencialmente***!
+
+      Si x es mayor que v[i], entonces x no esta en v[0..i]
+      Si x es menor que v[i], entonces x no esta en v[i..n-1]
+
+      El tiempo de ejecución se puede reducir drásticamente si el vector está ordenado
+
+
+//pre: v esta ordenado (de menor a mayor).
+//post: retorna i tal que v[i] es x cuando x esta en v 
+//      retorna -1 cuando x no esta en v 
+int binary_search(const vector<int>& v, int x) {
+    int iz = 0;
+    int de = v.size() - 1;
+    //v[iz..de] es el area de busqueda "activo"
+    while (iz <= de) {
+        int mit = (iz + de)/2;
+        //mit es la posición mitad del area activa, iz <= mit <= de
+        if (x > v[mit]) iz = mit + 1;  //descartamos primera mitad de area activa
+        else if (x < v[mit]) de = mit - 1; //descartamos la segunda mitad
+        else return mit;
+    }
+    //si llegamos aqui el area activa es vacia
+    return -1;
+}
+
+**Ejemplo de traza de ejecución**:
+
+Supongamos que:
+
+    v es 11 17 24 29 30 35 44 48 51 52 57 63 67 71 85 89 91 94 99 
+
+    x es 90
+
+    Traza de ejecución:
+    
+        1) iz es 0, de es 18 (v tiene tamaño 19). Entonces iteramos porque iz <= de y cambiamos
+           mit por 9 ((0 + 18)/2). Como x > v[mit] (porque 90 > 52) cambiamos iz por mit + 1
+
+        2) iz es 10, de es 18. Entonces iteramos porque iz <= de y cambiamos mit por 14 ((10 + 18)/2).
+           Como x > v[mit] (porque 90 > 85) cambiamos iz por mit + 1.
+
+        3) iz es 15, de es 18. Iteramos de nuevo porque iz <= de y cambiamos mit por 16 ((15 + 18)/2).
+           Como x < v[mit] (porque 90 < 91) cambiamos de por mit - 1.
+
+           4) iz es 15, de es 15. Iteramos de nuevo porque iz <= de y cambiamos mit por 15 ((15 + 15)/2).
+           Como x > v[mit] (porque 90 > 89) cambiamos iz  por  mit + 1.
+
+        5) iz es 16, de es 15. No iteramos mas porque la condición iz <= de no se cumple. 
+           La función retorna -1 y termina.
+
+
+
+Ejercicio: traza de ejecución para x con valor 17
+            
+
+
+Tiempo de ejecución proporcional al número de tests  que se realizan ~~ log n
+
+Es un algoritmo O(log n)
+
+
+Comparacion entre n y log n:
+
+
+n          log n
+===================
+100        7
+1000       10
+10000      14
+100000     17
+1000000    20
+10000000   24
+..............
+
+
+Versión recursiva de la búsqueda dicotómica
+-------------------------------------------
+
+Las variables locales iz y de que delimitan el área de búsqueda activa pasan 
+a ser parámetros de la función para así poder expresar los cambios en las llamadas 
+recursivas
+
+//busqueda dicotómica: version recursiva
+//pre: v es creciente y  iz, de son indices validos de v 
+//post: retorna i tal que v[i] es x cuando x esta en v[iz..de] y iz <= i <= de
+//      retorna -1 cuando x no esta en v[iz..de] 
+int rec_binary_search(const vector<int>& v, int x, int iz, int de) {
+    if (iz > de) return -1;
+    else {
+        int mit = (iz + de)/2;
+        //iz <= mit <= de
+        if (x > v[mit]) return rec_binary_search(v, x, mit + 1, de); 
+        else if (x < v[mit]) return rec_binary_search(v, x, iz, mit - 1);
+        else return mit;
+    }
+}
+
+

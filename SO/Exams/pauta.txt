@@ -1,0 +1,19 @@
+void Usage(){
+    char buffer[128];
+  sprintf(buffer, "Usage: n_procs num\n");
+  write(1,buffer, strlen(buffer));
+  exit(0);
+}
+
+void error_y_exit(char *msg, int exit_status) {
+	perror(msg);
+	exit(exit_status);
+}
+
+all: prog
+
+prog:prog.c
+	gcc -o prog prog.c
+
+clean:
+	rm -rf prog

@@ -1,0 +1,160 @@
+Mergesort --- Ordenación por fusión---
+======================================
+
+Es un algoritmo sofisticado de ordenación de vectores que garantiza en todos
+los casos un tiempo de ejecución proporcional a nlogn, es un algoritmo O(nlogn).
+Este rendimiento, junto a su "sencillez" son sus **puntos fuertes**. Como veremos
+más tarde tiene como **punto débil** que  usa un vector auxiliar para hacer el proceso
+de merge o fusión. La diferencia en el rendimiento entre mergesort y cualquiera de los 
+simples ---como el de ordenación por inserción--- es muy evidente, como luego 
+constataremos experimentalmente.
+
+
+Idea intuitiva del algoritmo
+----------------------------
+Para ordenar el vector v procedemos como sigue. Primero ordenamos la primera mitad v[0..n/2].
+Luego ordenamos la segunda parte v[n/2 + 1.. n-1]. Hecho esto tendremos el vector dividido en 
+dos mitades o segmentos, cada una ordenada. Para conseguir el vector completamente ordenado
+basta fusionar (merge) las dos mitades ordenadas (recordemos que el tiempo necesario para
+fusionar vectores ordenados es proporcional a n, es O(n)).
+
+
+Ejemplo
+-------
+
+queremos ordenar v ---> 43 27 98 26 45 36 86 35 21 66 21 78  (n es 12)
+
+ordenamos la primera mitad v[0..5] ---> 26 27 36 43 45 98 | 86 35 21 66 21 78
+ordenamos la segunda mitad v[6..11]---> 26 27 36 43 45 98 | 21 21 35 66 78 86
+
+Finalmente fusionamos los segmentos ordenados v[0..5] y v[6..11] para obtener 
+el vector completamente ordenado:
+
+merge(v[0..5], v[6..11]) ---> 21 21 26 27 35 36 43 45 66 78 86 98 
+
+
+
+Cómo ordenamos las mitades?
+---------------------------
+
+con llamadas ***recursivas***
+
+Por tanto mergesort es una acción recursiva. El caso directo corresponde a segmentos
+o porciones  a ordenar muy pequeños, de tamaño uno o cero. En este caso no hay nada que 
+hacer porque el segmento ya está ordenado. El caso recursivo  se aplica a segmentos de
+tamaño superior a uno.
+
+
+Esquema algorítmico
+-------------------
+Introducimos los parámetros iz y de que señalan los límites del segmento a ordenar. Son 
+necesarios para poder expresarlos cambios en  las llamadas recursivas. Si queremos ordenar
+todo el vector haremos la llamada mergesort(v, 0, n - 1) donde n representa el tamaño de v 
+
+
+// Pre: iz y de son posiciones validas de v 
+// Post: los valores  de v[iz..de] son los  iniciales, pero ordenados de menor a mayor
+void mergesort(vector<int>& v, int iz, int de) {
+    if (iz < de) {
+        int mit = (iz + de)/2;
+        mergesort(v, iz, mit);
+        //por hipotesis de induccion, v[iz..mit] tiene los valores originales ordenados
+        mergesort(v, mit + 1, de);
+        //por hipotesis de induccion, v[mit+1..de] tiene los valores originales ordenados
+        fusionar(v, iz, mit, de);
+    }
+}
+
+
+
+
+
+
+Código completo
+---------------
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+//pre: n > 0
+//post: retorna un vector de tamanno n leido de la entrada
+vector<int> lee_vector(int n) {
+    vector<int> v(n);
+    for (int i = 0; i < n; ++i) cin >> v[i];
+    return v;
+}
+
+
+//pre:---
+//post: valores del vector escritos en output
+void escribir_vector(const vector<int>& v) {
+    int n = v.size();
+    cout << v[0];
+    for (int i = 1; i < n; ++i)
+    cout << ' ' << v[i];
+    cout << endl;
+}
+
+
+
+// Pre: 0 <= iz <= mit <= de < v.size() i v[iz..mit] y v[mit+1..de], por separado, 
+//      estan ordenados de menor a mayor
+// Post: los valores de v[iz..de] son los iniciales, pero ordenados de menor a
+//       a mayor y el resto de elementos de v no ha cambiado
+void fusionar(vector<int>& v, int iz, int mit, int de) {
+    vector<int> aux(de - iz + 1);
+    int i = iz;      //indice para primer segmento
+    int j = mit + 1; //indice para segundo segmento
+    int k = 0;       //indice para aux
+    while (i <= mit and j <= de) {
+        if (v[i] <= v[j]) {
+            aux[k] = v[i];
+            ++i;
+        }
+        else {
+            aux[k] = v[j];
+            ++j;
+        }
+        ++k;
+    }
+    while (i <= mit) {
+        aux[k] = v[i];
+        ++k;
+        ++i;
+    }
+    while (j <= de) {
+        aux[k] = v[j];
+        ++k;
+        ++j;
+    }
+    //volcamos el resultado de la fusion en v[iz..de]
+    int s = aux.size(); //s es de - iz + 1
+    for (k = 0; k < s; ++k) v[iz + k] = aux[k];
+}
+
+
+// Pre: iz y de son posiciones validas de v 
+// Post: los valores  de v[iz..de] son los  iniciales, pero ordenados de menor a mayor
+void mergesort(vector<int>& v, int iz, int de) {
+    if (iz < de) {
+        int mit = (iz + de)/2;
+        mergesort(v, iz, mit);
+        //por hipotesis de induccion, v[iz..mit] tiene los valores originales ordenados
+        mergesort(v, mit + 1, de);
+        //por hipotesis de induccion, v[mit+1..de] tiene los valores originales ordenados
+        fusionar(v, iz, mit, de);
+    }
+}
+
+
+int main() {
+   int n;
+   cin >> n;
+   vector<int> v = lee_vector(n);
+   mergesort(v,0,v.size() - 1);
+   escribir_vector(v);
+}
+

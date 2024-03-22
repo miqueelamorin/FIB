@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Subgrup-prop31.2-entrega.iml" filepath="$PROJECT_DIR$/.idea/Subgrup-prop31.2-entrega.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FONTS/src/main/main.iml" filepath="$PROJECT_DIR$/FONTS/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FONTS/src/test/test.iml" filepath="$PROJECT_DIR$/FONTS/src/test/test.iml" />
+    </modules>
+  </component>
+</project>

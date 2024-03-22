@@ -1,0 +1,46 @@
+1. 
+	Devuelve 0
+
+2. 
+	./es1 < entrada.txt
+
+3.
+   	-rwxrwxrwx 1 miquel miquel 16136 Nov 23 08:33 es1
+	-rwxrwxrwx 1 miquel miquel  1170 Feb  8  2021 es1.c
+	-rwxrwxrwx 1 miquel miquel 16288 Nov 23 08:33 es2
+	-rwxrwxrwx 1 miquel miquel  1700 Feb  8  2021 es2.c
+	-rwxrwxrwx 1 miquel miquel 16136 Nov 23 08:33 es3
+	-rwxrwxrwx 1 miquel miquel   943 Feb  8  2021 es3.c
+	-rwxrwxrwx 1 miquel miquel 16048 Nov 23 08:33 es4
+	-rwxrwxrwx 1 miquel miquel  1206 Feb  8  2021 es4.c
+	-rwxrwxrwx 1 miquel miquel 15776 Nov 23 08:33 es5
+	-rwxrwxrwx 1 miquel miquel    31 Feb  8  2021 es5.c
+	-rwxrwxrwx 1 miquel miquel 16048 Nov 23 08:33 es6
+	-rwxrwxrwx 1 miquel miquel   112 Feb  8  2021 es6.c
+	-rwxrwxrwx 1 miquel miquel 16008 Nov 23 08:33 es7
+	-rwxrwxrwx 1 miquel miquel   107 Feb  8  2021 es7.c
+	-rwxrwxrwx 1 miquel miquel 16096 Nov 23 08:33 es8
+	-rwxrwxrwx 1 miquel miquel   644 Feb  8  2021 es8.c
+
+	Busca la palabra 'es' en la salida del comando ls -l
+
+	ps -e -o pid,user,command | grep bash
+
+5.
+	Se escriben 4 bytes en representación interna 'B)' y 5 cuando se convierte a string '10562'. Un int ocupa 4 bytes y en el string cada caracter ocupa 1 byte.
+	En la representación interna se ven los bytes del número transformado a ascii y en la string el número se imprime como un numero.
+
+6.
+	La función read_driver_1 o read_driver_2.
+
+	Son identificadores del dispositivo físico.
+	Major: Indica el tipo de dispositivo
+	Minor: Indica la instancia concreta respecto al major.
+
+	DRIVER 1:
+		MAJOR: 249
+		MINOR: 0
+
+	DRIVER 2:
+		MAJOR: 250
+		MINOR: 0

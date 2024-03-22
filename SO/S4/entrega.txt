@@ -1,0 +1,6 @@
+28 - El proceso padre muestra el mensaje 'Alarm Clock' y termina su ejecución.
+29 - La tabla de tratamiento de signals se pone por defecto. Se pierde la reprogramación de los signals.ç
+30 - Es concurrente
+31 - No, ya que un proceso solo tiene permiso de enviar signals a los procesos creados por el mismo usuario.
+     bash: kill: (7803) - Operation not permitted
+32 - Muestra 'Alarm Clock'

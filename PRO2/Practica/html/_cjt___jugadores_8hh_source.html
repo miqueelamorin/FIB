@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica de PRO2. &#39;Circuito de torneos de tenis&#39;.: Fichero Fuente Cjt_Jugadores.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica de PRO2. &#39;Circuito de torneos de tenis&#39;.<span id="projectnumber">&#160;v2.0 16-05-2022</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Cjt_Jugadores.hh</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_cjt___jugadores_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef _CJT_JUGADORES_HH_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define _CJT_JUGADORES_HH_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_jugador_8hh.html">Jugador.hh</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_cjt___jugadores.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cjt___jugadores.html">Cjt_Jugadores</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//Constructoras </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="class_cjt___jugadores.html#a2e7a3bb35253088c8b66d6cfbc89742f">Cjt_Jugadores</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//Modificadoras</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a568645add15663ae5ad455db748500de">actualizar_estadisticas</a>(<span class="keywordtype">string</span> jug, <span class="keywordtype">int</span> t, <span class="keywordtype">int</span> sg, <span class="keywordtype">int</span> sp, <span class="keywordtype">int</span> jg, <span class="keywordtype">int</span> jp, <span class="keywordtype">int</span> pg, <span class="keywordtype">int</span> pp);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a732b3275188d15d648b87fa78f80d0e0">anadir_jugador</a>(<span class="keywordtype">string</span> nombre);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#ad9e89ddf1604ef45b5b86b011ea36730">eliminar_jugador</a>(<span class="keywordtype">string</span> nombre);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#ae7b5ee0d4dfd3379a9aaad67d40fd51e">sumar_puntos</a>(<span class="keywordtype">string</span> nombre, <span class="keywordtype">int</span> pts);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#aa3e654d501a23e4f43a1a61cdf7507cc">ordenar_ranking</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Lectura y escritura</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a753d3bc139ca9107cfc94d464653d473">leer</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a4c60a851b0212b02d07f2048d13188d6">listar_ranking</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a1a96c570a483da224c882216d3080dd0">listar_jugadores</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cjt___jugadores.html#a4cc6e7db64a3f5df7f77445cd66e5e8e">listar_jugador</a>(<span class="keywordtype">string</span> nombre) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//Consultoras</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cjt___jugadores.html#a368a20e35cb54e9a5491adcb14bb5e16">existe</a>(<span class="keywordtype">string</span> nombre) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_cjt___jugadores.html#ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3">numero_jugadores</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_cjt___jugadores.html#a10d337c9870407712dda6e09a319e680">buscar_jugador</a>(<span class="keywordtype">int</span> n) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_cjt___jugadores.html#af17c15164bd84637045a320173e98309">consultar_puntos</a>(<span class="keywordtype">string</span> nombre) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="struct_cjt___jugadores_1_1jrank.html">  126</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_cjt___jugadores_1_1jrank.html">jrank</a>{</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="struct_cjt___jugadores_1_1jrank.html#aab48b7b320183bd65bf0a81f59f85bb7">  128</a></span>        <span class="keywordtype">string</span> <a class="code hl_variable" href="struct_cjt___jugadores_1_1jrank.html#aab48b7b320183bd65bf0a81f59f85bb7">nombre</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="struct_cjt___jugadores_1_1jrank.html#a8b9dc2fa3d382ab7bb165013525e2dc1">  131</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_cjt___jugadores_1_1jrank.html#a8b9dc2fa3d382ab7bb165013525e2dc1">puntos</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="struct_cjt___jugadores_1_1jrank.html#ac997f958c4d48dd39ecc596b6dd6dbee">  134</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_cjt___jugadores_1_1jrank.html#ac997f958c4d48dd39ecc596b6dd6dbee">pos_ant</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    };</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_cjt___jugadores.html#a13fc36e93247d53bf4b4489e41a8a62f">  138</a></span>    map&lt;string, Jugador&gt; <a class="code hl_variable" href="class_cjt___jugadores.html#a13fc36e93247d53bf4b4489e41a8a62f">cjt</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_cjt___jugadores.html#a2e870e07bbcbd6b0509824b6869923d0">  141</a></span>    vector&lt;jrank&gt; <a class="code hl_variable" href="class_cjt___jugadores.html#a2e870e07bbcbd6b0509824b6869923d0">ranking</a>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cjt___jugadores.html#ad2609d45dc343725e0b31dd26aa1e79c">comp</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_cjt___jugadores_1_1jrank.html">jrank</a>&amp; j1, <span class="keyword">const</span> <a class="code hl_struct" href="struct_cjt___jugadores_1_1jrank.html">jrank</a>&amp; j2);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_jugador_8hh_html"><div class="ttname"><a href="_jugador_8hh.html">Jugador.hh</a></div><div class="ttdoc">Especificación de la clase Jugador.</div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html"><div class="ttname"><a href="class_cjt___jugadores.html">Cjt_Jugadores</a></div><div class="ttdoc">Representa un conjunto de jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00022">Cjt_Jugadores.hh:23</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a10d337c9870407712dda6e09a319e680"><div class="ttname"><a href="class_cjt___jugadores.html#a10d337c9870407712dda6e09a319e680">Cjt_Jugadores::buscar_jugador</a></div><div class="ttdeci">string buscar_jugador(int n) const</div><div class="ttdoc">Localiza el nombre del jugador con posición &quot;n&quot; en el ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00098">Cjt_Jugadores.cc:98</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a13fc36e93247d53bf4b4489e41a8a62f"><div class="ttname"><a href="class_cjt___jugadores.html#a13fc36e93247d53bf4b4489e41a8a62f">Cjt_Jugadores::cjt</a></div><div class="ttdeci">map&lt; string, Jugador &gt; cjt</div><div class="ttdoc">Diccionario que almacena jugadores con índice asociado por nombre.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00138">Cjt_Jugadores.hh:138</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a1a96c570a483da224c882216d3080dd0"><div class="ttname"><a href="class_cjt___jugadores.html#a1a96c570a483da224c882216d3080dd0">Cjt_Jugadores::listar_jugadores</a></div><div class="ttdeci">void listar_jugadores() const</div><div class="ttdoc">Operación de escritura de todos los jugadores y sus estadísticas.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00069">Cjt_Jugadores.cc:69</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a2e7a3bb35253088c8b66d6cfbc89742f"><div class="ttname"><a href="class_cjt___jugadores.html#a2e7a3bb35253088c8b66d6cfbc89742f">Cjt_Jugadores::Cjt_Jugadores</a></div><div class="ttdeci">Cjt_Jugadores()</div><div class="ttdoc">Creadora por defecto. Se ejecuta automáticamente al declarar un conjunto de jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00007">Cjt_Jugadores.cc:7</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a2e870e07bbcbd6b0509824b6869923d0"><div class="ttname"><a href="class_cjt___jugadores.html#a2e870e07bbcbd6b0509824b6869923d0">Cjt_Jugadores::ranking</a></div><div class="ttdeci">vector&lt; jrank &gt; ranking</div><div class="ttdoc">Vector que representa el ranking de jugadores (jrank)</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00141">Cjt_Jugadores.hh:141</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a368a20e35cb54e9a5491adcb14bb5e16"><div class="ttname"><a href="class_cjt___jugadores.html#a368a20e35cb54e9a5491adcb14bb5e16">Cjt_Jugadores::existe</a></div><div class="ttdeci">bool existe(string nombre) const</div><div class="ttdoc">Indica si existe el jugador con nombre &quot;nombre&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00087">Cjt_Jugadores.cc:87</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a4c60a851b0212b02d07f2048d13188d6"><div class="ttname"><a href="class_cjt___jugadores.html#a4c60a851b0212b02d07f2048d13188d6">Cjt_Jugadores::listar_ranking</a></div><div class="ttdeci">void listar_ranking() const</div><div class="ttdoc">Operación de escritura del ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00062">Cjt_Jugadores.cc:62</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a4cc6e7db64a3f5df7f77445cd66e5e8e"><div class="ttname"><a href="class_cjt___jugadores.html#a4cc6e7db64a3f5df7f77445cd66e5e8e">Cjt_Jugadores::listar_jugador</a></div><div class="ttdeci">void listar_jugador(string nombre) const</div><div class="ttdoc">Operación de escritura de un jugador y sus estadísticas.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00079">Cjt_Jugadores.cc:79</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a568645add15663ae5ad455db748500de"><div class="ttname"><a href="class_cjt___jugadores.html#a568645add15663ae5ad455db748500de">Cjt_Jugadores::actualizar_estadisticas</a></div><div class="ttdeci">void actualizar_estadisticas(string jug, int t, int sg, int sp, int jg, int jp, int pg, int pp)</div><div class="ttdoc">Actualiza las estadísticas de un partido para un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00121">Cjt_Jugadores.cc:121</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a732b3275188d15d648b87fa78f80d0e0"><div class="ttname"><a href="class_cjt___jugadores.html#a732b3275188d15d648b87fa78f80d0e0">Cjt_Jugadores::anadir_jugador</a></div><div class="ttdeci">void anadir_jugador(string nombre)</div><div class="ttdoc">Añade un jugador al conjunto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00009">Cjt_Jugadores.cc:9</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_a753d3bc139ca9107cfc94d464653d473"><div class="ttname"><a href="class_cjt___jugadores.html#a753d3bc139ca9107cfc94d464653d473">Cjt_Jugadores::leer</a></div><div class="ttdeci">void leer()</div><div class="ttdoc">Operación de lectura.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00103">Cjt_Jugadores.cc:103</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_aa3e654d501a23e4f43a1a61cdf7507cc"><div class="ttname"><a href="class_cjt___jugadores.html#aa3e654d501a23e4f43a1a61cdf7507cc">Cjt_Jugadores::ordenar_ranking</a></div><div class="ttdeci">void ordenar_ranking()</div><div class="ttdoc">Ordena el ranking de jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00053">Cjt_Jugadores.cc:53</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3"><div class="ttname"><a href="class_cjt___jugadores.html#ac0a8e34bec7aa6ef3ba33e6bb9eeaeb3">Cjt_Jugadores::numero_jugadores</a></div><div class="ttdeci">int numero_jugadores() const</div><div class="ttdoc">Indica el número de jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00093">Cjt_Jugadores.cc:93</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_ad2609d45dc343725e0b31dd26aa1e79c"><div class="ttname"><a href="class_cjt___jugadores.html#ad2609d45dc343725e0b31dd26aa1e79c">Cjt_Jugadores::comp</a></div><div class="ttdeci">static bool comp(const jrank &amp;j1, const jrank &amp;j2)</div><div class="ttdoc">Operación de comparación de dos elementos del struct jrank según sus puntos y posición anterior en el...</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00047">Cjt_Jugadores.cc:47</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_ad9e89ddf1604ef45b5b86b011ea36730"><div class="ttname"><a href="class_cjt___jugadores.html#ad9e89ddf1604ef45b5b86b011ea36730">Cjt_Jugadores::eliminar_jugador</a></div><div class="ttdeci">void eliminar_jugador(string nombre)</div><div class="ttdoc">Da de baja un jugador del conjunto.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00022">Cjt_Jugadores.cc:22</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_ae7b5ee0d4dfd3379a9aaad67d40fd51e"><div class="ttname"><a href="class_cjt___jugadores.html#ae7b5ee0d4dfd3379a9aaad67d40fd51e">Cjt_Jugadores::sumar_puntos</a></div><div class="ttdeci">void sumar_puntos(string nombre, int pts)</div><div class="ttdoc">Suma los puntos indicados al jugador con nombre &quot;nombre&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00035">Cjt_Jugadores.cc:35</a></div></div>
+<div class="ttc" id="aclass_cjt___jugadores_html_af17c15164bd84637045a320173e98309"><div class="ttname"><a href="class_cjt___jugadores.html#af17c15164bd84637045a320173e98309">Cjt_Jugadores::consultar_puntos</a></div><div class="ttdeci">int consultar_puntos(string nombre) const</div><div class="ttdoc">Operación para consultar los puntos de un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8cc_source.html#l00041">Cjt_Jugadores.cc:41</a></div></div>
+<div class="ttc" id="astruct_cjt___jugadores_1_1jrank_html"><div class="ttname"><a href="struct_cjt___jugadores_1_1jrank.html">Cjt_Jugadores::jrank</a></div><div class="ttdoc">Representa un jugador en el ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00126">Cjt_Jugadores.hh:126</a></div></div>
+<div class="ttc" id="astruct_cjt___jugadores_1_1jrank_html_a8b9dc2fa3d382ab7bb165013525e2dc1"><div class="ttname"><a href="struct_cjt___jugadores_1_1jrank.html#a8b9dc2fa3d382ab7bb165013525e2dc1">Cjt_Jugadores::jrank::puntos</a></div><div class="ttdeci">int puntos</div><div class="ttdoc">Entero que representa los puntos del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00131">Cjt_Jugadores.hh:131</a></div></div>
+<div class="ttc" id="astruct_cjt___jugadores_1_1jrank_html_aab48b7b320183bd65bf0a81f59f85bb7"><div class="ttname"><a href="struct_cjt___jugadores_1_1jrank.html#aab48b7b320183bd65bf0a81f59f85bb7">Cjt_Jugadores::jrank::nombre</a></div><div class="ttdeci">string nombre</div><div class="ttdoc">String que representa el nombre del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00128">Cjt_Jugadores.hh:128</a></div></div>
+<div class="ttc" id="astruct_cjt___jugadores_1_1jrank_html_ac997f958c4d48dd39ecc596b6dd6dbee"><div class="ttname"><a href="struct_cjt___jugadores_1_1jrank.html#ac997f958c4d48dd39ecc596b6dd6dbee">Cjt_Jugadores::jrank::pos_ant</a></div><div class="ttdeci">int pos_ant</div><div class="ttdoc">Entero que representa la posición anterior en el ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt___jugadores_8hh_source.html#l00134">Cjt_Jugadores.hh:134</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

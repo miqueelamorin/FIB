@@ -1,0 +1,177 @@
+for iteration
+=============
+
+    while is the general iteration instruction, but simple iterations 
+    can be rewritten in a shorter way --more compact and more intuitive--
+    replacing *while* with  *for* instruction.
+
+    for (int j = 1; j <= n; ++j) 
+        S
+
+    --- > Block S is executed n times, first with j having value 1, 
+          then value 2,... Last iteration is performed with j having value n.
+
+    A bit more general expression:
+    
+    for (int j = a; B; ++j)
+        S
+    
+    where B is a boolean expression and ++j can be replaced by --j if convenient
+
+    Variable j is the **control variable** of the for instruction above. 
+    Control variable only exists in the scope of the for instruction
+
+    ***Warning*** Modifying the value of the control variable in block S 
+                  is considered a serious error. See page 6 on "Normes de 
+                  Programació". 
+
+    
+    this code is *almost* equivalent to:
+
+    int j = a;
+    while (B) {
+        S;
+        ++j
+    }
+
+    (but note the scope of var j is different from the one in the for version) 
+    
+
+    Example:  Multiplication table
+
+    //in: an integer
+    //out: mult table
+    int n;
+    cin >> n;
+    int j = 0;
+    while (j <= 10) {
+        cout << n << '*' << j << " = " << n*j << endl;
+        j = j + 1 // also j += 1,  also: ++j
+    }
+
+
+
+   int n;
+   cin >> n;
+   for (int j = 0; j <= 10; ++j) 
+         cout << n << '*' << j << " = " << n*j << endl;
+    
+
+   
+        
+
+
+
+How to work with input data sequences
+=====================================
+
+   --> Case 1. We know the length of the input sequence.
+
+   Example
+            //in: k, n1,..., nk
+            //out: n1 + ....+ nk
+            int k;
+            cin >> k;
+            int sum = 0;
+            for (int i = 0; i < k; ++i) {
+                int n;  //vars must be declared in block where they live
+                cin >> n;
+                sum += n
+            }
+            cout << sum << endl;
+
+    ---> Case 2. Input sequence ends with a mark.
+
+    Example
+            //in: sequence of char finished with '.'
+            //out: number of letters in sequence
+            char ch
+            cin >> ch;
+            int count = 0;
+            while (ch != '.') {
+                if (('A' <= ch and  ch <= 'Z') or 
+                    ('a' <= ch and  <= 'z')) ++count
+                cin >> ch;
+            }
+            cout << count << endl;
+
+    ---> Case 3. General case: no length and no mark.
+
+    Example
+            //in: sequence of strings (names)
+            //out: number of times "Marta" appears on input seq
+            int count = 0;
+            string s;
+            while (cin >> s) 
+                if (s == "Marta") ++count;
+            cout << count << endl;
+
+
+    **Note that cin >> s is also a boolean expression that evaluates to true when 
+      reading operation has been succesful and evaluates to false otherwise. When 
+      no more data is available (data in input seq is run out) cin >> s is false 
+      and the value of var s does not change.
+
+
+Nested iterations
+=================
+
+    Example: Draw a right triangle of size n
+
+            //in: integer greater than zero
+            //out right triangle of size n
+            int n;
+            cin >> n;
+            int nblanks = n - 1;
+            for (int i = 1; i <= n; ++i) {
+                for (int j = 1; j <= nblanks; ++j)
+                    cout << ' ';
+                for (int j = nblanks + 1; j <= n; ++j)
+                    cout << '*';
+                cout << endl;
+                --nblanks;
+            }
+
+    Example: Num of digits
+
+            //in: sequence of integers greater than zero
+            //out: for each input number its number of digits
+            int n;
+            while (cin >> n) {
+                int ndigits = 0;
+                while (n > 0) {
+                    ++ndigits;
+                    cin >> n;
+                }
+                cout << ndigits << endl;
+            }
+
+
+    Example: Draw a piramid of size n
+
+
+            //in: integer greater than zero
+            //out: piramid of size n
+            int n;
+            cin >> n;
+            int nblanks = n - 1;
+            int nstars = 1;
+            for (int i = 1; i <= n; ++i) {
+                for (int j = 1; j <= nblanks; ++j)
+                    cout << ' ';
+                for (int j = 1; j <= nstars; ++j)
+                    cout << '*';
+                cout << endl;
+                --nblanks;
+                nstars += 2;
+            }
+
+
+Visibility of variables
+=======================
+
+    Take a glance to the chapter "Data types and visibility" pages 22-24 at 
+    https://www.cs.upc.edu/pro1/index.php?id=material-docent-1
+
+    
+

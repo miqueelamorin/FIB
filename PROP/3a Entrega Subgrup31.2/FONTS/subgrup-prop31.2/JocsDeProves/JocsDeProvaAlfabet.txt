@@ -1,0 +1,45 @@
+Joc de proves de les funcionalitats de l'alfabet
+
+Utilitzarem jocs de prova CAIXA BLANCA per poder comprovar els casos limits.
+
+Casos d'ús que es comproven amb aquesta prova:
+    - Crear Alfabet
+    - Eliminar Alfabet
+    - Modificar Alfabet
+
+Fitxers necessaris:
+    testAlfabet.txt
+
+Input:
+
+    1
+    2
+    1
+    llatí
+    abcdefghijklmnopqrstuvwxyz
+    2
+    2
+    testAlfabet.txt
+    alf_imp
+    3
+    2
+    llatí
+    1
+    a
+    4
+    llatí
+    5
+    llatí
+    2
+    1
+
+    6
+    alf_imp
+    abccdeeff
+    0
+
+ Cada número de l'input representa una acció diferent del driver alfabet.
+ Amb aquesta entrada estem comprovant primer que podem crear i elimiar alfabets sense problema, i si l'alfabet indicat
+ ja existeix o no existeix (respectivament) salta una excepció que notifica a l'usuari.
+ També comprovem que si creem un alfabet amb el contiut biut, salta una excecpció.
+ A més, també comprovem que podem importar un alfabet des d'un fitxer .txt i que podem modificar satisfactoriament qualsevol alfabet que existeixi.

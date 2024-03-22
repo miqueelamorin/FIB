@@ -1,0 +1,227 @@
+Sequences. Treat all and search algorithms.
+==========================================
+(---Recorrido y búsqueda en secuencias. Esquemas algorítmicos---)
+
+
+
+The input is a sequence of data (items: char, string, integer...)
+
+Roughly, any data process on the input sequence can be either:
+
+1) a process that requieres the evaluation of each data item
+   in the sequence ---> TREAT ALL problem
+
+or
+
+2) a process whose goal is to check  if there is any data item satisfying a 
+  property ---> SEARCH problem
+
+or
+
+3) (rarely) a combination of the previous ones
+
+
+Examples:
+
+    Given a sequence of strings, count the number of times "anna" appears.
+
+        for instance:
+
+            in: anna lluis olga anna pere
+            out: 2
+
+        TREAT ALL
+
+        int counter = 0;
+        string name;
+        while (cin >> name) 
+            if (name == "anna") ++counter
+        cout << counter << endl;
+
+
+
+    Given a sequence of strings, check if "pere" appears
+
+        for instance:
+
+            in: pau roger pere marta pere dani pere neus
+            out: true (1 on the cout)
+      
+        SEARCH
+
+        bool found = false;
+        string name;
+        while (not found and cin >> name)
+            found = name == "pere"
+            //alternatively: if (name == "pere") found = true;
+        cout << found << endl;
+
+
+        REMARK (very important!!):
+
+        ***the code has to finish as soon as an item with
+           the required property has been found*** 
+      
+
+
+    Given a sequence of non negative  integers, compute the maximum
+
+        for instance:
+
+            in: 3 1 5 8 0
+            out: 8
+
+        TREAT ALL
+
+        int max = -1; // "fake", but suitable initialization
+        int n;
+        while (cin >> n)
+            if (n > max) max = n;
+        cout << max << endl;
+
+
+    
+    
+
+Algorithmic squemes
+===================
+
+TREAT ALL
+
+    initialize;
+    while (not end_of_seq) {
+        get a new data item d;
+        treat d;
+    }
+    //all data items have been processed
+
+
+SEARCH
+    
+    initialize;
+    bool found = false;
+    while (not found and not end_of_seq) {
+        get new data item d;
+        if (property(d)) found = true;
+    }
+    //the value of found shows whether there is a item 
+    //satisfying property
+
+    
+    Boolean variable *found* is not always necessary, but it 
+    can make the programming task easier. 
+    
+    Revisit the search example ("pere") above:
+    
+    string name = "aaa"; // "fake" but suitable initialization
+    while (name != "pere" and cin >> name) {}; //empty iteration block
+    cout << (name == "pere") << endl;
+    
+    
+    *** Here, at the continuation condition, plays a role the C++ 
+    "lazy" computation rule for predicates: 'false and q' is false 
+    and q is not evaluated.Similarly, 'true or p' is true and p 
+    is not evaluated ***
+    
+
+
+Working with slots (uso de ventanas)
+==================
+
+in: a non empty sequence of city names where a plane has taken off/landed. 
+    The sequence is ordered chronologically. Just after the sequence 
+    the MARK "###" comes out.
+
+out: the number of plane flights from Madrid to Barcelona
+
+For instance, for input sequence: 
+    Palma Madrid Barcelona Palma Valencia Bilbao Madrid Barcelona ###
+    the number is 2.
+
+    int counter = 0;
+    string from;
+    cin >> from
+    string to;    
+    cin >> to;    //couple <from, to>  defines an *abstract slot* of wide 2
+    while (to != "###") {
+        if (from == "Madrid and to == "Barcelona") ++counter;
+        //now we update the slot value
+        from = to;
+        cin >> to;
+    }
+
+
+
+
+in: a non empty sequence of city names where a plane has taken off/landed. 
+    The sequence is ordered chronologically,  has **NO MARK** and 
+    the **length is unknown** 
+
+out: true when the plane has flown from Barcelona to Madrid, false otherwise.
+
+For instance, for input sequence: 
+    Palma Madrid Barcelona Palma Valencia Bilbao Madrid Barcelona
+    the result is false.
+
+    bool found = false;
+    string from;
+    cin >> from;
+    string to; //couple <from, to>  defines an *abstract slot* of wide 2
+    while (not found and cin >> to) { 
+        if (from == "Barcelona" and to == "Madrid") found = true;
+        //we now update the slot value
+        from = to;
+    }
+    cout << found << endl;
+   
+
+
+Sequences on sequences
+=======================
+
+in: A nonempty sequence of cases. Each case is formed by plane identifier (string), an
+    int n > 1 and a sequence of n cities (string) where the plane has taken off/landed.
+
+out: the plane identifier with the most flights from Madrid to Barcelona. Ties are solved
+    choosing the smallest in the usual string order (dictionary order)
+
+For instance, for input:
+ 
+    XQ3652  5 Madrid Barcelona Palma Madrid Barcelona
+    RF2039  6 Barcelona Madrid Barcelona Bilbao Madrid Palma
+    AD83487 8 Sevilla Ibiza Madrid Barcelona Palma Madrid Barcelona Palma
+    DW3346  4 Madrid Barcelona Madrid Barcelona
+
+    the result is AD83487
+
+    int max_freq = 0; 
+    string max_identifier;
+    bool max_ident_initialized = false;
+    string identifier;
+    while (cin >> identifier) {
+        if (not max_ident_initialized) {
+            max_identifier = identifier;
+            max_ident_initialized = true;
+        }
+        int n;
+        cin >> n;
+        string from = "FAKE"; // "fake" but suitable initialization
+        int freq = 0;
+        for (int j = 0; j < n; ++j) {
+            string to;
+            cin >> to;
+            if (from == "Madrid" and to == "Barcelona")  ++freq;
+            from = to;
+        }
+        if (freq > max_freq) {
+            max_freq = freq;
+            max_identifier = identifier;
+        }
+        else if (freq ==  max_freq and identifier < max_identifier)
+             max_identifier = identifier;
+ 
+    }   
+    cout << max_identifier << ' ' << max_freq << endl;
+    
+
+
